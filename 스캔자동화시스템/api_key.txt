@@ -1,0 +1,2 @@
+ANTHROPIC=여기에_Anthropic_API키_입력
+GDRIVE=여기에_GoogleDrive_API키_입력
