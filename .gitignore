@@ -1,0 +1,6 @@
+*.pdf 
+*.jpg 
+*.png 
+.tmp.driveupload/ 
+file_ids.json 
+token.json 
