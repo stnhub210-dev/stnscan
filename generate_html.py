@@ -617,7 +617,10 @@ class Handler(BaseHTTPRequestHandler):
 
 if __name__=="__main__":
     if len(sys.argv)>1 and sys.argv[1]=="once":
-        generate(SCAN_FOLDER,OUTPUT_HTML); sys.exit(0)
+        # GitHub Actions 환경: 스크립트 위치 기준으로 경로 설정
+        base = os.path.dirname(os.path.abspath(__file__))
+        out  = os.path.join(base, "스캔관리대장.html")
+        generate(base, out); sys.exit(0)
 
     print("="*50)
     print("  스캔관리대장 v3  |  포트:",API_PORT)
