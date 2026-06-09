@@ -6,7 +6,7 @@
 """
 
 import os, json, re, sys, time, subprocess, threading
-from datetime import datetime, date
+from datetime import datetime, date, timezone, timedelta
 from http.server import HTTPServer, BaseHTTPRequestHandler
 import urllib.request
 
@@ -232,7 +232,8 @@ def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
     week_ago = (date.today() - timedelta(days=7)).strftime("%Y-%m-%d")
     today_cnt= sum(1 for d in docs if d["date"] >= week_ago)
     drv_cnt  = len(drive_ids)
-    updated  = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    KST = timezone(timedelta(hours=9))
+    updated  = datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S")
 
     def panel(pid, lst, active=""):
         return f'<div id="p-{pid}" class="panel {active}"><table><thead><tr><th>No</th><th>스캔일자</th><th>구분</th><th>회사(기관)명</th><th>문서종류</th><th>긴급도</th><th>파일 열기</th><th>분류</th></tr></thead><tbody>{rows(lst)}</tbody></table></div>'
@@ -617,10 +618,7 @@ class Handler(BaseHTTPRequestHandler):
 
 if __name__=="__main__":
     if len(sys.argv)>1 and sys.argv[1]=="once":
-        # GitHub Actions 환경: 스크립트 위치 기준으로 경로 설정
-        base = os.path.dirname(os.path.abspath(__file__))
-        out  = os.path.join(base, "스캔관리대장.html")
-        generate(base, out); sys.exit(0)
+        generate(SCAN_FOLDER,OUTPUT_HTML); sys.exit(0)
 
     print("="*50)
     print("  스캔관리대장 v3  |  포트:",API_PORT)
