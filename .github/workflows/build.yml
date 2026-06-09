@@ -3,11 +3,14 @@ name: 스캔관리대장 자동 생성
 on:
   push:
     branches: [ main ]
-  workflow_dispatch:  # 수동 실행 버튼
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
       - name: 저장소 체크아웃
         uses: actions/checkout@v4
@@ -29,4 +32,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           publish_branch: gh-pages
-          include_files: 스캔관리대장.html
