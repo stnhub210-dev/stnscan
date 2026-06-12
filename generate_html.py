@@ -6,7 +6,7 @@
 """
 
 import os, json, re, sys, time, subprocess, threading
-from datetime import datetime, date, timezone, timedelta
+from datetime import datetime, date
 from http.server import HTTPServer, BaseHTTPRequestHandler
 import urllib.request
 
@@ -232,11 +232,12 @@ def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
     week_ago = (date.today() - timedelta(days=7)).strftime("%Y-%m-%d")
     today_cnt= sum(1 for d in docs if d["date"] >= week_ago)
     drv_cnt  = len(drive_ids)
-    KST = timezone(timedelta(hours=9))
-    updated  = datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S")
+    updated  = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     def panel(pid, lst, active=""):
         return f'<div id="p-{pid}" class="panel {active}"><table><thead><tr><th>No</th><th>스캔일자</th><th>구분</th><th>회사(기관)명</th><th>문서종류</th><th>긴급도</th><th>파일 열기</th><th>분류</th></tr></thead><tbody>{rows(lst)}</tbody></table></div>'
+
+    PW_HASH = "9998d4912395a5bd5dbd699f33725cdea181a3215f744318c03168c548f9b77b"
 
     html = f"""<!DOCTYPE html>
 <html lang="ko"><head>
@@ -245,6 +246,41 @@ def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{font-family:'Malgun Gothic',sans-serif;background:#f0f2f5;color:#333;font-size:14px}}
+
+/* ── 잠금 화면 ── */
+#lockScreen{{
+  position:fixed;top:0;left:0;width:100%;height:100%;
+  background:linear-gradient(135deg,#0d1b6e 0%,#1a237e 50%,#283593 100%);
+  z-index:9999;display:flex;align-items:center;justify-content:center;
+}}
+#lockScreen.hide{{display:none}}
+.lock-box{{
+  background:rgba(255,255,255,0.06);backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,0.15);border-radius:20px;
+  padding:48px 40px;min-width:320px;max-width:380px;width:90%;
+  text-align:center;box-shadow:0 24px 64px rgba(0,0,0,0.5);
+}}
+.lock-logo{{font-size:48px;margin-bottom:12px}}
+.lock-title{{color:#fff;font-size:22px;font-weight:700;margin-bottom:4px;letter-spacing:-0.5px}}
+.lock-sub{{color:rgba(255,255,255,0.5);font-size:12px;margin-bottom:32px}}
+.lock-label{{color:rgba(255,255,255,0.7);font-size:12px;text-align:left;margin-bottom:6px;display:block}}
+.lock-input{{
+  width:100%;padding:13px 16px;border-radius:10px;border:1.5px solid rgba(255,255,255,0.2);
+  background:rgba(255,255,255,0.08);color:#fff;font-size:16px;
+  outline:none;letter-spacing:2px;text-align:center;
+  transition:border .2s;
+}}
+.lock-input::placeholder{{color:rgba(255,255,255,0.3);letter-spacing:0}}
+.lock-input:focus{{border-color:rgba(255,255,255,0.6);background:rgba(255,255,255,0.12)}}
+.lock-btn{{
+  width:100%;margin-top:16px;padding:14px;border:none;border-radius:10px;
+  background:#e8f0fe;color:#1a237e;font-size:15px;font-weight:700;
+  cursor:pointer;transition:all .2s;letter-spacing:0.5px;
+}}
+.lock-btn:hover{{background:#fff;transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,0,0,0.2)}}
+.lock-err{{color:#ff6b6b;font-size:12px;margin-top:10px;min-height:18px}}
+.lock-notice{{color:rgba(255,255,255,0.3);font-size:11px;margin-top:24px;line-height:1.6}}
+</style>
 .hdr{{background:#1a237e;color:#fff;padding:14px 24px;display:flex;align-items:center;justify-content:space-between}}
 .hdr h1{{font-size:19px}}
 .hdr span{{font-size:11px;opacity:.7}}
@@ -299,6 +335,23 @@ tr:hover td{{background:#f5f5f5}}
 .modal select{{width:100%;padding:8px;border:1px solid #ddd;border-radius:6px;font-size:13px;margin-bottom:12px}}
 .modal-btns{{display:flex;gap:8px;justify-content:flex-end;margin-top:8px}}
 </style></head><body>
+
+<!-- ── 잠금 화면 ── -->
+<div id="lockScreen">
+  <div class="lock-box">
+    <div class="lock-logo">📁</div>
+    <div class="lock-title">스캔관리대장</div>
+    <div class="lock-sub">STN 문서관리시스템 · stnscan.co.kr</div>
+    <label class="lock-label">비밀번호</label>
+    <input class="lock-input" id="lockPw" type="password" placeholder="비밀번호를 입력하세요"
+           onkeydown="if(event.key==='Enter')unlock()">
+    <button class="lock-btn" onclick="unlock()">🔓 열기</button>
+    <div class="lock-err" id="lockErr"></div>
+    <div class="lock-notice">관계자 외 접근 금지<br>© STN Media Group</div>
+  </div>
+</div>
+<!-- ── /잠금 화면 ── -->
+
 <div class="hdr"><h1>📁 스캔관리대장</h1><span>마지막 생성: {updated}</span></div>
 <div class="stats">
   <div class="stat"     onclick="goTab('all')">  <div class="n">{len(docs)}</div><div class="l">전체</div></div>
@@ -472,6 +525,37 @@ async function refresh_(){{
     st.textContent='❌ 서버 연결 실패 — 스캔관리대장_실행.bat 확인';
   }}finally{{btn.disabled=false;btn.textContent='🔄 새로고침';}}
 }}
+
+/* ── 잠금 화면 ── */
+const PW_HASH = "{PW_HASH}";
+async function sha256(str){{
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+}}
+async function unlock(){{
+  const pw = document.getElementById('lockPw').value;
+  const err = document.getElementById('lockErr');
+  if(!pw){{ err.textContent='비밀번호를 입력하세요.'; return; }}
+  const hash = await sha256(pw);
+  if(hash === PW_HASH){{
+    sessionStorage.setItem('stn_auth','1');
+    document.getElementById('lockScreen').classList.add('hide');
+    err.textContent='';
+  }} else {{
+    err.textContent='❌ 비밀번호가 올바르지 않습니다.';
+    document.getElementById('lockPw').value='';
+    document.getElementById('lockPw').focus();
+  }}
+}}
+// 페이지 로드 시 인증 여부 확인
+(function(){{
+  if(sessionStorage.getItem('stn_auth')==='1'){{
+    document.getElementById('lockScreen').classList.add('hide');
+  }} else {{
+    document.getElementById('lockPw').focus();
+  }}
+}})();
+/* ── /잠금 화면 ── */
 </script></body></html>"""
 
     with open(output_path, 'w', encoding='utf-8') as f:
@@ -557,19 +641,68 @@ def drive_upload_new(scan_folder=SCAN_FOLDER):
         return 0
 
 def git_push():
+    """
+    스캔관리대장.html 을 GitHub main 브랜치에 푸시.
+    - 한국어 파일명 깨짐 방지: core.quotepath false 설정
+    - 커밋 메시지 영문 사용 (cp949 인코딩 충돌 방지)
+    - nothing to commit 상태는 정상 처리 (오류 아님)
+    - stderr/stdout 모두 utf-8 + errors='ignore' 디코딩
+    """
+    def run(cmd):
+        return subprocess.run(
+            cmd, cwd=SCAN_FOLDER,
+            capture_output=True
+        )
+
     try:
-        os.chdir(SCAN_FOLDER)
-        subprocess.run(["git","add","스캔관리대장.html"], check=True, capture_output=True)
-        subprocess.run(["git","commit","-m",f"자동업데이트 {datetime.now().strftime('%Y-%m-%d %H:%M')}"],
-                       check=True, capture_output=True)
-        subprocess.run(["git","push"], check=True, capture_output=True)
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] ✅ GitHub 업로드 완료")
-        return True, "GitHub 업로드 완료"
-    except subprocess.CalledProcessError as e:
-        msg = e.stderr.decode("utf-8","ignore").strip() if e.stderr else "오류"
-        return False, msg
+        # 한국어 파일명 인코딩 설정
+        run(["git", "config", "core.quotepath", "false"])
+        run(["git", "config", "core.autocrlf", "false"])
+
+        # HTML 파일 스테이징
+        r = run(["git", "add", "스캔관리대장.html"])
+        if r.returncode != 0:
+            err = r.stderr.decode("utf-8", "ignore").strip()
+            print(f"  git add 실패: {err}")
+            return False, f"git add 실패: {err}"
+
+        # 변경 여부 확인
+        status = run(["git", "status", "--porcelain"])
+        status_out = status.stdout.decode("utf-8", "ignore").strip()
+        if not status_out:
+            print(f"[{datetime.now().strftime('%H:%M:%S')}] 변경 없음 — push 생략")
+            return True, "변경 없음"
+
+        # 커밋 (메시지 영문 — cp949 충돌 방지)
+        msg = f"update {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+        r = run(["git", "commit", "-m", msg])
+        if r.returncode != 0:
+            out = r.stdout.decode("utf-8", "ignore").strip()
+            err = r.stderr.decode("utf-8", "ignore").strip()
+            if "nothing to commit" in out or "nothing to commit" in err:
+                print(f"[{datetime.now().strftime('%H:%M:%S')}] nothing to commit — push 생략")
+                return True, "변경 없음"
+            print(f"  git commit 실패: {err or out}")
+            return False, f"git commit 실패: {err or out}"
+
+        # 푸시
+        r = run(["git", "push", "origin", "main"])
+        if r.returncode != 0:
+            err = r.stderr.decode("utf-8", "ignore").strip()
+            print(f"  git push 실패: {err}")
+            return False, f"git push 실패: {err}"
+
+        print(f"[{datetime.now().strftime('%H:%M:%S')}] GitHub push 완료")
+        return True, "GitHub push 완료"
+
+    except FileNotFoundError:
+        print("  git 명령어를 찾을 수 없음 — Git 설치 확인")
+        return False, "git 명령어 없음"
     except Exception as e:
+        print(f"  git_push 예외: {e}")
         return False, str(e)
+
+
 
 class Handler(BaseHTTPRequestHandler):
     def log_message(self,*a): pass
