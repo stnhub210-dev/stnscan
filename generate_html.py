@@ -126,10 +126,11 @@ def load_lawsuit_data():
 
 CLASSIFICATIONS = os.path.join(SCAN_FOLDER, "classifications.json")
 
-def load_classifications():
-    if os.path.exists(CLASSIFICATIONS):
+def load_classifications(scan_folder=SCAN_FOLDER):
+    path = os.path.join(scan_folder, "classifications.json")
+    if os.path.exists(path):
         try:
-            with open(CLASSIFICATIONS, encoding="utf-8") as f:
+            with open(path, encoding="utf-8") as f:
                 return json.load(f)
         except: pass
     return {}
@@ -138,9 +139,9 @@ def save_classifications(data):
     with open(CLASSIFICATIONS, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-def fetch_drive_ids():
+def fetch_drive_ids(scan_folder=SCAN_FOLDER):
     try:
-        jp = os.path.join(SCAN_FOLDER, "file_ids.json")
+        jp = os.path.join(scan_folder, "file_ids.json")
         if os.path.exists(jp):
             with open(jp, encoding="utf-8") as f:
                 return json.load(f)
@@ -157,14 +158,14 @@ def make_link(fname, drive_ids):
 # ── HTML 생성 ────────────────────────────────
 def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
     print(f"\n[{datetime.now().strftime('%H:%M:%S')}] HTML 생성 시작...")
-    drive_ids = fetch_drive_ids()
+    drive_ids = fetch_drive_ids(scan_folder)
     load_lawsuit_data()
 
     pdfs = [f for f in os.listdir(scan_folder) if f.lower().endswith('.pdf')]
 
     today_str = date.today().strftime("%Y-%m-%d")
 
-    classifications = load_classifications()
+    classifications = load_classifications(scan_folder)
     docs = []
     for fname in pdfs:
         fpath = os.path.join(scan_folder, fname)
@@ -751,7 +752,11 @@ class Handler(BaseHTTPRequestHandler):
 
 if __name__=="__main__":
     if len(sys.argv)>1 and sys.argv[1]=="once":
-        generate(SCAN_FOLDER,OUTPUT_HTML); sys.exit(0)
+        # GitHub Actions 환경 감지: SCAN_FOLDER가 없으면 현재 디렉토리 사용
+        ci_folder = SCAN_FOLDER if os.path.isdir(SCAN_FOLDER) else os.path.abspath(".")
+        ci_output = os.path.join(ci_folder, "스캔관리대장.html")
+        generate(ci_folder, ci_output)
+        sys.exit(0)
 
     print("="*50)
     print("  스캔관리대장 v3  |  포트:",API_PORT)
