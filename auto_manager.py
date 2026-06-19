@@ -224,20 +224,48 @@ def nb(d): return ' <span class="nb">NEW</span>' if ir(d) else ""
 def ra(d): return ' data-recent="true"' if ir(d) else ""
 def ub(u): return f'<span class="badge {u}">{u}</span>' if u else ""
 
+def clean_git_junk(folder=SCAN_FOLDER):
+    """Windows가 .git 내부에 흩뿌린 desktop.ini / 잔여 lock 제거 (push 손상 방지)"""
+    gitdir = os.path.join(folder, ".git")
+    if not os.path.isdir(gitdir):
+        return
+    for root, dirs, files in os.walk(gitdir):
+        for fn in files:
+            if fn.lower() == "desktop.ini" or fn.endswith(".lock"):
+                try:
+                    p = os.path.join(root, fn)
+                    os.chmod(p, 0o666)
+                    os.remove(p)
+                except Exception:
+                    pass
+
 def git_push():
-    """GitHub에 HTML 자동 업로드"""
+    """GitHub에 HTML 자동 업로드 (웹용 scan.html 포함)"""
     import subprocess
     try:
         folder = SCAN_FOLDER
         env = os.environ.copy()
         env["PYTHONIOENCODING"] = "utf-8"
-        subprocess.run(["git","add","스캔관리대장.html"], cwd=folder, capture_output=True, env=env)
+        # 0) 웹페이지(scan.html) 생성 — 배포 레이아웃, 링크 항상 활성
+        #    로컬 대시보드(스캔관리대장.html)는 보존하려고 임시경로로 출력 후 삭제
+        try:
+            import generate_html as gh
+            _tmp = os.path.join(folder, "_web_dash_tmp.html")
+            gh.generate(folder, _tmp)
+            try: os.remove(_tmp)
+            except Exception: pass
+        except Exception as e:
+            log.warning(f"scan.html 생성 오류: {e}")
+        # 1) .git 손상(desktop.ini/lock) 정리
+        clean_git_junk(folder)
+        # 2) 로컬 대시보드 + 웹페이지 모두 스테이징
+        subprocess.run(["git","add","스캔관리대장.html","scan.html"], cwd=folder, capture_output=True, env=env)
         result = subprocess.run(["git","commit","-m","update"], cwd=folder, capture_output=True, text=True, encoding="utf-8", errors="ignore", env=env)
-        if "nothing to commit" in result.stdout:
+        if "nothing to commit" in (result.stdout or ""):
             return
         push = subprocess.run(["git","push"], cwd=folder, capture_output=True, text=True, encoding="utf-8", errors="ignore", env=env)
         if push.returncode == 0:
-            log.info("GitHub 자동 업로드 완료")
+            log.info("GitHub 자동 업로드 완료 (scan.html 포함)")
         else:
             log.warning(f"GitHub 업로드 오류: {push.stderr[:100]}")
     except Exception as e:

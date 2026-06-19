@@ -2,11 +2,11 @@
 스캔관리대장 자동 생성기 v4
 - 한글 파일명: 파일 생성일(ctime) 기준 날짜 적용
 - 날짜+시간 기준 최신순 정렬
-- 분류 모달에 날짜 수동 수정 기능
+- 분류 모달 날짜 수동 수정 기능
+- 연필 버튼: data 속성 방식 (특수문자 안전)
 - 새 파일 감지 알림 배지 (30초 폴링)
-- /filecount API 추가
-- HTTPS 환경: 서버연결 안내 메시지 표시
-- 드라이브 미등록 파일: 링크 대신 텍스트 표시
+- scan.html 동시 생성
+- HTTPS 환경 안내
 """
 
 import os, json, re, sys, time, subprocess, threading
@@ -16,8 +16,25 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 SCAN_FOLDER = r"C:\Users\User\Desktop\스캔"
 OUTPUT_HTML = os.path.join(SCAN_FOLDER, "스캔관리대장.html")
 XLSX_PATH   = os.path.join(SCAN_FOLDER, "소송목록.xlsx")
-FOLDER_ID   = "1hT9xdNEawnkrZ78p26Kcjlm-1wdR5x-X"
 API_PORT    = 8765
+FOLDER_ID   = "1hT9xdNEawnkrZ78p26Kcjlm-1wdR5x-X"
+FOLDER_URL  = f"https://drive.google.com/drive/folders/{FOLDER_ID}"
+
+
+def clean_git_junk(folder=SCAN_FOLDER):
+    """Windows가 .git 내부에 흩뿌린 desktop.ini / 잔여 lock 제거 (push 손상 방지)"""
+    gitdir = os.path.join(folder, ".git")
+    if not os.path.isdir(gitdir):
+        return
+    for root, dirs, files in os.walk(gitdir):
+        for fn in files:
+            if fn.lower() == "desktop.ini" or fn.endswith(".lock"):
+                try:
+                    p = os.path.join(root, fn)
+                    os.chmod(p, 0o666)
+                    os.remove(p)
+                except Exception:
+                    pass
 
 
 def _file_ts(fpath):
@@ -137,12 +154,6 @@ def fetch_drive_ids():
     except: pass
     return {}
 
-def make_link(fname, drive_ids):
-    fid = drive_ids.get(fname)
-    if fid:
-        return f"https://drive.google.com/file/d/{fid}/view"
-    return ""   # 드라이브 미등록 시 빈 문자열
-
 
 def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
     print(f"\n[{datetime.now().strftime('%H:%M:%S')}] HTML 생성 시작...")
@@ -165,19 +176,23 @@ def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
             date_str = ov["date"]
             try: sort_ts = datetime.strptime(ov["date"], "%Y-%m-%d").timestamp()
             except: pass
-        link     = make_link(fname, drive_ids)
-        has_drv  = bool(link)
+        fid     = drive_ids.get(fname, "")
+        # 드라이브 ID가 있으면 개별 파일, 없으면 드라이브 폴더로 연결(항상 클릭 가능)
+        link    = f"https://drive.google.com/file/d/{fid}/view" if fid else FOLDER_URL
         docs.append({
             "fname": fname, "date": date_str, "sort_ts": sort_ts,
             "company": company, "category": category, "doctype": doctype,
-            "urgency": detect_urgency(fname),
-            "link": link, "has_drv": has_drv,
+            "urgency": detect_urgency(fname), "link": link,
         })
 
     docs.sort(key=lambda d: d["sort_ts"], reverse=True)
 
+    def esc(s):
+        """HTML attribute 안전 이스케이프"""
+        return s.replace("&","&amp;").replace('"',"&quot;").replace("<","&lt;").replace(">","&gt;")
+
     def nbadge(d):
-        return '<span class="nbadge">NEW</span>' if d["date"] == today_str else ""
+        return ' <span class="nbadge">NEW</span>' if d["date"] == today_str else ""
 
     def ubadge(u):
         if u == "긴급": return '<span class="b-red">긴급</span>'
@@ -193,28 +208,28 @@ def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
         out = ""
         for i, d in enumerate(lst):
             icon  = "&#9878;" if d["category"] == "소송" else "&#128203;"
-            safe  = d["fname"].replace("'", "\\'")
-            co    = d["company"].replace("'", "\\'")
-            ca    = d["category"].replace("'", "\\'")
-            dt    = d["doctype"].replace("'", "\\'")
-            sd    = d["date"]
             short = d["fname"][:28] + ("..." if len(d["fname"]) > 28 else "")
-            # ★ 드라이브 링크 있으면 클릭 가능, 없으면 텍스트만
-            if d["has_drv"]:
-                file_cell = f'<a href="{d["link"]}" target="_blank" class="fl">&#128196; {short}</a>'
+            # 파일 링크: 드라이브 등록 시 클릭 가능, 미등록 시 텍스트
+            if d["link"]:
+                fcell = f'<a href="{d["link"]}" target="_blank" class="fl">&#128196; {short}</a>'
             else:
-                file_cell = f'<span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; {short}</span>'
+                fcell = f'<span class="fl-nd">&#128196; {short}</span>'
+            # data 속성으로 안전하게 전달 (특수문자, 따옴표 모두 처리)
             out += (
                 f'<tr{rowcls(d)}>'
                 f'<td class="c">{i+1}</td>'
-                f'<td class="c dc">{d["date"]} {nbadge(d)}</td>'
+                f'<td class="c dc">{d["date"]}{nbadge(d)}</td>'
                 f'<td class="c">{icon} {d["category"]}</td>'
                 f'<td>{d["company"]}</td>'
                 f'<td>{d["doctype"]}</td>'
                 f'<td class="c">{ubadge(d["urgency"])}</td>'
-                f'<td>{file_cell}</td>'
-                f'<td class="c"><button class="cbtn" '
-                f'onclick="openModal(\'{safe}\',\'{co}\',\'{ca}\',\'{dt}\',\'{sd}\')">&#9998;</button></td>'
+                f'<td>{fcell}</td>'
+                f'<td class="c"><button class="cbtn"'
+                f' data-fname="{esc(d["fname"])}"'
+                f' data-company="{esc(d["company"])}"'
+                f' data-category="{esc(d["category"])}"'
+                f' data-doctype="{esc(d["doctype"])}"'
+                f' data-date="{esc(d["date"])}">&#9998;</button></td>'
                 f'</tr>\n'
             )
         return out
@@ -232,14 +247,13 @@ def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
     upd  = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     N    = len(docs)
 
-    def panel(pid, lst, on=""):
+    def panel(pid, lst, on=False):
         hd = ("<thead><tr>"
               "<th>No</th><th>스캔일자</th><th>구분</th>"
               "<th>회사(기관)명</th><th>문서종류</th><th>긴급도</th>"
-              "<th>파일 열기</th><th>분류</th>"
-              "</tr></thead>")
-        return (f'<div id="p-{pid}" class="panel{" on" if on else ""}">'
-                f'<table>{hd}<tbody>{mkrows(lst)}</tbody></table></div>')
+              "<th>파일 열기</th><th>분류</th></tr></thead>")
+        cls = ' on' if on else ''
+        return f'<div id="p-{pid}" class="panel{cls}"><table>{hd}<tbody>{mkrows(lst)}</tbody></table></div>'
 
     html = f"""<!DOCTYPE html>
 <html lang="ko"><head>
@@ -251,6 +265,8 @@ def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
 body{{font-family:'Malgun Gothic',sans-serif;background:#f0f2f5;color:#333;font-size:14px}}
 .hdr{{background:#1a237e;color:#fff;padding:14px 24px;display:flex;align-items:center;justify-content:space-between}}
 .hdr h1{{font-size:19px}}.hdr span{{font-size:11px;opacity:.7}}
+.info-bar{{background:#e3f2fd;border-left:4px solid #1565c0;padding:8px 16px;font-size:12px;
+           color:#1565c0;margin:8px 24px;border-radius:4px;display:none;line-height:1.6}}
 .stats{{display:flex;gap:10px;padding:14px 24px;flex-wrap:wrap}}
 .stat{{background:#fff;border-radius:10px;padding:12px 18px;min-width:100px;text-align:center;
        box-shadow:0 2px 6px rgba(0,0,0,.08);cursor:pointer;transition:all .15s}}
@@ -284,31 +300,28 @@ tr:hover td{{background:#f5f5f5}}
 .c{{text-align:center}}.dc{{font-size:12px;color:#555}}
 .fl{{color:#1565c0;text-decoration:none;font-weight:500;font-size:12px}}
 .fl:hover{{text-decoration:underline}}
-.fl-nd{{color:#999;font-size:12px;cursor:default}}
-.fl-nd::after{{content:" &#x2601;";font-size:10px;color:#bbb}}
+.fl-nd{{color:#aaa;font-size:12px}}
 .nbadge{{background:#2e7d32;color:#fff;font-size:10px;padding:2px 5px;
          border-radius:10px;margin-left:3px;vertical-align:middle}}
 .b-red{{background:#e53935;color:#fff;font-size:11px;padding:2px 7px;border-radius:10px}}
 .b-org{{background:#ef6c00;color:#fff;font-size:11px;padding:2px 7px;border-radius:10px}}
 .r-new td{{background:#e8f5e9!important}}.r-urg td{{background:#fff3e0!important}}
 .foot{{color:#999;font-size:11px;margin-top:8px;text-align:right;padding-bottom:20px}}
-.cbtn{{background:#e8eaf6;border:none;border-radius:6px;cursor:pointer;padding:4px 8px;font-size:13px}}
+.cbtn{{background:#e8eaf6;border:none;border-radius:6px;cursor:pointer;padding:4px 10px;font-size:14px}}
 .cbtn:hover{{background:#c5cae9}}
 .modal-bg{{display:none;position:fixed;top:0;left:0;width:100%;height:100%;
            background:rgba(0,0,0,.5);z-index:1000;align-items:center;justify-content:center}}
 .modal-bg.show{{display:flex}}
-.modal{{background:#fff;border-radius:12px;padding:24px;min-width:320px;
-        box-shadow:0 8px 32px rgba(0,0,0,.2)}}
+.modal{{background:#fff;border-radius:12px;padding:24px;min-width:320px;max-width:90vw;
+        box-shadow:0 8px 32px rgba(0,0,0,.25)}}
 .modal h3{{font-size:16px;margin-bottom:12px;color:#1a237e}}
 .mfname{{font-size:11px;color:#888;margin-bottom:14px;word-break:break-all;
          padding:6px 8px;background:#f5f5f5;border-radius:6px}}
-.modal label{{font-size:12px;color:#555;display:block;margin-bottom:4px;font-weight:600}}
-.modal select,
-.modal input[type="date"]{{width:100%;padding:8px;border:1px solid #ddd;
-                           border-radius:6px;font-size:13px;margin-bottom:12px;background:#fff}}
+.modal label{{font-size:12px;color:#555;display:block;margin:0 0 4px;font-weight:600}}
+.modal select,.modal input[type=date]{{
+  width:100%;padding:8px;border:1px solid #ddd;border-radius:6px;
+  font-size:13px;margin-bottom:12px;background:#fff;font-family:inherit}}
 .modal-btns{{display:flex;gap:8px;justify-content:flex-end;margin-top:4px}}
-.info-bar{{background:#e3f2fd;border-left:4px solid #1565c0;padding:8px 16px;
-           font-size:12px;color:#1565c0;margin:0 24px 8px;border-radius:4px;display:none}}
 </style>
 </head><body>
 <div class="hdr">
@@ -316,17 +329,17 @@ tr:hover td{{background:#f5f5f5}}
   <span>마지막 생성: {upd}</span>
 </div>
 <div id="infoBar" class="info-bar">
-  &#9432; 웹 접속 중 — 파일 열기는 구글 드라이브 등록 파일만 가능합니다.
-  새 파일 반영은 PC에서 <b>generate_html.py</b> 실행 후 자동 업로드됩니다.
+  &#9432; 웹 접속 중입니다. 파일 열기는 구글 드라이브 등록 파일만 가능하며,
+  분류 변경은 PC 로컬에서만 동작합니다.
 </div>
 <div class="stats">
-  <div class="stat"     onclick="goTab('all')">    <div class="n">{N}</div>   <div class="l">전체</div></div>
+  <div class="stat"     onclick="goTab('all')">    <div class="n">{N}</div>    <div class="l">전체</div></div>
   <div class="stat red" onclick="goTab('lawsuit')"> <div class="n">{len(ld)}</div><div class="l">소송문서</div></div>
-  <div class="stat red" onclick="filterKw('긴급')"> <div class="n">{urg}</div> <div class="l">&#9679; 긴급</div></div>
-  <div class="stat org" onclick="filterKw('주의')"> <div class="n">{warn}</div><div class="l">&#9679; 주의</div></div>
+  <div class="stat red" onclick="filterKw('긴급')"> <div class="n">{urg}</div>  <div class="l">&#9679; 긴급</div></div>
+  <div class="stat org" onclick="filterKw('주의')"> <div class="n">{warn}</div> <div class="l">&#9679; 주의</div></div>
   <div class="stat"     onclick="goTab('work')">    <div class="n">{len(wd)}</div><div class="l">업무문서</div></div>
-  <div class="stat grn" onclick="filterToday()">    <div class="n">{tcnt}</div><div class="l">&#128197; 최근 7일</div></div>
-  <div class="stat" style="cursor:default">         <div class="n">{dcnt}</div><div class="l">&#9729; 드라이브</div></div>
+  <div class="stat grn" onclick="filterToday()">    <div class="n">{tcnt}</div> <div class="l">&#128197; 최근 7일</div></div>
+  <div class="stat" style="cursor:default">         <div class="n">{dcnt}</div> <div class="l">&#9729; 드라이브</div></div>
 </div>
 <div class="bar">
   <input id="si" placeholder="&#128269; 파일명, 회사명, 사건명..." oninput="doSearch()">
@@ -345,7 +358,6 @@ tr:hover td{{background:#f5f5f5}}
   <button class="tab"    id="t-pl"      onclick="goTab('pl',this)">플래닛 ({len(pl)})</button>
 </div>
 
-<!-- 분류 변경 모달 -->
 <div class="modal-bg" id="modalBg">
   <div class="modal">
     <h3>&#9998; 분류 변경</h3>
@@ -371,7 +383,7 @@ tr:hover td{{background:#f5f5f5}}
     </select>
     <div class="modal-btns">
       <button class="btn b-gray" onclick="closeModal()">취소</button>
-      <button class="btn b-blue" onclick="saveModal()">저장</button>
+      <button class="btn b-blue" id="mSave">저장</button>
     </div>
   </div>
 </div>
@@ -390,13 +402,19 @@ tr:hover td{{background:#f5f5f5}}
 <script>
 var _cur = 'all';
 var _fname = '';
-var _isHttps = window.location.protocol === 'https:';
+var _isHttps = (window.location.protocol === 'https:');
 
-// HTTPS 접속 시 안내 바 표시, 새로고침 버튼 숨기기
-if (_isHttps) {{
-  document.getElementById('infoBar').style.display = 'block';
-  document.getElementById('rb').style.display = 'none';
-}}
+// HTTPS 접속 안내
+(function() {{
+  try {{
+    if (_isHttps) {{
+      var ib = document.getElementById('infoBar');
+      var rb = document.getElementById('rb');
+      if (ib) ib.style.display = 'block';
+      if (rb) rb.style.display = 'none';
+    }}
+  }} catch(e) {{}}
+}})();
 
 function goTab(name, btn) {{
   _cur = name;
@@ -413,22 +431,22 @@ function goTab(name, btn) {{
 
 function doSearch() {{
   var q = document.getElementById('si').value.toLowerCase();
-  var rows = document.getElementById('p-' + _cur).querySelectorAll('tbody tr');
-  rows.forEach(function(r) {{
+  var panel = document.getElementById('p-' + _cur);
+  if (!panel) return;
+  panel.querySelectorAll('tbody tr').forEach(function(r) {{
     r.style.display = (!q || r.textContent.toLowerCase().indexOf(q) >= 0) ? '' : 'none';
   }});
 }}
 
-function clearSearch() {{
-  document.getElementById('si').value = '';
-  doSearch();
-}}
+function clearSearch() {{ document.getElementById('si').value = ''; doSearch(); }}
 
 function filterToday() {{
   var today = new Date();
   goTab('all', document.getElementById('t-all'));
   document.getElementById('si').value = '';
-  document.getElementById('p-all').querySelectorAll('tbody tr').forEach(function(r) {{
+  var panel = document.getElementById('p-all');
+  if (!panel) return;
+  panel.querySelectorAll('tbody tr').forEach(function(r) {{
     var dc = r.querySelector('.dc');
     if (!dc) return;
     var diff = (today - new Date(dc.textContent.trim().substring(0, 10))) / 86400000;
@@ -436,32 +454,40 @@ function filterToday() {{
   }});
 }}
 
-function filterKw(kw) {{
-  document.getElementById('si').value = kw;
-  goTab('all'); doSearch();
-}}
+function filterKw(kw) {{ document.getElementById('si').value = kw; goTab('all'); doSearch(); }}
 
-function openModal(fname, company, category, doctype, scanDate) {{
-  _fname = fname;
-  document.getElementById('mFname').textContent = fname;
-  document.getElementById('mDate').value     = scanDate  || '';
-  document.getElementById('mCompany').value  = company   || '기타';
-  document.getElementById('mCategory').value = category  || '업무';
-  document.getElementById('mDoctype').value  = doctype   || '기타';
-  document.getElementById('modalBg').classList.add('show');
-}}
+/* ── 연필 버튼: data 속성 이벤트 위임 ── */
+document.addEventListener('click', function(e) {{
+  var btn = e.target;
+  if (!btn.classList.contains('cbtn')) return;
+  _fname = btn.getAttribute('data-fname') || '';
+  var mf = document.getElementById('mFname');
+  var md = document.getElementById('mDate');
+  var mc = document.getElementById('mCompany');
+  var mcat = document.getElementById('mCategory');
+  var mdt = document.getElementById('mDoctype');
+  var bg = document.getElementById('modalBg');
+  if (!mf || !md || !mc || !mcat || !mdt || !bg) return;
+  mf.textContent   = _fname;
+  md.value         = btn.getAttribute('data-date')     || '';
+  mc.value         = btn.getAttribute('data-company')  || '기타';
+  mcat.value       = btn.getAttribute('data-category') || '업무';
+  mdt.value        = btn.getAttribute('data-doctype')  || '기타';
+  bg.classList.add('show');
+}});
 
 function closeModal() {{
-  document.getElementById('modalBg').classList.remove('show');
+  var bg = document.getElementById('modalBg');
+  if (bg) bg.classList.remove('show');
 }}
 
 document.getElementById('modalBg').addEventListener('click', function(e) {{
   if (e.target === this) closeModal();
 }});
 
-function saveModal() {{
+document.getElementById('mSave').addEventListener('click', function() {{
   if (_isHttps) {{
-    alert('분류 변경은 PC에서 로컬 파일로 접속할 때만 가능합니다.\n\nPC에서 스캔관리대장.html 파일을 직접 열어주세요.');
+    alert('분류 변경은 PC 로컬 파일(file:///)로 접속할 때만 가능합니다.');
     return;
   }}
   var payload = {{
@@ -473,22 +499,24 @@ function saveModal() {{
   }};
   fetch('http://localhost:{API_PORT}/reclassify', {{
     method  : 'POST',
-    headers : {{'Content-Type': 'application/json'}},
+    headers : {{'Content-Type':'application/json'}},
     body    : JSON.stringify(payload)
   }}).then(function(r) {{ return r.json(); }})
     .then(function(res) {{
       if (res.ok) {{ closeModal(); doRefresh(); }}
       else {{ alert('저장 실패: ' + res.msg); }}
     }}).catch(function() {{
-      alert('서버 연결 실패\n\n스캔관리대장_실행.bat 또는\npython generate_html.py 를 실행해 주세요.');
+      alert('서버 미실행\\npython generate_html.py 를 실행해 주세요.');
     }});
-}}
+}});
 
+/* ── 새로고침 ── */
 function doRefresh() {{
   var btn = document.getElementById('rb');
   var st  = document.getElementById('rstat');
+  if (!btn || !st) return;
   btn.disabled = true; btn.textContent = '...갱신중...'; st.textContent = '';
-  fetch('http://localhost:{API_PORT}/refresh', {{ method: 'POST' }})
+  fetch('http://localhost:{API_PORT}/refresh', {{method:'POST'}})
     .then(function(r) {{ return r.json(); }})
     .then(function(d) {{
       if (d.ok) {{
@@ -499,42 +527,53 @@ function doRefresh() {{
       }}
     }}).catch(function() {{
       st.style.color = '#e53935';
-      st.textContent = 'ERR 서버 미실행 — python generate_html.py 확인';
+      st.textContent = 'ERR - python generate_html.py 실행 확인';
     }}).finally(function() {{
       btn.disabled = false; btn.textContent = '&#128260; 새로고침';
     }});
 }}
 
-(function() {{
-  var known = {N};
-  function poll() {{
-    fetch('http://localhost:{API_PORT}/filecount')
-      .then(function(r) {{ return r.json(); }})
-      .then(function(d) {{
-        if (d.count > known) {{ showToast(d.count - known); known = d.count; }}
-      }}).catch(function() {{}});
-  }}
-  function showToast(n) {{
-    document.title = '[' + n + '개 신규] 스캔관리대장';
-    var el = document.getElementById('_nb');
-    if (!el) {{
-      el = document.createElement('div');
-      el.id = '_nb';
-      el.style.cssText = 'position:fixed;bottom:24px;right:24px;z-index:9999;background:#2e7d32;color:#fff;padding:14px 20px;border-radius:12px;font-size:14px;font-weight:700;box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;';
-      el.onclick = function() {{ doRefresh(); el.remove(); document.title = '스캔관리대장'; }};
-      document.body.appendChild(el);
+/* ── 새 파일 감지 (30초 폴링, 로컬 전용) ── */
+if (!_isHttps) {{
+  (function() {{
+    var known = {N};
+    function poll() {{
+      fetch('http://localhost:{API_PORT}/filecount')
+        .then(function(r) {{ return r.json(); }})
+        .then(function(d) {{
+          if (d.count > known) {{ showToast(d.count - known); known = d.count; }}
+        }}).catch(function() {{}});
     }}
-    el.textContent = '[신규] ' + n + '개 파일 — 클릭하여 새로고침';
-  }}
-  if (!_isHttps) {{
+    function showToast(n) {{
+      document.title = '[' + n + '개 신규] 스캔관리대장';
+      var el = document.getElementById('_nb');
+      if (!el) {{
+        el = document.createElement('div');
+        el.id = '_nb';
+        el.style.cssText = [
+          'position:fixed;bottom:24px;right:24px;z-index:9999;',
+          'background:#2e7d32;color:#fff;padding:14px 20px;',
+          'border-radius:12px;font-size:14px;font-weight:700;',
+          'box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;'
+        ].join('');
+        el.onclick = function() {{ doRefresh(); el.remove(); document.title='스캔관리대장'; }};
+        document.body.appendChild(el);
+      }}
+      el.textContent = '[신규] ' + n + '개 파일 - 클릭하여 새로고침';
+    }}
     setInterval(poll, 30000);
     setTimeout(poll, 5000);
-  }}
-}})();
+  }})();
+}}
 </script>
 </body></html>"""
 
+    # 스캔관리대장.html 저장
     with open(output_path, 'w', encoding='utf-8') as f:
+        f.write(html)
+    # scan.html 동시 생성 (stnscan.co.kr/scan.html 용)
+    scan_path = os.path.join(scan_folder, "scan.html")
+    with open(scan_path, 'w', encoding='utf-8') as f:
         f.write(html)
     print(f"[{datetime.now().strftime('%H:%M:%S')}] HTML 생성 완료 ({len(pdfs)}개 파일)")
     return len(pdfs)
@@ -557,39 +596,46 @@ def drive_upload_new(scan_folder=SCAN_FOLDER):
                 creds.refresh(Request())
                 with open(TOKEN, "w") as f: f.write(creds.to_json())
             else:
-                print("  드라이브 로그인 필요 -> python gdrive_upload.py 실행"); return 0
+                print("  드라이브 로그인 필요"); return 0
         svc = build("drive", "v3", credentials=creds)
         res = svc.files().list(
             q=f"name='{FNAME}' and mimeType='application/vnd.google-apps.folder' and trashed=false",
             fields="files(id)").execute()
         fls = res.get("files", [])
-        if not fls: print("  드라이브 폴더 없음"); return 0
+        if not fls: return 0
         fid_path = os.path.join(scan_folder, "file_ids.json")
         file_ids = json.load(open(fid_path, encoding="utf-8")) if os.path.exists(fid_path) else {}
-        pdfs      = [f for f in os.listdir(scan_folder) if f.lower().endswith(".pdf")]
-        new_files = [f for f in pdfs if f not in file_ids]
+        new_files = [f for f in os.listdir(scan_folder)
+                     if f.lower().endswith(".pdf") and f not in file_ids]
         if not new_files: return 0
         cnt = 0
         for fname in new_files:
             try:
-                media = MediaFileUpload(os.path.join(scan_folder, fname), mimetype="application/pdf", resumable=True)
-                fobj  = svc.files().create(body={"name": fname, "parents": [fls[0]["id"]]},
-                                           media_body=media, fields="id").execute()
-                svc.permissions().create(fileId=fobj["id"], body={"type":"anyone","role":"reader"}).execute()
+                media = MediaFileUpload(os.path.join(scan_folder, fname),
+                                        mimetype="application/pdf", resumable=True)
+                fobj  = svc.files().create(
+                    body={"name": fname, "parents": [fls[0]["id"]]},
+                    media_body=media, fields="id").execute()
+                svc.permissions().create(
+                    fileId=fobj["id"], body={"type":"anyone","role":"reader"}).execute()
                 file_ids[fname] = fobj["id"]; cnt += 1
-            except Exception as e: print(f"  ERR {fname[:40]}: {e}")
+            except Exception as e:
+                print(f"  ERR {fname[:40]}: {e}")
         with open(fid_path, "w", encoding="utf-8") as f:
             json.dump(file_ids, f, ensure_ascii=False, indent=2)
         return cnt
-    except ImportError: print("  google 라이브러리 없음"); return 0
+    except ImportError: return 0
     except Exception as e: print(f"  드라이브 오류: {e}"); return 0
 
 
 def git_push():
     try:
         os.chdir(SCAN_FOLDER)
-        subprocess.run(["git","add","스캔관리대장.html"], check=True, capture_output=True)
-        subprocess.run(["git","commit","-m",f"update {datetime.now().strftime('%Y-%m-%d %H:%M')}"],
+        clean_git_junk(SCAN_FOLDER)
+        subprocess.run(["git","add","스캔관리대장.html","scan.html"],
+                       check=True, capture_output=True)
+        subprocess.run(["git","commit","-m",
+                        f"update {datetime.now().strftime('%Y-%m-%d %H:%M')}"],
                        check=True, capture_output=True)
         subprocess.run(["git","push"], check=True, capture_output=True)
         print(f"[{datetime.now().strftime('%H:%M:%S')}] GitHub 업로드 완료")
@@ -626,7 +672,7 @@ class Handler(BaseHTTPRequestHandler):
     def do_POST(self):
         if self.path == "/refresh":
             try:
-                cnt = generate(SCAN_FOLDER, OUTPUT_HTML)
+                cnt     = generate(SCAN_FOLDER, OUTPUT_HTML)
                 ok, msg = git_push()
                 self.send_json({"ok": True, "msg": f"갱신완료({cnt}개) - {msg}"})
             except Exception as e:
