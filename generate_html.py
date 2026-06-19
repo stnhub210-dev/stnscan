@@ -5,6 +5,8 @@
 - 분류 모달에 날짜 수동 수정 기능
 - 새 파일 감지 알림 배지 (30초 폴링)
 - /filecount API 추가
+- HTTPS 환경: 서버연결 안내 메시지 표시
+- 드라이브 미등록 파일: 링크 대신 텍스트 표시
 """
 
 import os, json, re, sys, time, subprocess, threading
@@ -90,7 +92,7 @@ def detect_urgency(fname):
     m = re.search(r'기한(\d{8})', fname)
     if m:
         try:
-            dl = datetime.strptime(m.group(1), "%Y%m%d").date()
+            dl   = datetime.strptime(m.group(1), "%Y%m%d").date()
             left = (dl - date.today()).days
             if left <= 7:  return "긴급"
             if left <= 14: return "주의"
@@ -103,8 +105,8 @@ def detect_urgency(fname):
 def load_lawsuit_data():
     try:
         import openpyxl
-        wb = openpyxl.load_workbook(XLSX_PATH)
-        ws = wb.active
+        wb   = openpyxl.load_workbook(XLSX_PATH)
+        ws   = wb.active
         rows = [r for r in ws.iter_rows(min_row=2, values_only=True) if r[0]]
         print(f"  소송목록.xlsx 로드 완료: {len(rows)}건")
         return rows
@@ -137,9 +139,9 @@ def fetch_drive_ids():
 
 def make_link(fname, drive_ids):
     fid = drive_ids.get(fname)
-    if fid: return f"https://drive.google.com/file/d/{fid}/view"
-    local = os.path.join(SCAN_FOLDER, fname).replace("\\", "/")
-    return f"file:///{local}"
+    if fid:
+        return f"https://drive.google.com/file/d/{fid}/view"
+    return ""   # 드라이브 미등록 시 빈 문자열
 
 
 def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
@@ -163,10 +165,13 @@ def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
             date_str = ov["date"]
             try: sort_ts = datetime.strptime(ov["date"], "%Y-%m-%d").timestamp()
             except: pass
+        link     = make_link(fname, drive_ids)
+        has_drv  = bool(link)
         docs.append({
             "fname": fname, "date": date_str, "sort_ts": sort_ts,
             "company": company, "category": category, "doctype": doctype,
-            "urgency": detect_urgency(fname), "link": make_link(fname, drive_ids),
+            "urgency": detect_urgency(fname),
+            "link": link, "has_drv": has_drv,
         })
 
     docs.sort(key=lambda d: d["sort_ts"], reverse=True)
@@ -194,6 +199,11 @@ def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
             dt    = d["doctype"].replace("'", "\\'")
             sd    = d["date"]
             short = d["fname"][:28] + ("..." if len(d["fname"]) > 28 else "")
+            # ★ 드라이브 링크 있으면 클릭 가능, 없으면 텍스트만
+            if d["has_drv"]:
+                file_cell = f'<a href="{d["link"]}" target="_blank" class="fl">&#128196; {short}</a>'
+            else:
+                file_cell = f'<span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; {short}</span>'
             out += (
                 f'<tr{rowcls(d)}>'
                 f'<td class="c">{i+1}</td>'
@@ -202,7 +212,7 @@ def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
                 f'<td>{d["company"]}</td>'
                 f'<td>{d["doctype"]}</td>'
                 f'<td class="c">{ubadge(d["urgency"])}</td>'
-                f'<td><a href="{d["link"]}" target="_blank" class="fl">&#128196; {short}</a></td>'
+                f'<td>{file_cell}</td>'
                 f'<td class="c"><button class="cbtn" '
                 f'onclick="openModal(\'{safe}\',\'{co}\',\'{ca}\',\'{dt}\',\'{sd}\')">&#9998;</button></td>'
                 f'</tr>\n'
@@ -231,7 +241,6 @@ def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
         return (f'<div id="p-{pid}" class="panel{" on" if on else ""}">'
                 f'<table>{hd}<tbody>{mkrows(lst)}</tbody></table></div>')
 
-    # ── HTML (f-string, CSS/JS 중괄호는 {{ }} 로 이스케이프) ──────────
     html = f"""<!DOCTYPE html>
 <html lang="ko"><head>
 <meta charset="UTF-8">
@@ -275,6 +284,8 @@ tr:hover td{{background:#f5f5f5}}
 .c{{text-align:center}}.dc{{font-size:12px;color:#555}}
 .fl{{color:#1565c0;text-decoration:none;font-weight:500;font-size:12px}}
 .fl:hover{{text-decoration:underline}}
+.fl-nd{{color:#999;font-size:12px;cursor:default}}
+.fl-nd::after{{content:" &#x2601;";font-size:10px;color:#bbb}}
 .nbadge{{background:#2e7d32;color:#fff;font-size:10px;padding:2px 5px;
          border-radius:10px;margin-left:3px;vertical-align:middle}}
 .b-red{{background:#e53935;color:#fff;font-size:11px;padding:2px 7px;border-radius:10px}}
@@ -294,14 +305,19 @@ tr:hover td{{background:#f5f5f5}}
 .modal label{{font-size:12px;color:#555;display:block;margin-bottom:4px;font-weight:600}}
 .modal select,
 .modal input[type="date"]{{width:100%;padding:8px;border:1px solid #ddd;
-                           border-radius:6px;font-size:13px;margin-bottom:12px;
-                           background:#fff}}
+                           border-radius:6px;font-size:13px;margin-bottom:12px;background:#fff}}
 .modal-btns{{display:flex;gap:8px;justify-content:flex-end;margin-top:4px}}
+.info-bar{{background:#e3f2fd;border-left:4px solid #1565c0;padding:8px 16px;
+           font-size:12px;color:#1565c0;margin:0 24px 8px;border-radius:4px;display:none}}
 </style>
 </head><body>
 <div class="hdr">
   <h1>&#128193; 스캔관리대장</h1>
   <span>마지막 생성: {upd}</span>
+</div>
+<div id="infoBar" class="info-bar">
+  &#9432; 웹 접속 중 — 파일 열기는 구글 드라이브 등록 파일만 가능합니다.
+  새 파일 반영은 PC에서 <b>generate_html.py</b> 실행 후 자동 업로드됩니다.
 </div>
 <div class="stats">
   <div class="stat"     onclick="goTab('all')">    <div class="n">{N}</div>   <div class="l">전체</div></div>
@@ -329,54 +345,36 @@ tr:hover td{{background:#f5f5f5}}
   <button class="tab"    id="t-pl"      onclick="goTab('pl',this)">플래닛 ({len(pl)})</button>
 </div>
 
-<!-- ===== 분류 변경 모달 ===== -->
+<!-- 분류 변경 모달 -->
 <div class="modal-bg" id="modalBg">
   <div class="modal">
     <h3>&#9998; 분류 변경</h3>
     <div class="mfname" id="mFname"></div>
-
     <label>&#128197; 스캔 날짜</label>
     <input type="date" id="mDate">
-
     <label>&#127970; 회사(기관)명</label>
     <select id="mCompany">
-      <option>에스티엔미디어</option>
-      <option>에스티엔</option>
-      <option>에스티엔씨엘오미디어</option>
-      <option>이강영</option>
-      <option>플래닛</option>
-      <option>이창규드림</option>
-      <option>기타</option>
+      <option>에스티엔미디어</option><option>에스티엔</option>
+      <option>에스티엔씨엘오미디어</option><option>이강영</option>
+      <option>플래닛</option><option>이창규드림</option><option>기타</option>
     </select>
-
     <label>&#128221; 구분</label>
     <select id="mCategory">
-      <option>업무</option>
-      <option>소송</option>
+      <option>업무</option><option>소송</option>
     </select>
-
     <label>&#128196; 문서종류</label>
     <select id="mDoctype">
-      <option>기타</option>
-      <option>소장</option>
-      <option>내용증명</option>
-      <option>회생계획안</option>
-      <option>회생채권조사확정재판</option>
-      <option>인사/급여</option>
-      <option>내부보고</option>
-      <option>공문/신청</option>
-      <option>계약서</option>
-      <option>입찰</option>
-      <option>스캔문서</option>
+      <option>기타</option><option>소장</option><option>내용증명</option>
+      <option>회생계획안</option><option>회생채권조사확정재판</option>
+      <option>인사/급여</option><option>내부보고</option><option>공문/신청</option>
+      <option>계약서</option><option>입찰</option><option>스캔문서</option>
     </select>
-
     <div class="modal-btns">
       <button class="btn b-gray" onclick="closeModal()">취소</button>
       <button class="btn b-blue" onclick="saveModal()">저장</button>
     </div>
   </div>
 </div>
-<!-- ========================== -->
 
 <div class="content">
   {panel('all',    docs, True)}
@@ -386,12 +384,19 @@ tr:hover td{{background:#f5f5f5}}
   {panel('sn',     sn)}
   {panel('lk',     lk)}
   {panel('pl',     pl)}
-  <div class="foot">&#128336; {upd} 기준 &middot; 총 {N}개 파일</div>
+  <div class="foot">&#128336; {upd} 기준 &middot; 총 {N}개 파일 &middot; &#9729; 드라이브 {dcnt}개</div>
 </div>
 
 <script>
 var _cur = 'all';
 var _fname = '';
+var _isHttps = window.location.protocol === 'https:';
+
+// HTTPS 접속 시 안내 바 표시, 새로고침 버튼 숨기기
+if (_isHttps) {{
+  document.getElementById('infoBar').style.display = 'block';
+  document.getElementById('rb').style.display = 'none';
+}}
 
 function goTab(name, btn) {{
   _cur = name;
@@ -436,7 +441,6 @@ function filterKw(kw) {{
   goTab('all'); doSearch();
 }}
 
-/* ── 모달 ── */
 function openModal(fname, company, category, doctype, scanDate) {{
   _fname = fname;
   document.getElementById('mFname').textContent = fname;
@@ -456,6 +460,10 @@ document.getElementById('modalBg').addEventListener('click', function(e) {{
 }});
 
 function saveModal() {{
+  if (_isHttps) {{
+    alert('분류 변경은 PC에서 로컬 파일로 접속할 때만 가능합니다.\n\nPC에서 스캔관리대장.html 파일을 직접 열어주세요.');
+    return;
+  }}
   var payload = {{
     fname    : _fname,
     date     : document.getElementById('mDate').value,
@@ -472,11 +480,10 @@ function saveModal() {{
       if (res.ok) {{ closeModal(); doRefresh(); }}
       else {{ alert('저장 실패: ' + res.msg); }}
     }}).catch(function() {{
-      alert('서버 연결 실패 - 스캔관리대장_실행.bat 확인');
+      alert('서버 연결 실패\n\n스캔관리대장_실행.bat 또는\npython generate_html.py 를 실행해 주세요.');
     }});
 }}
 
-/* ── 새로고침 ── */
 function doRefresh() {{
   var btn = document.getElementById('rb');
   var st  = document.getElementById('rstat');
@@ -492,13 +499,12 @@ function doRefresh() {{
       }}
     }}).catch(function() {{
       st.style.color = '#e53935';
-      st.textContent = 'ERR 서버 연결 실패';
+      st.textContent = 'ERR 서버 미실행 — python generate_html.py 확인';
     }}).finally(function() {{
       btn.disabled = false; btn.textContent = '&#128260; 새로고침';
     }});
 }}
 
-/* ── 새 파일 감지 (30초 폴링) ── */
 (function() {{
   var known = {N};
   function poll() {{
@@ -514,21 +520,16 @@ function doRefresh() {{
     if (!el) {{
       el = document.createElement('div');
       el.id = '_nb';
-      el.style.cssText = [
-        'position:fixed;bottom:24px;right:24px;z-index:9999;',
-        'background:#2e7d32;color:#fff;padding:14px 20px;',
-        'border-radius:12px;font-size:14px;font-weight:700;',
-        'box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;'
-      ].join('');
-      el.onclick = function() {{
-        doRefresh(); el.remove(); document.title = '스캔관리대장';
-      }};
+      el.style.cssText = 'position:fixed;bottom:24px;right:24px;z-index:9999;background:#2e7d32;color:#fff;padding:14px 20px;border-radius:12px;font-size:14px;font-weight:700;box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;';
+      el.onclick = function() {{ doRefresh(); el.remove(); document.title = '스캔관리대장'; }};
       document.body.appendChild(el);
     }}
-    el.textContent = '[신규] ' + n + '개 파일 - 클릭하여 새로고침';
+    el.textContent = '[신규] ' + n + '개 파일 — 클릭하여 새로고침';
   }}
-  setInterval(poll, 30000);
-  setTimeout(poll, 5000);
+  if (!_isHttps) {{
+    setInterval(poll, 30000);
+    setTimeout(poll, 5000);
+  }}
 }})();
 </script>
 </body></html>"""
@@ -565,7 +566,7 @@ def drive_upload_new(scan_folder=SCAN_FOLDER):
         if not fls: print("  드라이브 폴더 없음"); return 0
         fid_path = os.path.join(scan_folder, "file_ids.json")
         file_ids = json.load(open(fid_path, encoding="utf-8")) if os.path.exists(fid_path) else {}
-        pdfs     = [f for f in os.listdir(scan_folder) if f.lower().endswith(".pdf")]
+        pdfs      = [f for f in os.listdir(scan_folder) if f.lower().endswith(".pdf")]
         new_files = [f for f in pdfs if f not in file_ids]
         if not new_files: return 0
         cnt = 0
