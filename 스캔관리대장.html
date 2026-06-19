@@ -41,6 +41,8 @@ tr:hover td{background:#f5f5f5}
 .c{text-align:center}.dc{font-size:12px;color:#555}
 .fl{color:#1565c0;text-decoration:none;font-weight:500;font-size:12px}
 .fl:hover{text-decoration:underline}
+.fl-nd{color:#999;font-size:12px;cursor:default}
+.fl-nd::after{content:" &#x2601;";font-size:10px;color:#bbb}
 .nbadge{background:#2e7d32;color:#fff;font-size:10px;padding:2px 5px;
          border-radius:10px;margin-left:3px;vertical-align:middle}
 .b-red{background:#e53935;color:#fff;font-size:11px;padding:2px 7px;border-radius:10px}
@@ -60,14 +62,19 @@ tr:hover td{background:#f5f5f5}
 .modal label{font-size:12px;color:#555;display:block;margin-bottom:4px;font-weight:600}
 .modal select,
 .modal input[type="date"]{width:100%;padding:8px;border:1px solid #ddd;
-                           border-radius:6px;font-size:13px;margin-bottom:12px;
-                           background:#fff}
+                           border-radius:6px;font-size:13px;margin-bottom:12px;background:#fff}
 .modal-btns{display:flex;gap:8px;justify-content:flex-end;margin-top:4px}
+.info-bar{background:#e3f2fd;border-left:4px solid #1565c0;padding:8px 16px;
+           font-size:12px;color:#1565c0;margin:0 24px 8px;border-radius:4px;display:none}
 </style>
 </head><body>
 <div class="hdr">
   <h1>&#128193; 스캔관리대장</h1>
-  <span>마지막 생성: 2026-06-19 09:34:32</span>
+  <span>마지막 생성: 2026-06-19 09:37:48</span>
+</div>
+<div id="infoBar" class="info-bar">
+  &#9432; 웹 접속 중 — 파일 열기는 구글 드라이브 등록 파일만 가능합니다.
+  새 파일 반영은 PC에서 <b>generate_html.py</b> 실행 후 자동 업로드됩니다.
 </div>
 <div class="stats">
   <div class="stat"     onclick="goTab('all')">    <div class="n">372</div>   <div class="l">전체</div></div>
@@ -95,72 +102,54 @@ tr:hover td{background:#f5f5f5}
   <button class="tab"    id="t-pl"      onclick="goTab('pl',this)">플래닛 (3)</button>
 </div>
 
-<!-- ===== 분류 변경 모달 ===== -->
+<!-- 분류 변경 모달 -->
 <div class="modal-bg" id="modalBg">
   <div class="modal">
     <h3>&#9998; 분류 변경</h3>
     <div class="mfname" id="mFname"></div>
-
     <label>&#128197; 스캔 날짜</label>
     <input type="date" id="mDate">
-
     <label>&#127970; 회사(기관)명</label>
     <select id="mCompany">
-      <option>에스티엔미디어</option>
-      <option>에스티엔</option>
-      <option>에스티엔씨엘오미디어</option>
-      <option>이강영</option>
-      <option>플래닛</option>
-      <option>이창규드림</option>
-      <option>기타</option>
+      <option>에스티엔미디어</option><option>에스티엔</option>
+      <option>에스티엔씨엘오미디어</option><option>이강영</option>
+      <option>플래닛</option><option>이창규드림</option><option>기타</option>
     </select>
-
     <label>&#128221; 구분</label>
     <select id="mCategory">
-      <option>업무</option>
-      <option>소송</option>
+      <option>업무</option><option>소송</option>
     </select>
-
     <label>&#128196; 문서종류</label>
     <select id="mDoctype">
-      <option>기타</option>
-      <option>소장</option>
-      <option>내용증명</option>
-      <option>회생계획안</option>
-      <option>회생채권조사확정재판</option>
-      <option>인사/급여</option>
-      <option>내부보고</option>
-      <option>공문/신청</option>
-      <option>계약서</option>
-      <option>입찰</option>
-      <option>스캔문서</option>
+      <option>기타</option><option>소장</option><option>내용증명</option>
+      <option>회생계획안</option><option>회생채권조사확정재판</option>
+      <option>인사/급여</option><option>내부보고</option><option>공문/신청</option>
+      <option>계약서</option><option>입찰</option><option>스캔문서</option>
     </select>
-
     <div class="modal-btns">
       <button class="btn b-gray" onclick="closeModal()">취소</button>
       <button class="btn b-blue" onclick="saveModal()">저장</button>
     </div>
   </div>
 </div>
-<!-- ========================== -->
 
 <div class="content">
-  <div id="p-all" class="panel on"><table><thead><tr><th>No</th><th>스캔일자</th><th>구분</th><th>회사(기관)명</th><th>문서종류</th><th>긴급도</th><th>파일 열기</th><th>분류</th></tr></thead><tbody><tr class="r-new"><td class="c">1</td><td class="c dc">2026-06-19 <span class="nbadge">NEW</span></td><td class="c">&#128203; 업무</td><td>에스티엔</td><td>기타</td><td class="c"></td><td><a href="file:///C:/Users/User/Desktop/스캔/에스티엔게임즈 등기부등본.pdf" target="_blank" class="fl">&#128196; 에스티엔게임즈 등기부등본.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('에스티엔게임즈 등기부등본.pdf','에스티엔','업무','기타','2026-06-19')">&#9998;</button></td></tr>
-<tr><td class="c">2</td><td class="c dc">2026-06-18 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="file:///C:/Users/User/Desktop/스캔/806호 개별 공시지가.pdf" target="_blank" class="fl">&#128196; 806호 개별 공시지가.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('806호 개별 공시지가.pdf','기타','업무','기타','2026-06-18')">&#9998;</button></td></tr>
-<tr><td class="c">3</td><td class="c dc">2026-06-18 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="file:///C:/Users/User/Desktop/스캔/806호 토지대장.pdf" target="_blank" class="fl">&#128196; 806호 토지대장.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('806호 토지대장.pdf','기타','업무','기타','2026-06-18')">&#9998;</button></td></tr>
-<tr class="r-urg"><td class="c">4</td><td class="c dc">2026-06-18 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"><span class="b-red">긴급</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/2026카정10232_즉시항고장.pdf" target="_blank" class="fl">&#128196; 2026카정10232_즉시항고장.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('2026카정10232_즉시항고장.pdf','기타','업무','기타','2026-06-18')">&#9998;</button></td></tr>
-<tr><td class="c">5</td><td class="c dc">2026-06-18 </td><td class="c">&#9878; 소송</td><td>에스티엔</td><td>내부보고</td><td class="c"><span class="b-org">주의</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/(주)에스티엔 2026년 5월 관리인 월간보고서(간회합) (1).pdf" target="_blank" class="fl">&#128196; (주)에스티엔 2026년 5월 관리인 월간보고서(간...</a></td><td class="c"><button class="cbtn" onclick="openModal('(주)에스티엔 2026년 5월 관리인 월간보고서(간회합) (1).pdf','에스티엔','소송','내부보고','2026-06-18')">&#9998;</button></td></tr>
-<tr><td class="c">6</td><td class="c dc">2026-06-17 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="file:///C:/Users/User/Desktop/스캔/페이시스 통합결제창 연동 가이드-V2.0 6 (1).pdf" target="_blank" class="fl">&#128196; 페이시스 통합결제창 연동 가이드-V2.0 6 (1)...</a></td><td class="c"><button class="cbtn" onclick="openModal('페이시스 통합결제창 연동 가이드-V2.0 6 (1).pdf','기타','업무','기타','2026-06-17')">&#9998;</button></td></tr>
-<tr><td class="c">7</td><td class="c dc">2026-06-17 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="file:///C:/Users/User/Desktop/스캔/이재혁.pdf" target="_blank" class="fl">&#128196; 이재혁.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('이재혁.pdf','기타','업무','기타','2026-06-17')">&#9998;</button></td></tr>
-<tr><td class="c">8</td><td class="c dc">2026-06-17 </td><td class="c">&#9878; 소송</td><td>기타</td><td>기타</td><td class="c"><span class="b-org">주의</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/2026.6.17 민사본안 - 서류제출 - 전자소송포털(2026 카정 10232).pdf" target="_blank" class="fl">&#128196; 2026.6.17 민사본안 - 서류제출 - 전자소송...</a></td><td class="c"><button class="cbtn" onclick="openModal('2026.6.17 민사본안 - 서류제출 - 전자소송포털(2026 카정 10232).pdf','기타','소송','기타','2026-06-17')">&#9998;</button></td></tr>
-<tr class="r-urg"><td class="c">9</td><td class="c dc">2026-06-17 </td><td class="c">&#128203; 업무</td><td>에스티엔</td><td>기타</td><td class="c"><span class="b-red">긴급</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/긴급처리요청서-에스티엔.pdf" target="_blank" class="fl">&#128196; 긴급처리요청서-에스티엔.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('긴급처리요청서-에스티엔.pdf','에스티엔','업무','기타','2026-06-17')">&#9998;</button></td></tr>
-<tr><td class="c">10</td><td class="c dc">2026-06-17 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="file:///C:/Users/User/Desktop/스캔/부평테크노타워 관리비 2026.6.pdf" target="_blank" class="fl">&#128196; 부평테크노타워 관리비 2026.6.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('부평테크노타워 관리비 2026.6.pdf','기타','업무','기타','2026-06-17')">&#9998;</button></td></tr>
-<tr><td class="c">11</td><td class="c dc">2026-06-15 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="file:///C:/Users/User/Desktop/스캔/유치권존재확인 청구의 소.pdf" target="_blank" class="fl">&#128196; 유치권존재확인 청구의 소.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('유치권존재확인 청구의 소.pdf','기타','업무','기타','2026-06-15')">&#9998;</button></td></tr>
-<tr class="r-urg"><td class="c">12</td><td class="c dc">2026-06-15 </td><td class="c">&#128203; 업무</td><td>이강영</td><td>공문/신청</td><td class="c"><span class="b-red">긴급</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/2026카정10232_2026.06.15_강제집행정지 신청서_신청인_관리인 이강영 주식회사 에스티엔 관리인 이강영 주식회사 에스티엔.pdf" target="_blank" class="fl">&#128196; 2026카정10232_2026.06.15_강제집행정...</a></td><td class="c"><button class="cbtn" onclick="openModal('2026카정10232_2026.06.15_강제집행정지 신청서_신청인_관리인 이강영 주식회사 에스티엔 관리인 이강영 주식회사 에스티엔.pdf','이강영','업무','공문/신청','2026-06-15')">&#9998;</button></td></tr>
-<tr class="r-urg"><td class="c">13</td><td class="c dc">2026-06-15 </td><td class="c">&#128203; 업무</td><td>기타</td><td>공문/신청</td><td class="c"><span class="b-red">긴급</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/강제집행정지신청 가상계좌.pdf" target="_blank" class="fl">&#128196; 강제집행정지신청 가상계좌.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('강제집행정지신청 가상계좌.pdf','기타','업무','공문/신청','2026-06-15')">&#9998;</button></td></tr>
-<tr class="r-urg"><td class="c">14</td><td class="c dc">2026-06-15 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"><span class="b-red">긴급</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/강제집행정지 2026 가정 10232.pdf" target="_blank" class="fl">&#128196; 강제집행정지 2026 가정 10232.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('강제집행정지 2026 가정 10232.pdf','기타','업무','기타','2026-06-15')">&#9998;</button></td></tr>
-<tr><td class="c">15</td><td class="c dc">2026-06-15 </td><td class="c">&#9878; 소송</td><td>기타</td><td>기타</td><td class="c"><span class="b-org">주의</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/민사본안 - 서류제출 - 전자소송포털(가상계좌).pdf" target="_blank" class="fl">&#128196; 민사본안 - 서류제출 - 전자소송포털(가상계좌).p...</a></td><td class="c"><button class="cbtn" onclick="openModal('민사본안 - 서류제출 - 전자소송포털(가상계좌).pdf','기타','소송','기타','2026-06-15')">&#9998;</button></td></tr>
-<tr><td class="c">16</td><td class="c dc">2026-06-15 </td><td class="c">&#9878; 소송</td><td>기타</td><td>기타</td><td class="c"><span class="b-org">주의</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/민사본안 - 서류제출 - 전자소송포털.pdf" target="_blank" class="fl">&#128196; 민사본안 - 서류제출 - 전자소송포털.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('민사본안 - 서류제출 - 전자소송포털.pdf','기타','소송','기타','2026-06-15')">&#9998;</button></td></tr>
+  <div id="p-all" class="panel on"><table><thead><tr><th>No</th><th>스캔일자</th><th>구분</th><th>회사(기관)명</th><th>문서종류</th><th>긴급도</th><th>파일 열기</th><th>분류</th></tr></thead><tbody><tr class="r-new"><td class="c">1</td><td class="c dc">2026-06-19 <span class="nbadge">NEW</span></td><td class="c">&#128203; 업무</td><td>에스티엔</td><td>기타</td><td class="c"></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 에스티엔게임즈 등기부등본.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('에스티엔게임즈 등기부등본.pdf','에스티엔','업무','기타','2026-06-19')">&#9998;</button></td></tr>
+<tr><td class="c">2</td><td class="c dc">2026-06-18 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 806호 개별 공시지가.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('806호 개별 공시지가.pdf','기타','업무','기타','2026-06-18')">&#9998;</button></td></tr>
+<tr><td class="c">3</td><td class="c dc">2026-06-18 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 806호 토지대장.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('806호 토지대장.pdf','기타','업무','기타','2026-06-18')">&#9998;</button></td></tr>
+<tr class="r-urg"><td class="c">4</td><td class="c dc">2026-06-18 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"><span class="b-red">긴급</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 2026카정10232_즉시항고장.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('2026카정10232_즉시항고장.pdf','기타','업무','기타','2026-06-18')">&#9998;</button></td></tr>
+<tr><td class="c">5</td><td class="c dc">2026-06-18 </td><td class="c">&#9878; 소송</td><td>에스티엔</td><td>내부보고</td><td class="c"><span class="b-org">주의</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; (주)에스티엔 2026년 5월 관리인 월간보고서(간...</span></td><td class="c"><button class="cbtn" onclick="openModal('(주)에스티엔 2026년 5월 관리인 월간보고서(간회합) (1).pdf','에스티엔','소송','내부보고','2026-06-18')">&#9998;</button></td></tr>
+<tr><td class="c">6</td><td class="c dc">2026-06-17 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 페이시스 통합결제창 연동 가이드-V2.0 6 (1)...</span></td><td class="c"><button class="cbtn" onclick="openModal('페이시스 통합결제창 연동 가이드-V2.0 6 (1).pdf','기타','업무','기타','2026-06-17')">&#9998;</button></td></tr>
+<tr><td class="c">7</td><td class="c dc">2026-06-17 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 이재혁.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('이재혁.pdf','기타','업무','기타','2026-06-17')">&#9998;</button></td></tr>
+<tr><td class="c">8</td><td class="c dc">2026-06-17 </td><td class="c">&#9878; 소송</td><td>기타</td><td>기타</td><td class="c"><span class="b-org">주의</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 2026.6.17 민사본안 - 서류제출 - 전자소송...</span></td><td class="c"><button class="cbtn" onclick="openModal('2026.6.17 민사본안 - 서류제출 - 전자소송포털(2026 카정 10232).pdf','기타','소송','기타','2026-06-17')">&#9998;</button></td></tr>
+<tr class="r-urg"><td class="c">9</td><td class="c dc">2026-06-17 </td><td class="c">&#128203; 업무</td><td>에스티엔</td><td>기타</td><td class="c"><span class="b-red">긴급</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 긴급처리요청서-에스티엔.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('긴급처리요청서-에스티엔.pdf','에스티엔','업무','기타','2026-06-17')">&#9998;</button></td></tr>
+<tr><td class="c">10</td><td class="c dc">2026-06-17 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 부평테크노타워 관리비 2026.6.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('부평테크노타워 관리비 2026.6.pdf','기타','업무','기타','2026-06-17')">&#9998;</button></td></tr>
+<tr><td class="c">11</td><td class="c dc">2026-06-15 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 유치권존재확인 청구의 소.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('유치권존재확인 청구의 소.pdf','기타','업무','기타','2026-06-15')">&#9998;</button></td></tr>
+<tr class="r-urg"><td class="c">12</td><td class="c dc">2026-06-15 </td><td class="c">&#128203; 업무</td><td>이강영</td><td>공문/신청</td><td class="c"><span class="b-red">긴급</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 2026카정10232_2026.06.15_강제집행정...</span></td><td class="c"><button class="cbtn" onclick="openModal('2026카정10232_2026.06.15_강제집행정지 신청서_신청인_관리인 이강영 주식회사 에스티엔 관리인 이강영 주식회사 에스티엔.pdf','이강영','업무','공문/신청','2026-06-15')">&#9998;</button></td></tr>
+<tr class="r-urg"><td class="c">13</td><td class="c dc">2026-06-15 </td><td class="c">&#128203; 업무</td><td>기타</td><td>공문/신청</td><td class="c"><span class="b-red">긴급</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 강제집행정지신청 가상계좌.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('강제집행정지신청 가상계좌.pdf','기타','업무','공문/신청','2026-06-15')">&#9998;</button></td></tr>
+<tr class="r-urg"><td class="c">14</td><td class="c dc">2026-06-15 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"><span class="b-red">긴급</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 강제집행정지 2026 가정 10232.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('강제집행정지 2026 가정 10232.pdf','기타','업무','기타','2026-06-15')">&#9998;</button></td></tr>
+<tr><td class="c">15</td><td class="c dc">2026-06-15 </td><td class="c">&#9878; 소송</td><td>기타</td><td>기타</td><td class="c"><span class="b-org">주의</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 민사본안 - 서류제출 - 전자소송포털(가상계좌).p...</span></td><td class="c"><button class="cbtn" onclick="openModal('민사본안 - 서류제출 - 전자소송포털(가상계좌).pdf','기타','소송','기타','2026-06-15')">&#9998;</button></td></tr>
+<tr><td class="c">16</td><td class="c dc">2026-06-15 </td><td class="c">&#9878; 소송</td><td>기타</td><td>기타</td><td class="c"><span class="b-org">주의</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 민사본안 - 서류제출 - 전자소송포털.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('민사본안 - 서류제출 - 전자소송포털.pdf','기타','소송','기타','2026-06-15')">&#9998;</button></td></tr>
 <tr><td class="c">17</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1W_zcYnl4hgpLu8rP70B-N_4JIwHEB4fP/view" target="_blank" class="fl">&#128196; 홍성일_증명사진.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('홍성일_증명사진.pdf','기타','업무','기타','2026-06-14')">&#9998;</button></td></tr>
 <tr><td class="c">18</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1p1jkU-KulRx4fBWAkdehg-HTAt1eIhjH/view" target="_blank" class="fl">&#128196; 한신대학교 협약서.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('한신대학교 협약서.pdf','기타','업무','기타','2026-06-14')">&#9998;</button></td></tr>
 <tr><td class="c">19</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1yrwFRHZa-LUN4Nfj4ovfE17uW2Y4NMFI/view" target="_blank" class="fl">&#128196; 플레닛네이처미디어등기부등본.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('플레닛네이처미디어등기부등본.pdf','기타','업무','기타','2026-06-14')">&#9998;</button></td></tr>
@@ -513,15 +502,15 @@ tr:hover td{background:#f5f5f5}
 <tr><td class="c">366</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>기타</td><td>계약서</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1IGxFVr6yy0AWmoNO-SVE2ol6NRrrunm-/view" target="_blank" class="fl">&#128196; 20010206_부평테크노타워_김지민계약직근로계약서...</a></td><td class="c"><button class="cbtn" onclick="openModal('20010206_부평테크노타워_김지민계약직근로계약서.pdf','기타','업무','계약서','2026-06-14')">&#9998;</button></td></tr>
 <tr><td class="c">367</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1EVFO_kFIVNSFGO8pSd1tnWOeA8AhAckI/view" target="_blank" class="fl">&#128196; 106호 6471.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('106호 6471.pdf','기타','업무','기타','2026-06-14')">&#9998;</button></td></tr>
 <tr><td class="c">368</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>에스티엔</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1571J8J95-nykcwuweCTaA2XM1IHaXWUK/view" target="_blank" class="fl">&#128196; (26.05.04)결정_인천지법(25라5671)_에...</a></td><td class="c"><button class="cbtn" onclick="openModal('(26.05.04)결정_인천지법(25라5671)_에스티엔 유치권.pdf','에스티엔','업무','기타','2026-06-14')">&#9998;</button></td></tr>
-<tr><td class="c">369</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="file:///C:/Users/User/Desktop/스캔/주식회사 명진기업.pdf" target="_blank" class="fl">&#128196; 주식회사 명진기업.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('주식회사 명진기업.pdf','기타','업무','기타','2026-06-14')">&#9998;</button></td></tr>
+<tr><td class="c">369</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 주식회사 명진기업.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('주식회사 명진기업.pdf','기타','업무','기타','2026-06-14')">&#9998;</button></td></tr>
 <tr><td class="c">370</td><td class="c dc">2026-06-12 </td><td class="c">&#128203; 업무</td><td>이강영</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1tt6Z8wkN0xULllxE7EOAyBBI_Ymd2aDm/view" target="_blank" class="fl">&#128196; 이강영 통장사본.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('이강영 통장사본.pdf','이강영','업무','기타','2026-06-12')">&#9998;</button></td></tr>
 <tr><td class="c">371</td><td class="c dc">2026-06-12 </td><td class="c">&#128203; 업무</td><td>플래닛</td><td>계약서</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1TmLABN0cN6mWRf6EDU04vlSQJ9QEXSfk/view" target="_blank" class="fl">&#128196; 출연계약서(플래닛_파파야).pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('출연계약서(플래닛_파파야).pdf','플래닛','업무','계약서','2026-06-12')">&#9998;</button></td></tr>
 <tr><td class="c">372</td><td class="c dc">2026-06-12 </td><td class="c">&#128203; 업무</td><td>기타</td><td>계약서</td><td class="c"></td><td><a href="https://drive.google.com/file/d/12NFMJ3C2TW7Y6cQ4cGa1CC5TEK9KbK3r/view" target="_blank" class="fl">&#128196; 출연계약서(여수).pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('출연계약서(여수).pdf','기타','업무','계약서','2026-06-12')">&#9998;</button></td></tr>
 </tbody></table></div>
-  <div id="p-lawsuit" class="panel"><table><thead><tr><th>No</th><th>스캔일자</th><th>구분</th><th>회사(기관)명</th><th>문서종류</th><th>긴급도</th><th>파일 열기</th><th>분류</th></tr></thead><tbody><tr><td class="c">1</td><td class="c dc">2026-06-18 </td><td class="c">&#9878; 소송</td><td>에스티엔</td><td>내부보고</td><td class="c"><span class="b-org">주의</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/(주)에스티엔 2026년 5월 관리인 월간보고서(간회합) (1).pdf" target="_blank" class="fl">&#128196; (주)에스티엔 2026년 5월 관리인 월간보고서(간...</a></td><td class="c"><button class="cbtn" onclick="openModal('(주)에스티엔 2026년 5월 관리인 월간보고서(간회합) (1).pdf','에스티엔','소송','내부보고','2026-06-18')">&#9998;</button></td></tr>
-<tr><td class="c">2</td><td class="c dc">2026-06-17 </td><td class="c">&#9878; 소송</td><td>기타</td><td>기타</td><td class="c"><span class="b-org">주의</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/2026.6.17 민사본안 - 서류제출 - 전자소송포털(2026 카정 10232).pdf" target="_blank" class="fl">&#128196; 2026.6.17 민사본안 - 서류제출 - 전자소송...</a></td><td class="c"><button class="cbtn" onclick="openModal('2026.6.17 민사본안 - 서류제출 - 전자소송포털(2026 카정 10232).pdf','기타','소송','기타','2026-06-17')">&#9998;</button></td></tr>
-<tr><td class="c">3</td><td class="c dc">2026-06-15 </td><td class="c">&#9878; 소송</td><td>기타</td><td>기타</td><td class="c"><span class="b-org">주의</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/민사본안 - 서류제출 - 전자소송포털(가상계좌).pdf" target="_blank" class="fl">&#128196; 민사본안 - 서류제출 - 전자소송포털(가상계좌).p...</a></td><td class="c"><button class="cbtn" onclick="openModal('민사본안 - 서류제출 - 전자소송포털(가상계좌).pdf','기타','소송','기타','2026-06-15')">&#9998;</button></td></tr>
-<tr><td class="c">4</td><td class="c dc">2026-06-15 </td><td class="c">&#9878; 소송</td><td>기타</td><td>기타</td><td class="c"><span class="b-org">주의</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/민사본안 - 서류제출 - 전자소송포털.pdf" target="_blank" class="fl">&#128196; 민사본안 - 서류제출 - 전자소송포털.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('민사본안 - 서류제출 - 전자소송포털.pdf','기타','소송','기타','2026-06-15')">&#9998;</button></td></tr>
+  <div id="p-lawsuit" class="panel"><table><thead><tr><th>No</th><th>스캔일자</th><th>구분</th><th>회사(기관)명</th><th>문서종류</th><th>긴급도</th><th>파일 열기</th><th>분류</th></tr></thead><tbody><tr><td class="c">1</td><td class="c dc">2026-06-18 </td><td class="c">&#9878; 소송</td><td>에스티엔</td><td>내부보고</td><td class="c"><span class="b-org">주의</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; (주)에스티엔 2026년 5월 관리인 월간보고서(간...</span></td><td class="c"><button class="cbtn" onclick="openModal('(주)에스티엔 2026년 5월 관리인 월간보고서(간회합) (1).pdf','에스티엔','소송','내부보고','2026-06-18')">&#9998;</button></td></tr>
+<tr><td class="c">2</td><td class="c dc">2026-06-17 </td><td class="c">&#9878; 소송</td><td>기타</td><td>기타</td><td class="c"><span class="b-org">주의</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 2026.6.17 민사본안 - 서류제출 - 전자소송...</span></td><td class="c"><button class="cbtn" onclick="openModal('2026.6.17 민사본안 - 서류제출 - 전자소송포털(2026 카정 10232).pdf','기타','소송','기타','2026-06-17')">&#9998;</button></td></tr>
+<tr><td class="c">3</td><td class="c dc">2026-06-15 </td><td class="c">&#9878; 소송</td><td>기타</td><td>기타</td><td class="c"><span class="b-org">주의</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 민사본안 - 서류제출 - 전자소송포털(가상계좌).p...</span></td><td class="c"><button class="cbtn" onclick="openModal('민사본안 - 서류제출 - 전자소송포털(가상계좌).pdf','기타','소송','기타','2026-06-15')">&#9998;</button></td></tr>
+<tr><td class="c">4</td><td class="c dc">2026-06-15 </td><td class="c">&#9878; 소송</td><td>기타</td><td>기타</td><td class="c"><span class="b-org">주의</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 민사본안 - 서류제출 - 전자소송포털.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('민사본안 - 서류제출 - 전자소송포털.pdf','기타','소송','기타','2026-06-15')">&#9998;</button></td></tr>
 <tr><td class="c">5</td><td class="c dc">2026-06-14 </td><td class="c">&#9878; 소송</td><td>기타</td><td>회생관련</td><td class="c"><span class="b-org">주의</span></td><td><a href="https://drive.google.com/file/d/1Nb4P_E79RoMjPFkLXjtK0ihnwCaBlJFi/view" target="_blank" class="fl">&#128196; 이미정 개인회생 판결문.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('이미정 개인회생 판결문.pdf','기타','소송','회생관련','2026-06-14')">&#9998;</button></td></tr>
 <tr><td class="c">6</td><td class="c dc">2026-06-14 </td><td class="c">&#9878; 소송</td><td>기타</td><td>채권신고</td><td class="c"><span class="b-org">주의</span></td><td><a href="https://drive.google.com/file/d/1j8QxoTM35K-AQ1kv0OHjUkR72BfiMzFh/view" target="_blank" class="fl">&#128196; 이미정 개인회생 채권자목록.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('이미정 개인회생 채권자목록.pdf','기타','소송','채권신고','2026-06-14')">&#9998;</button></td></tr>
 <tr><td class="c">7</td><td class="c dc">2026-06-14 </td><td class="c">&#9878; 소송</td><td>기타</td><td>회생관련</td><td class="c"><span class="b-org">주의</span></td><td><a href="https://drive.google.com/file/d/1lgUq2vJK6DVQ8oLTX57sYguPuyFWOINN/view" target="_blank" class="fl">&#128196; 이미정 개인회생 이체내역.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('이미정 개인회생 이체내역.pdf','기타','소송','회생관련','2026-06-14')">&#9998;</button></td></tr>
@@ -607,18 +596,18 @@ tr:hover td{background:#f5f5f5}
 <tr><td class="c">87</td><td class="c dc">2025-12-04 </td><td class="c">&#9878; 소송</td><td>에스티엔</td><td>회생관련</td><td class="c"><span class="b-org">주의</span></td><td><a href="https://drive.google.com/file/d/10LuObUCLly6hIzG5va-OWz1Q9t-O4jtw/view" target="_blank" class="fl">&#128196; 2025-12-04_주식회사 에스티엔_간이회생 감정...</a></td><td class="c"><button class="cbtn" onclick="openModal('2025-12-04_주식회사 에스티엔_간이회생 감정평가 계약 및 수수료 지급 허가 신청서.pdf','에스티엔','소송','회생관련','2025-12-04')">&#9998;</button></td></tr>
 <tr><td class="c">88</td><td class="c dc">2025-10-01 </td><td class="c">&#9878; 소송</td><td>기타</td><td>내용증명</td><td class="c"><span class="b-org">주의</span></td><td><a href="https://drive.google.com/file/d/1tAVogyYpJJcIluPIc8A97zsnySE2KB6A/view" target="_blank" class="fl">&#128196; 2025-10-01_스페이스하비_생중계용역계약_내용...</a></td><td class="c"><button class="cbtn" onclick="openModal('2025-10-01_스페이스하비_생중계용역계약_내용증명.pdf','기타','소송','내용증명','2025-10-01')">&#9998;</button></td></tr>
 </tbody></table></div>
-  <div id="p-work" class="panel"><table><thead><tr><th>No</th><th>스캔일자</th><th>구분</th><th>회사(기관)명</th><th>문서종류</th><th>긴급도</th><th>파일 열기</th><th>분류</th></tr></thead><tbody><tr class="r-new"><td class="c">1</td><td class="c dc">2026-06-19 <span class="nbadge">NEW</span></td><td class="c">&#128203; 업무</td><td>에스티엔</td><td>기타</td><td class="c"></td><td><a href="file:///C:/Users/User/Desktop/스캔/에스티엔게임즈 등기부등본.pdf" target="_blank" class="fl">&#128196; 에스티엔게임즈 등기부등본.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('에스티엔게임즈 등기부등본.pdf','에스티엔','업무','기타','2026-06-19')">&#9998;</button></td></tr>
-<tr><td class="c">2</td><td class="c dc">2026-06-18 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="file:///C:/Users/User/Desktop/스캔/806호 개별 공시지가.pdf" target="_blank" class="fl">&#128196; 806호 개별 공시지가.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('806호 개별 공시지가.pdf','기타','업무','기타','2026-06-18')">&#9998;</button></td></tr>
-<tr><td class="c">3</td><td class="c dc">2026-06-18 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="file:///C:/Users/User/Desktop/스캔/806호 토지대장.pdf" target="_blank" class="fl">&#128196; 806호 토지대장.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('806호 토지대장.pdf','기타','업무','기타','2026-06-18')">&#9998;</button></td></tr>
-<tr class="r-urg"><td class="c">4</td><td class="c dc">2026-06-18 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"><span class="b-red">긴급</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/2026카정10232_즉시항고장.pdf" target="_blank" class="fl">&#128196; 2026카정10232_즉시항고장.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('2026카정10232_즉시항고장.pdf','기타','업무','기타','2026-06-18')">&#9998;</button></td></tr>
-<tr><td class="c">5</td><td class="c dc">2026-06-17 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="file:///C:/Users/User/Desktop/스캔/페이시스 통합결제창 연동 가이드-V2.0 6 (1).pdf" target="_blank" class="fl">&#128196; 페이시스 통합결제창 연동 가이드-V2.0 6 (1)...</a></td><td class="c"><button class="cbtn" onclick="openModal('페이시스 통합결제창 연동 가이드-V2.0 6 (1).pdf','기타','업무','기타','2026-06-17')">&#9998;</button></td></tr>
-<tr><td class="c">6</td><td class="c dc">2026-06-17 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="file:///C:/Users/User/Desktop/스캔/이재혁.pdf" target="_blank" class="fl">&#128196; 이재혁.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('이재혁.pdf','기타','업무','기타','2026-06-17')">&#9998;</button></td></tr>
-<tr class="r-urg"><td class="c">7</td><td class="c dc">2026-06-17 </td><td class="c">&#128203; 업무</td><td>에스티엔</td><td>기타</td><td class="c"><span class="b-red">긴급</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/긴급처리요청서-에스티엔.pdf" target="_blank" class="fl">&#128196; 긴급처리요청서-에스티엔.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('긴급처리요청서-에스티엔.pdf','에스티엔','업무','기타','2026-06-17')">&#9998;</button></td></tr>
-<tr><td class="c">8</td><td class="c dc">2026-06-17 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="file:///C:/Users/User/Desktop/스캔/부평테크노타워 관리비 2026.6.pdf" target="_blank" class="fl">&#128196; 부평테크노타워 관리비 2026.6.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('부평테크노타워 관리비 2026.6.pdf','기타','업무','기타','2026-06-17')">&#9998;</button></td></tr>
-<tr><td class="c">9</td><td class="c dc">2026-06-15 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="file:///C:/Users/User/Desktop/스캔/유치권존재확인 청구의 소.pdf" target="_blank" class="fl">&#128196; 유치권존재확인 청구의 소.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('유치권존재확인 청구의 소.pdf','기타','업무','기타','2026-06-15')">&#9998;</button></td></tr>
-<tr class="r-urg"><td class="c">10</td><td class="c dc">2026-06-15 </td><td class="c">&#128203; 업무</td><td>이강영</td><td>공문/신청</td><td class="c"><span class="b-red">긴급</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/2026카정10232_2026.06.15_강제집행정지 신청서_신청인_관리인 이강영 주식회사 에스티엔 관리인 이강영 주식회사 에스티엔.pdf" target="_blank" class="fl">&#128196; 2026카정10232_2026.06.15_강제집행정...</a></td><td class="c"><button class="cbtn" onclick="openModal('2026카정10232_2026.06.15_강제집행정지 신청서_신청인_관리인 이강영 주식회사 에스티엔 관리인 이강영 주식회사 에스티엔.pdf','이강영','업무','공문/신청','2026-06-15')">&#9998;</button></td></tr>
-<tr class="r-urg"><td class="c">11</td><td class="c dc">2026-06-15 </td><td class="c">&#128203; 업무</td><td>기타</td><td>공문/신청</td><td class="c"><span class="b-red">긴급</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/강제집행정지신청 가상계좌.pdf" target="_blank" class="fl">&#128196; 강제집행정지신청 가상계좌.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('강제집행정지신청 가상계좌.pdf','기타','업무','공문/신청','2026-06-15')">&#9998;</button></td></tr>
-<tr class="r-urg"><td class="c">12</td><td class="c dc">2026-06-15 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"><span class="b-red">긴급</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/강제집행정지 2026 가정 10232.pdf" target="_blank" class="fl">&#128196; 강제집행정지 2026 가정 10232.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('강제집행정지 2026 가정 10232.pdf','기타','업무','기타','2026-06-15')">&#9998;</button></td></tr>
+  <div id="p-work" class="panel"><table><thead><tr><th>No</th><th>스캔일자</th><th>구분</th><th>회사(기관)명</th><th>문서종류</th><th>긴급도</th><th>파일 열기</th><th>분류</th></tr></thead><tbody><tr class="r-new"><td class="c">1</td><td class="c dc">2026-06-19 <span class="nbadge">NEW</span></td><td class="c">&#128203; 업무</td><td>에스티엔</td><td>기타</td><td class="c"></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 에스티엔게임즈 등기부등본.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('에스티엔게임즈 등기부등본.pdf','에스티엔','업무','기타','2026-06-19')">&#9998;</button></td></tr>
+<tr><td class="c">2</td><td class="c dc">2026-06-18 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 806호 개별 공시지가.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('806호 개별 공시지가.pdf','기타','업무','기타','2026-06-18')">&#9998;</button></td></tr>
+<tr><td class="c">3</td><td class="c dc">2026-06-18 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 806호 토지대장.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('806호 토지대장.pdf','기타','업무','기타','2026-06-18')">&#9998;</button></td></tr>
+<tr class="r-urg"><td class="c">4</td><td class="c dc">2026-06-18 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"><span class="b-red">긴급</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 2026카정10232_즉시항고장.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('2026카정10232_즉시항고장.pdf','기타','업무','기타','2026-06-18')">&#9998;</button></td></tr>
+<tr><td class="c">5</td><td class="c dc">2026-06-17 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 페이시스 통합결제창 연동 가이드-V2.0 6 (1)...</span></td><td class="c"><button class="cbtn" onclick="openModal('페이시스 통합결제창 연동 가이드-V2.0 6 (1).pdf','기타','업무','기타','2026-06-17')">&#9998;</button></td></tr>
+<tr><td class="c">6</td><td class="c dc">2026-06-17 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 이재혁.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('이재혁.pdf','기타','업무','기타','2026-06-17')">&#9998;</button></td></tr>
+<tr class="r-urg"><td class="c">7</td><td class="c dc">2026-06-17 </td><td class="c">&#128203; 업무</td><td>에스티엔</td><td>기타</td><td class="c"><span class="b-red">긴급</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 긴급처리요청서-에스티엔.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('긴급처리요청서-에스티엔.pdf','에스티엔','업무','기타','2026-06-17')">&#9998;</button></td></tr>
+<tr><td class="c">8</td><td class="c dc">2026-06-17 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 부평테크노타워 관리비 2026.6.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('부평테크노타워 관리비 2026.6.pdf','기타','업무','기타','2026-06-17')">&#9998;</button></td></tr>
+<tr><td class="c">9</td><td class="c dc">2026-06-15 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 유치권존재확인 청구의 소.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('유치권존재확인 청구의 소.pdf','기타','업무','기타','2026-06-15')">&#9998;</button></td></tr>
+<tr class="r-urg"><td class="c">10</td><td class="c dc">2026-06-15 </td><td class="c">&#128203; 업무</td><td>이강영</td><td>공문/신청</td><td class="c"><span class="b-red">긴급</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 2026카정10232_2026.06.15_강제집행정...</span></td><td class="c"><button class="cbtn" onclick="openModal('2026카정10232_2026.06.15_강제집행정지 신청서_신청인_관리인 이강영 주식회사 에스티엔 관리인 이강영 주식회사 에스티엔.pdf','이강영','업무','공문/신청','2026-06-15')">&#9998;</button></td></tr>
+<tr class="r-urg"><td class="c">11</td><td class="c dc">2026-06-15 </td><td class="c">&#128203; 업무</td><td>기타</td><td>공문/신청</td><td class="c"><span class="b-red">긴급</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 강제집행정지신청 가상계좌.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('강제집행정지신청 가상계좌.pdf','기타','업무','공문/신청','2026-06-15')">&#9998;</button></td></tr>
+<tr class="r-urg"><td class="c">12</td><td class="c dc">2026-06-15 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"><span class="b-red">긴급</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 강제집행정지 2026 가정 10232.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('강제집행정지 2026 가정 10232.pdf','기타','업무','기타','2026-06-15')">&#9998;</button></td></tr>
 <tr><td class="c">13</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1W_zcYnl4hgpLu8rP70B-N_4JIwHEB4fP/view" target="_blank" class="fl">&#128196; 홍성일_증명사진.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('홍성일_증명사진.pdf','기타','업무','기타','2026-06-14')">&#9998;</button></td></tr>
 <tr><td class="c">14</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1p1jkU-KulRx4fBWAkdehg-HTAt1eIhjH/view" target="_blank" class="fl">&#128196; 한신대학교 협약서.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('한신대학교 협약서.pdf','기타','업무','기타','2026-06-14')">&#9998;</button></td></tr>
 <tr><td class="c">15</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1yrwFRHZa-LUN4Nfj4ovfE17uW2Y4NMFI/view" target="_blank" class="fl">&#128196; 플레닛네이처미디어등기부등본.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('플레닛네이처미디어등기부등본.pdf','기타','업무','기타','2026-06-14')">&#9998;</button></td></tr>
@@ -887,7 +876,7 @@ tr:hover td{background:#f5f5f5}
 <tr><td class="c">278</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>기타</td><td>계약서</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1IGxFVr6yy0AWmoNO-SVE2ol6NRrrunm-/view" target="_blank" class="fl">&#128196; 20010206_부평테크노타워_김지민계약직근로계약서...</a></td><td class="c"><button class="cbtn" onclick="openModal('20010206_부평테크노타워_김지민계약직근로계약서.pdf','기타','업무','계약서','2026-06-14')">&#9998;</button></td></tr>
 <tr><td class="c">279</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1EVFO_kFIVNSFGO8pSd1tnWOeA8AhAckI/view" target="_blank" class="fl">&#128196; 106호 6471.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('106호 6471.pdf','기타','업무','기타','2026-06-14')">&#9998;</button></td></tr>
 <tr><td class="c">280</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>에스티엔</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1571J8J95-nykcwuweCTaA2XM1IHaXWUK/view" target="_blank" class="fl">&#128196; (26.05.04)결정_인천지법(25라5671)_에...</a></td><td class="c"><button class="cbtn" onclick="openModal('(26.05.04)결정_인천지법(25라5671)_에스티엔 유치권.pdf','에스티엔','업무','기타','2026-06-14')">&#9998;</button></td></tr>
-<tr><td class="c">281</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><a href="file:///C:/Users/User/Desktop/스캔/주식회사 명진기업.pdf" target="_blank" class="fl">&#128196; 주식회사 명진기업.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('주식회사 명진기업.pdf','기타','업무','기타','2026-06-14')">&#9998;</button></td></tr>
+<tr><td class="c">281</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>기타</td><td>기타</td><td class="c"></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 주식회사 명진기업.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('주식회사 명진기업.pdf','기타','업무','기타','2026-06-14')">&#9998;</button></td></tr>
 <tr><td class="c">282</td><td class="c dc">2026-06-12 </td><td class="c">&#128203; 업무</td><td>이강영</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1tt6Z8wkN0xULllxE7EOAyBBI_Ymd2aDm/view" target="_blank" class="fl">&#128196; 이강영 통장사본.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('이강영 통장사본.pdf','이강영','업무','기타','2026-06-12')">&#9998;</button></td></tr>
 <tr><td class="c">283</td><td class="c dc">2026-06-12 </td><td class="c">&#128203; 업무</td><td>플래닛</td><td>계약서</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1TmLABN0cN6mWRf6EDU04vlSQJ9QEXSfk/view" target="_blank" class="fl">&#128196; 출연계약서(플래닛_파파야).pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('출연계약서(플래닛_파파야).pdf','플래닛','업무','계약서','2026-06-12')">&#9998;</button></td></tr>
 <tr><td class="c">284</td><td class="c dc">2026-06-12 </td><td class="c">&#128203; 업무</td><td>기타</td><td>계약서</td><td class="c"></td><td><a href="https://drive.google.com/file/d/12NFMJ3C2TW7Y6cQ4cGa1CC5TEK9KbK3r/view" target="_blank" class="fl">&#128196; 출연계약서(여수).pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('출연계약서(여수).pdf','기타','업무','계약서','2026-06-12')">&#9998;</button></td></tr>
@@ -913,9 +902,9 @@ tr:hover td{background:#f5f5f5}
 <tr><td class="c">19</td><td class="c dc">2026-03-06 </td><td class="c">&#9878; 소송</td><td>에스티엔미디어</td><td>공문/신청</td><td class="c"><span class="b-org">주의</span></td><td><a href="https://drive.google.com/file/d/1r9kYobdFN1DgoThRao54Azi0QTbpZWv2/view" target="_blank" class="fl">&#128196; 2026-03-06_인천지법_제10가합174341호...</a></td><td class="c"><button class="cbtn" onclick="openModal('2026-03-06_인천지법_제10가합174341호_STN미디어재산명시신청결정.pdf','에스티엔미디어','소송','공문/신청','2026-03-06')">&#9998;</button></td></tr>
 <tr><td class="c">20</td><td class="c dc">2025-12-31 </td><td class="c">&#128203; 업무</td><td>에스티엔미디어</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1IB7I6ht1hD2h1asG2iZHfPLVIbbh4BSt/view" target="_blank" class="fl">&#128196; 20251231_에스티엔미디어_주주명부.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('20251231_에스티엔미디어_주주명부.pdf','에스티엔미디어','업무','기타','2025-12-31')">&#9998;</button></td></tr>
 </tbody></table></div>
-  <div id="p-sn" class="panel"><table><thead><tr><th>No</th><th>스캔일자</th><th>구분</th><th>회사(기관)명</th><th>문서종류</th><th>긴급도</th><th>파일 열기</th><th>분류</th></tr></thead><tbody><tr class="r-new"><td class="c">1</td><td class="c dc">2026-06-19 <span class="nbadge">NEW</span></td><td class="c">&#128203; 업무</td><td>에스티엔</td><td>기타</td><td class="c"></td><td><a href="file:///C:/Users/User/Desktop/스캔/에스티엔게임즈 등기부등본.pdf" target="_blank" class="fl">&#128196; 에스티엔게임즈 등기부등본.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('에스티엔게임즈 등기부등본.pdf','에스티엔','업무','기타','2026-06-19')">&#9998;</button></td></tr>
-<tr><td class="c">2</td><td class="c dc">2026-06-18 </td><td class="c">&#9878; 소송</td><td>에스티엔</td><td>내부보고</td><td class="c"><span class="b-org">주의</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/(주)에스티엔 2026년 5월 관리인 월간보고서(간회합) (1).pdf" target="_blank" class="fl">&#128196; (주)에스티엔 2026년 5월 관리인 월간보고서(간...</a></td><td class="c"><button class="cbtn" onclick="openModal('(주)에스티엔 2026년 5월 관리인 월간보고서(간회합) (1).pdf','에스티엔','소송','내부보고','2026-06-18')">&#9998;</button></td></tr>
-<tr class="r-urg"><td class="c">3</td><td class="c dc">2026-06-17 </td><td class="c">&#128203; 업무</td><td>에스티엔</td><td>기타</td><td class="c"><span class="b-red">긴급</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/긴급처리요청서-에스티엔.pdf" target="_blank" class="fl">&#128196; 긴급처리요청서-에스티엔.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('긴급처리요청서-에스티엔.pdf','에스티엔','업무','기타','2026-06-17')">&#9998;</button></td></tr>
+  <div id="p-sn" class="panel"><table><thead><tr><th>No</th><th>스캔일자</th><th>구분</th><th>회사(기관)명</th><th>문서종류</th><th>긴급도</th><th>파일 열기</th><th>분류</th></tr></thead><tbody><tr class="r-new"><td class="c">1</td><td class="c dc">2026-06-19 <span class="nbadge">NEW</span></td><td class="c">&#128203; 업무</td><td>에스티엔</td><td>기타</td><td class="c"></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 에스티엔게임즈 등기부등본.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('에스티엔게임즈 등기부등본.pdf','에스티엔','업무','기타','2026-06-19')">&#9998;</button></td></tr>
+<tr><td class="c">2</td><td class="c dc">2026-06-18 </td><td class="c">&#9878; 소송</td><td>에스티엔</td><td>내부보고</td><td class="c"><span class="b-org">주의</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; (주)에스티엔 2026년 5월 관리인 월간보고서(간...</span></td><td class="c"><button class="cbtn" onclick="openModal('(주)에스티엔 2026년 5월 관리인 월간보고서(간회합) (1).pdf','에스티엔','소송','내부보고','2026-06-18')">&#9998;</button></td></tr>
+<tr class="r-urg"><td class="c">3</td><td class="c dc">2026-06-17 </td><td class="c">&#128203; 업무</td><td>에스티엔</td><td>기타</td><td class="c"><span class="b-red">긴급</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 긴급처리요청서-에스티엔.pdf</span></td><td class="c"><button class="cbtn" onclick="openModal('긴급처리요청서-에스티엔.pdf','에스티엔','업무','기타','2026-06-17')">&#9998;</button></td></tr>
 <tr><td class="c">4</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>에스티엔</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/13fUSFVzR1Wn6vvEEIgvXsvIVAP1SrYZY/view" target="_blank" class="fl">&#128196; 주주명부(에스티엔메타미디어).pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('주주명부(에스티엔메타미디어).pdf','에스티엔','업무','기타','2026-06-14')">&#9998;</button></td></tr>
 <tr><td class="c">5</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>에스티엔</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1m3SZJDda40ak_5hkVjY_gxP75-SCTqND/view" target="_blank" class="fl">&#128196; 정관(에스티엔이엔지).pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('정관(에스티엔이엔지).pdf','에스티엔','업무','기타','2026-06-14')">&#9998;</button></td></tr>
 <tr><td class="c">6</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>에스티엔</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1bWg9ptvTDXRM-PRMqwGhDCpXVNP1I1p4/view" target="_blank" class="fl">&#128196; 정관(에스티엔메타미디어).pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('정관(에스티엔메타미디어).pdf','에스티엔','업무','기타','2026-06-14')">&#9998;</button></td></tr>
@@ -1054,7 +1043,7 @@ tr:hover td{background:#f5f5f5}
 <tr><td class="c">139</td><td class="c dc">2022-08-03 </td><td class="c">&#128203; 업무</td><td>에스티엔</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1w_M2U-uqcXzNd6r07S8A2u00BMgYTSDO/view" target="_blank" class="fl">&#128196; 20220803_에스티엔엔터테인먼트_방송채널사용사업...</a></td><td class="c"><button class="cbtn" onclick="openModal('20220803_에스티엔엔터테인먼트_방송채널사용사업등록증.pdf','에스티엔','업무','기타','2022-08-03')">&#9998;</button></td></tr>
 <tr><td class="c">140</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>에스티엔</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1571J8J95-nykcwuweCTaA2XM1IHaXWUK/view" target="_blank" class="fl">&#128196; (26.05.04)결정_인천지법(25라5671)_에...</a></td><td class="c"><button class="cbtn" onclick="openModal('(26.05.04)결정_인천지법(25라5671)_에스티엔 유치권.pdf','에스티엔','업무','기타','2026-06-14')">&#9998;</button></td></tr>
 </tbody></table></div>
-  <div id="p-lk" class="panel"><table><thead><tr><th>No</th><th>스캔일자</th><th>구분</th><th>회사(기관)명</th><th>문서종류</th><th>긴급도</th><th>파일 열기</th><th>분류</th></tr></thead><tbody><tr class="r-urg"><td class="c">1</td><td class="c dc">2026-06-15 </td><td class="c">&#128203; 업무</td><td>이강영</td><td>공문/신청</td><td class="c"><span class="b-red">긴급</span></td><td><a href="file:///C:/Users/User/Desktop/스캔/2026카정10232_2026.06.15_강제집행정지 신청서_신청인_관리인 이강영 주식회사 에스티엔 관리인 이강영 주식회사 에스티엔.pdf" target="_blank" class="fl">&#128196; 2026카정10232_2026.06.15_강제집행정...</a></td><td class="c"><button class="cbtn" onclick="openModal('2026카정10232_2026.06.15_강제집행정지 신청서_신청인_관리인 이강영 주식회사 에스티엔 관리인 이강영 주식회사 에스티엔.pdf','이강영','업무','공문/신청','2026-06-15')">&#9998;</button></td></tr>
+  <div id="p-lk" class="panel"><table><thead><tr><th>No</th><th>스캔일자</th><th>구분</th><th>회사(기관)명</th><th>문서종류</th><th>긴급도</th><th>파일 열기</th><th>분류</th></tr></thead><tbody><tr class="r-urg"><td class="c">1</td><td class="c dc">2026-06-15 </td><td class="c">&#128203; 업무</td><td>이강영</td><td>공문/신청</td><td class="c"><span class="b-red">긴급</span></td><td><span class="fl-nd" title="드라이브 미업로드 — PC 로컬 전용">&#128196; 2026카정10232_2026.06.15_강제집행정...</span></td><td class="c"><button class="cbtn" onclick="openModal('2026카정10232_2026.06.15_강제집행정지 신청서_신청인_관리인 이강영 주식회사 에스티엔 관리인 이강영 주식회사 에스티엔.pdf','이강영','업무','공문/신청','2026-06-15')">&#9998;</button></td></tr>
 <tr><td class="c">2</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>이강영</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1lkfSnxsQDzxipzTjll7xnia3V8xA8tf8/view" target="_blank" class="fl">&#128196; 이강영관제인도장.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('이강영관제인도장.pdf','이강영','업무','기타','2026-06-14')">&#9998;</button></td></tr>
 <tr><td class="c">3</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>이강영</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1XMn-aJmG0tcJoo8dTdA_T7EinytuSCNT/view" target="_blank" class="fl">&#128196; 이강영 특가중.pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('이강영 특가중.pdf','이강영','업무','기타','2026-06-14')">&#9998;</button></td></tr>
 <tr><td class="c">4</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>이강영</td><td>기타</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1fpXU6J-nt38Abx5U3yp8pwFKmRHjG7Si/view" target="_blank" class="fl">&#128196; 에스티엔사회건강운동본부(이강영).pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('에스티엔사회건강운동본부(이강영).pdf','이강영','업무','기타','2026-06-14')">&#9998;</button></td></tr>
@@ -1084,12 +1073,19 @@ tr:hover td{background:#f5f5f5}
 <tr><td class="c">2</td><td class="c dc">2026-06-14 </td><td class="c">&#128203; 업무</td><td>플래닛</td><td>계약서</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1nr3tezs60hxiOnFRibf-Dr8ZeYO5P9nC/view" target="_blank" class="fl">&#128196; 2018-11-25_플래닛네이처디어_헥토파이낸셜_통...</a></td><td class="c"><button class="cbtn" onclick="openModal('2018-11-25_플래닛네이처디어_헥토파이낸셜_통합서비스계약서.pdf','플래닛','업무','계약서','2026-06-14')">&#9998;</button></td></tr>
 <tr><td class="c">3</td><td class="c dc">2026-06-12 </td><td class="c">&#128203; 업무</td><td>플래닛</td><td>계약서</td><td class="c"></td><td><a href="https://drive.google.com/file/d/1TmLABN0cN6mWRf6EDU04vlSQJ9QEXSfk/view" target="_blank" class="fl">&#128196; 출연계약서(플래닛_파파야).pdf</a></td><td class="c"><button class="cbtn" onclick="openModal('출연계약서(플래닛_파파야).pdf','플래닛','업무','계약서','2026-06-12')">&#9998;</button></td></tr>
 </tbody></table></div>
-  <div class="foot">&#128336; 2026-06-19 09:34:32 기준 &middot; 총 372개 파일</div>
+  <div class="foot">&#128336; 2026-06-19 09:37:48 기준 &middot; 총 372개 파일 &middot; &#9729; 드라이브 362개</div>
 </div>
 
 <script>
 var _cur = 'all';
 var _fname = '';
+var _isHttps = window.location.protocol === 'https:';
+
+// HTTPS 접속 시 안내 바 표시, 새로고침 버튼 숨기기
+if (_isHttps) {
+  document.getElementById('infoBar').style.display = 'block';
+  document.getElementById('rb').style.display = 'none';
+}
 
 function goTab(name, btn) {
   _cur = name;
@@ -1134,7 +1130,6 @@ function filterKw(kw) {
   goTab('all'); doSearch();
 }
 
-/* ── 모달 ── */
 function openModal(fname, company, category, doctype, scanDate) {
   _fname = fname;
   document.getElementById('mFname').textContent = fname;
@@ -1154,6 +1149,12 @@ document.getElementById('modalBg').addEventListener('click', function(e) {
 });
 
 function saveModal() {
+  if (_isHttps) {
+    alert('분류 변경은 PC에서 로컬 파일로 접속할 때만 가능합니다.
+
+PC에서 스캔관리대장.html 파일을 직접 열어주세요.');
+    return;
+  }
   var payload = {
     fname    : _fname,
     date     : document.getElementById('mDate').value,
@@ -1170,11 +1171,13 @@ function saveModal() {
       if (res.ok) { closeModal(); doRefresh(); }
       else { alert('저장 실패: ' + res.msg); }
     }).catch(function() {
-      alert('서버 연결 실패 - 스캔관리대장_실행.bat 확인');
+      alert('서버 연결 실패
+
+스캔관리대장_실행.bat 또는
+python generate_html.py 를 실행해 주세요.');
     });
 }
 
-/* ── 새로고침 ── */
 function doRefresh() {
   var btn = document.getElementById('rb');
   var st  = document.getElementById('rstat');
@@ -1190,13 +1193,12 @@ function doRefresh() {
       }
     }).catch(function() {
       st.style.color = '#e53935';
-      st.textContent = 'ERR 서버 연결 실패';
+      st.textContent = 'ERR 서버 미실행 — python generate_html.py 확인';
     }).finally(function() {
       btn.disabled = false; btn.textContent = '&#128260; 새로고침';
     });
 }
 
-/* ── 새 파일 감지 (30초 폴링) ── */
 (function() {
   var known = 372;
   function poll() {
@@ -1212,21 +1214,16 @@ function doRefresh() {
     if (!el) {
       el = document.createElement('div');
       el.id = '_nb';
-      el.style.cssText = [
-        'position:fixed;bottom:24px;right:24px;z-index:9999;',
-        'background:#2e7d32;color:#fff;padding:14px 20px;',
-        'border-radius:12px;font-size:14px;font-weight:700;',
-        'box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;'
-      ].join('');
-      el.onclick = function() {
-        doRefresh(); el.remove(); document.title = '스캔관리대장';
-      };
+      el.style.cssText = 'position:fixed;bottom:24px;right:24px;z-index:9999;background:#2e7d32;color:#fff;padding:14px 20px;border-radius:12px;font-size:14px;font-weight:700;box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;';
+      el.onclick = function() { doRefresh(); el.remove(); document.title = '스캔관리대장'; };
       document.body.appendChild(el);
     }
-    el.textContent = '[신규] ' + n + '개 파일 - 클릭하여 새로고침';
+    el.textContent = '[신규] ' + n + '개 파일 — 클릭하여 새로고침';
   }
-  setInterval(poll, 30000);
-  setTimeout(poll, 5000);
+  if (!_isHttps) {
+    setInterval(poll, 30000);
+    setTimeout(poll, 5000);
+  }
 })();
 </script>
 </body></html>
