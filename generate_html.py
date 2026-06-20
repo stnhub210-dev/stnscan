@@ -244,6 +244,8 @@ def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
     ld = filt("category","소송"); wd = filt("category","업무")
     sm = filt("company","에스티엔미디어"); sn = filt("company","에스티엔")
     lk = filt("company","이강영");         pl = filt("company","플래닛")
+    ct = [d for d in docs if "계약" in d["fname"]]   # 계약서 탭
+    pp = [d for d in docs if "제안" in d["fname"]]   # 제안서 탭
     urg  = sum(1 for d in docs if d["urgency"] == "긴급")
     warn = sum(1 for d in docs if d["urgency"] == "주의")
     wago = (date.today() - timedelta(days=7)).strftime("%Y-%m-%d")
@@ -295,6 +297,7 @@ body{{font-family:'Malgun Gothic',sans-serif;background:#f0f2f5;color:#333;font-
 #t-all.on{{background:#1a237e}}#t-lawsuit.on{{background:#c62828}}
 #t-work.on{{background:#1565c0}}#t-sm.on{{background:#6a1b9a}}
 #t-sn.on{{background:#00695c}}#t-lk.on{{background:#e65100}}#t-pl.on{{background:#2e7d32}}
+#t-ct.on{{background:#5d4037}}#t-pp.on{{background:#00838f}}
 .content{{padding:14px 24px}}
 .panel{{display:none}}.panel.on{{display:block}}
 table{{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;
@@ -363,6 +366,8 @@ tr:hover td{{background:#f5f5f5}}
   <button class="tab"    id="t-sn"      onclick="goTab('sn',this)">STN뉴스 ({len(sn)})</button>
   <button class="tab"    id="t-lk"      onclick="goTab('lk',this)">이강영 ({len(lk)})</button>
   <button class="tab"    id="t-pl"      onclick="goTab('pl',this)">플래닛 ({len(pl)})</button>
+  <button class="tab"    id="t-ct"      onclick="goTab('ct',this)">&#128196; 계약서 ({len(ct)})</button>
+  <button class="tab"    id="t-pp"      onclick="goTab('pp',this)">&#128221; 제안서 ({len(pp)})</button>
 </div>
 
 <div class="modal-bg" id="modalBg">
@@ -403,6 +408,8 @@ tr:hover td{{background:#f5f5f5}}
   {panel('sn',     sn)}
   {panel('lk',     lk)}
   {panel('pl',     pl)}
+  {panel('ct',     ct)}
+  {panel('pp',     pp)}
   <div class="foot">&#128336; {upd} 기준 &middot; 총 {N}개 파일 &middot; &#9729; 드라이브 {dcnt}개</div>
 </div>
 
