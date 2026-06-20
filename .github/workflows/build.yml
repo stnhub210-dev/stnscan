@@ -9,7 +9,7 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - name: Stage web files only (보안: 키/데이터 제외)
+      - name: Stage web files only (no secrets/data)
         run: |
           mkdir -p _site
           cp index.html _site/ 2>/dev/null || true
