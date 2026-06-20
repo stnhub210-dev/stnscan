@@ -1,9 +1,0 @@
-*.pdf 
-*.jpg 
-*.png 
-.tmp.driveupload/ 
-file_ids.json
-token.json
-desktop.ini
-Thumbs.db
-.tmp.drivedownload/
