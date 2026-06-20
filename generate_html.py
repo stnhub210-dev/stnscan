@@ -571,10 +571,12 @@ if (!_isHttps) {{
     # 스캔관리대장.html 저장
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(html)
-    # scan.html 동시 생성 (stnscan.co.kr/scan.html 용)
+    # scan.html 동시 생성 (stnscan.co.kr/scan.html 용) — 비밀번호 표지 미인증 시 차단 가드 삽입
+    GUARD = "<script>if(sessionStorage.getItem('stn_auth')!=='1'){location.replace('index.html');}</script>"
+    web_html = html.replace("</head><body>", "</head><body>" + GUARD, 1)
     scan_path = os.path.join(scan_folder, "scan.html")
     with open(scan_path, 'w', encoding='utf-8') as f:
-        f.write(html)
+        f.write(web_html)
     print(f"[{datetime.now().strftime('%H:%M:%S')}] HTML 생성 완료 ({len(pdfs)}개 파일)")
     return len(pdfs)
 

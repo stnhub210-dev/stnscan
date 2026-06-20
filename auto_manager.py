@@ -60,6 +60,51 @@ def pdf_to_b64(path):
         return base64.b64encode(buf.getvalue()).decode()
     except: return None
 
+JPG_BACKUP=os.path.join(SCAN_FOLDER,"스캔원본_JPG")
+
+def convert_scan_jpgs(stable_sec=5):
+    """SCAN_*.jpg 스캔본을 페이지 그룹별로 1개 PDF로 병합. 원본은 스캔원본_JPG 폴더로 이동.
+    - 그룹 기준: 파일명 끝의 _001 같은 페이지번호를 뗀 공통 접두어
+    - stable_sec: 최근 수정된(=스캔 진행중) 그룹은 건너뜀(페이지 누락 방지)
+    - 사용자가 직접 이름 붙인 일반 JPG(SCAN_ 아님)는 건드리지 않음"""
+    try:
+        from PIL import Image
+    except Exception as e:
+        log.error(f"Pillow 없음, JPG 변환 불가:{e}"); return []
+    try:
+        jpgs=[f for f in os.listdir(SCAN_FOLDER) if f.lower().endswith(".jpg") and f.startswith("SCAN_")]
+    except: return []
+    if not jpgs: return []
+    groups={}
+    for f in jpgs:
+        m=re.match(r'^(SCAN_.+?)(_\d{1,3})?\.jpg$', f, re.IGNORECASE)
+        key=m.group(1) if m else os.path.splitext(f)[0]
+        groups.setdefault(key,[]).append(f)
+    made=[]; now=time.time()
+    for key,files in groups.items():
+        files=sorted(files)
+        try: newest=max(os.path.getmtime(os.path.join(SCAN_FOLDER,f)) for f in files)
+        except: continue
+        if now-newest<stable_sec:
+            log.info(f"JPG그룹 대기(스캔중):{key}"); continue
+        out=os.path.join(SCAN_FOLDER,key+".pdf")
+        c=1
+        while os.path.exists(out):
+            out=os.path.join(SCAN_FOLDER,f"{key}_{c}.pdf"); c+=1
+        try:
+            imgs=[Image.open(os.path.join(SCAN_FOLDER,f)).convert("RGB") for f in files]
+            imgs[0].save(out,save_all=True,append_images=imgs[1:])
+            for im in imgs: im.close()
+            os.makedirs(JPG_BACKUP,exist_ok=True)
+            for f in files:
+                try: os.rename(os.path.join(SCAN_FOLDER,f),os.path.join(JPG_BACKUP,f))
+                except Exception as e: log.warning(f"원본이동실패 {f}:{e}")
+            log.info(f"JPG→PDF 변환:{len(files)}p → {os.path.basename(out)}")
+            made.append(out)
+        except Exception as e:
+            log.error(f"JPG변환오류 {key}:{e}")
+    return made
+
 def analyze_pdf(fname,text="",img_b64=None):
     content=[]
     if img_b64: content.append({"type":"image","source":{"type":"base64","media_type":"image/jpeg","data":img_b64}})
@@ -259,7 +304,7 @@ def git_push():
         # 1) .git 손상(desktop.ini/lock) 정리
         clean_git_junk(folder)
         # 2) 로컬 대시보드 + 웹페이지 모두 스테이징
-        subprocess.run(["git","add","스캔관리대장.html","scan.html"], cwd=folder, capture_output=True, env=env)
+        subprocess.run(["git","add","scan.html","index.html"], cwd=folder, capture_output=True, env=env)
         result = subprocess.run(["git","commit","-m","update"], cwd=folder, capture_output=True, text=True, encoding="utf-8", errors="ignore", env=env)
         if "nothing to commit" in (result.stdout or ""):
             return
@@ -350,6 +395,7 @@ def main():
         input("\nEnter 눌러 종료..."); return
     log.info("시스템 시작")
     done_db=load_done()
+    convert_scan_jpgs(stable_sec=0)
     ids=load_drive_ids()
     pdfs=[f for f in os.listdir(SCAN_FOLDER) if f.lower().endswith('.pdf')]
     unprocessed=[f for f in pdfs if f not in done_db]
@@ -366,6 +412,10 @@ def main():
     while True:
         try:
             cur=set(os.listdir(SCAN_FOLDER)); new=cur-prev_files
+            if any(f.lower().endswith('.jpg') and f.startswith('SCAN_') for f in new):
+                time.sleep(3)
+                if convert_scan_jpgs(stable_sec=5):
+                    cur=set(os.listdir(SCAN_FOLDER)); new=cur-prev_files
             if new:
                 for fname in new:
                     if not fname.lower().endswith('.pdf'): continue

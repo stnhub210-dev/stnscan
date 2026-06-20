@@ -1,4 +1,4 @@
-name: ����
+name: deploy
 on:
   push:
     branches: [main]
@@ -9,10 +9,17 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+      - name: Stage web files only (보안: 키/데이터 제외)
+        run: |
+          mkdir -p _site
+          cp index.html _site/ 2>/dev/null || true
+          cp scan.html _site/ 2>/dev/null || true
+          cp CNAME _site/ 2>/dev/null || true
+          cp .nojekyll _site/ 2>/dev/null || true
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+          publish_dir: ./_site
           publish_branch: gh-pages
           keep_files: false

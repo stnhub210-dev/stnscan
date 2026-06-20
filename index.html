@@ -1,1 +1,61 @@
-<meta http-equiv="refresh" content="0; url=scan.html"> 
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>STN 스캔관리시스템</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:'Malgun Gothic','맑은 고딕',sans-serif;
+  background:linear-gradient(135deg,#1a237e 0%,#3949ab 60%,#5c6bc0 100%);
+  display:flex;align-items:center;justify-content:center;padding:20px}
+.box{background:#fff;border-radius:18px;box-shadow:0 18px 50px rgba(0,0,0,.35);
+  padding:40px 34px;width:100%;max-width:380px;text-align:center}
+.logo{font-size:46px;margin-bottom:8px}
+h1{color:#1a237e;font-size:22px;margin-bottom:4px}
+.sub{color:#888;font-size:13px;margin-bottom:26px}
+.lock{color:#5c6bc0;font-size:12px;margin-bottom:18px;letter-spacing:1px}
+input{width:100%;padding:13px 16px;border:2px solid #e0e0e0;border-radius:10px;
+  font-size:16px;text-align:center;letter-spacing:3px;outline:none;transition:.2s;
+  font-family:inherit}
+input:focus{border-color:#3949ab}
+button{width:100%;margin-top:14px;padding:13px;border:none;border-radius:10px;
+  background:#1a237e;color:#fff;font-size:16px;font-weight:bold;cursor:pointer;
+  transition:.2s;font-family:inherit}
+button:hover{background:#283593}
+button:active{transform:scale(.98)}
+.err{color:#e53935;font-size:13px;margin-top:14px;min-height:18px;font-weight:bold}
+.foot{margin-top:24px;color:#bbb;font-size:11px}
+.shake{animation:sh .4s}
+@keyframes sh{0%,100%{transform:translateX(0)}25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+</style>
+</head>
+<body>
+<div class="box" id="box">
+  <div class="logo">&#128274;</div>
+  <h1>STN 스캔관리시스템</h1>
+  <div class="sub">stnscan.co.kr</div>
+  <div class="lock">&#128273; 접근하려면 비밀번호를 입력하세요</div>
+  <input type="password" id="pw" placeholder="비밀번호" autocomplete="off" autofocus>
+  <button onclick="go()">입장하기</button>
+  <div class="err" id="err"></div>
+  <div class="foot">&#169; STN 내부 문서관리 · 무단 접근 금지</div>
+</div>
+<script>
+function go(){
+  var v=document.getElementById('pw').value;
+  if(btoa(unescape(encodeURIComponent(v)))==='c3RuNjAwMA=='){
+    sessionStorage.setItem('stn_auth','1');
+    location.replace('scan.html');
+  }else{
+    var e=document.getElementById('err'); e.textContent='비밀번호가 올바르지 않습니다';
+    var b=document.getElementById('box'); b.classList.remove('shake'); void b.offsetWidth; b.classList.add('shake');
+    document.getElementById('pw').value=''; document.getElementById('pw').focus();
+  }
+}
+document.getElementById('pw').addEventListener('keydown',function(e){if(e.key==='Enter')go();});
+if(sessionStorage.getItem('stn_auth')==='1'){location.replace('scan.html');}
+</script>
+</body>
+</html>

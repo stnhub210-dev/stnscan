@@ -1,9 +1,21 @@
-*.pdf 
-*.jpg 
-*.png 
-.tmp.driveupload/ 
+*.pdf
+*.jpg
+*.png
+.tmp.driveupload/
 file_ids.json
 token.json
 desktop.ini
 Thumbs.db
 .tmp.drivedownload/
+__pycache__/
+# --- 보안: 절대 공개 금지 (API키/내부 법무데이터) ---
+api_key.txt
+**/api_key.txt
+processed.json
+renamed_done.json
+*.xlsx
+~$*
+*.log
+스캔관리대장.html
+_web_dash_tmp.html
+일괄처리_실행.log
