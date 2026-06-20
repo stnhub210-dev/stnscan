@@ -182,7 +182,7 @@ def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
         docs.append({
             "fname": fname, "date": date_str, "sort_ts": sort_ts,
             "company": company, "category": category, "doctype": doctype,
-            "urgency": detect_urgency(fname), "link": link,
+            "urgency": detect_urgency(fname), "link": link, "fid": fid,
         })
 
     docs.sort(key=lambda d: d["sort_ts"], reverse=True)
@@ -209,8 +209,13 @@ def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
         for i, d in enumerate(lst):
             icon  = "&#9878;" if d["category"] == "소송" else "&#128203;"
             short = d["fname"][:28] + ("..." if len(d["fname"]) > 28 else "")
-            # 파일 링크: 드라이브 등록 시 클릭 가능, 미등록 시 텍스트
-            if d["link"]:
+            # 파일 링크: 열기(드라이브 미리보기) + 다운로드(직접 저장) 버튼
+            if d["fid"]:
+                open_url = f'https://drive.google.com/file/d/{d["fid"]}/view'
+                dl_url   = f'https://drive.usercontent.google.com/download?id={d["fid"]}&amp;export=download'
+                fcell = (f'<a href="{open_url}" target="_blank" class="fl">&#128196; {short}</a>'
+                         f'<a href="{dl_url}" class="dlbtn" title="다운로드">&#11015;</a>')
+            elif d["link"]:
                 fcell = f'<a href="{d["link"]}" target="_blank" class="fl">&#128196; {short}</a>'
             else:
                 fcell = f'<span class="fl-nd">&#128196; {short}</span>'
@@ -301,6 +306,8 @@ tr:hover td{{background:#f5f5f5}}
 .fl{{color:#1565c0;text-decoration:none;font-weight:500;font-size:12px}}
 .fl:hover{{text-decoration:underline}}
 .fl-nd{{color:#aaa;font-size:12px}}
+.dlbtn{{display:inline-block;margin-left:7px;text-decoration:none;color:#fff;background:#2e7d32;border-radius:5px;padding:1px 7px;font-size:12px;font-weight:bold;vertical-align:middle}}
+.dlbtn:hover{{background:#1b5e20}}
 .nbadge{{background:#2e7d32;color:#fff;font-size:10px;padding:2px 5px;
          border-radius:10px;margin-left:3px;vertical-align:middle}}
 .b-red{{background:#e53935;color:#fff;font-size:11px;padding:2px 7px;border-radius:10px}}
