@@ -185,7 +185,7 @@ def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
             "urgency": detect_urgency(fname), "link": link, "fid": fid,
         })
 
-    docs.sort(key=lambda d: d["sort_ts"], reverse=True)
+    docs.sort(key=lambda d: (d["date"], d["sort_ts"]), reverse=True)
 
     def esc(s):
         """HTML attribute 안전 이스케이프"""
