@@ -4,6 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>STN 스캔관리시스템</title>
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#1a237e">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="STN스캔">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
@@ -29,6 +36,9 @@ button:active{transform:scale(.98)}
 .foot{margin-top:24px;color:#bbb;font-size:11px}
 .shake{animation:sh .4s}
 @keyframes sh{0%,100%{transform:translateX(0)}25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+.install{display:none;margin-top:10px;background:#2e7d32}
+.install:hover{background:#1b5e20}
+.iostip{display:none;margin-top:14px;font-size:12px;color:#555;background:#f1f3f9;border-radius:8px;padding:10px 12px;line-height:1.6;text-align:left}
 </style>
 </head>
 <body>
@@ -40,6 +50,8 @@ button:active{transform:scale(.98)}
   <input type="password" id="pw" placeholder="비밀번호" autocomplete="off" autofocus>
   <button onclick="go()">입장하기</button>
   <div class="err" id="err"></div>
+  <button class="install" id="installBtn" onclick="installApp()">&#128241; 앱 설치하기</button>
+  <div class="iostip" id="iosTip">&#128241; <b>아이폰 설치법</b><br>사파리 하단 <b>공유</b> 버튼 &#8593; → <b>홈 화면에 추가</b></div>
   <div class="foot">&#169; STN 내부 문서관리 · 무단 접근 금지</div>
 </div>
 <script>
@@ -55,6 +67,29 @@ function go(){
   }
 }
 document.getElementById('pw').addEventListener('keydown',function(e){if(e.key==='Enter')go();});
+
+/* ── PWA: 서비스워커 등록 + 설치 버튼 ── */
+if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js').catch(function(){});}
+var _deferred=null;
+window.addEventListener('beforeinstallprompt',function(e){
+  e.preventDefault(); _deferred=e;
+  var b=document.getElementById('installBtn'); if(b) b.style.display='block';
+});
+function installApp(){
+  if(_deferred){ _deferred.prompt(); _deferred.userChoice.then(function(){
+    _deferred=null; document.getElementById('installBtn').style.display='none';
+  }); }
+}
+window.addEventListener('appinstalled',function(){
+  var b=document.getElementById('installBtn'); if(b) b.style.display='none';
+});
+/* 아이폰(사파리)은 beforeinstallprompt 미지원 → 안내문 표시 */
+(function(){
+  var isIOS=/iphone|ipad|ipod/i.test(navigator.userAgent);
+  var standalone=window.navigator.standalone||window.matchMedia('(display-mode: standalone)').matches;
+  if(isIOS && !standalone){ var t=document.getElementById('iosTip'); if(t) t.style.display='block'; }
+})();
+
 if(sessionStorage.getItem('stn_auth')==='1'){location.replace('scan.html');}
 </script>
 </body>

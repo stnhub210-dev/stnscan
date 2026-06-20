@@ -267,6 +267,13 @@ def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>스캔관리대장</title>
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#1a237e">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="STN스캔">
+<script>if('serviceWorker' in navigator){{navigator.serviceWorker.register('/sw.js').catch(function(){{}});}}</script>
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{font-family:'Malgun Gothic',sans-serif;background:#f0f2f5;color:#333;font-size:14px}}

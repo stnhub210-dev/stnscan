@@ -16,6 +16,11 @@ jobs:
           cp scan.html _site/ 2>/dev/null || true
           cp CNAME _site/ 2>/dev/null || true
           cp .nojekyll _site/ 2>/dev/null || true
+          cp manifest.json _site/ 2>/dev/null || true
+          cp sw.js _site/ 2>/dev/null || true
+          cp icon-192.png _site/ 2>/dev/null || true
+          cp icon-512.png _site/ 2>/dev/null || true
+          cp icon-512-maskable.png _site/ 2>/dev/null || true
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:

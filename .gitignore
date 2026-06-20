@@ -19,3 +19,7 @@ renamed_done.json
 스캔관리대장.html
 _web_dash_tmp.html
 일괄처리_실행.log
+# --- PWA 앱 아이콘은 배포 필요 (예외 허용) ---
+!icon-192.png
+!icon-512.png
+!icon-512-maskable.png
