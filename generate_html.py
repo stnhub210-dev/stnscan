@@ -15,6 +15,7 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 
 SCAN_FOLDER = r"C:\Users\User\Desktop\스캔"
 OUTPUT_HTML = os.path.join(SCAN_FOLDER, "스캔관리대장.html")
+PROCESSED_DB = os.path.join(SCAN_FOLDER, "processed.json")
 XLSX_PATH   = os.path.join(SCAN_FOLDER, "소송목록.xlsx")
 API_PORT    = 8765
 FOLDER_ID   = "1hT9xdNEawnkrZ78p26Kcjlm-1wdR5x-X"
@@ -42,6 +43,26 @@ def _file_ts(fpath):
         return min(os.path.getctime(fpath), os.path.getmtime(fpath))
     except:
         return time.time()
+
+
+def load_processed_dates():
+    """processed.json → {파일명: (스캔일자YYYY-MM-DD, 타임스탬프)} : 실제 스캔(처리)된 시각"""
+    out = {}
+    try:
+        with open(PROCESSED_DB, encoding="utf-8") as f:
+            db = json.load(f)
+        for fname, v in db.items():
+            pat = v.get("processed_at") if isinstance(v, dict) else None
+            if not pat:
+                continue
+            try:
+                dt = datetime.fromisoformat(pat)
+                out[fname] = (dt.strftime("%Y-%m-%d"), dt.timestamp())
+            except Exception:
+                pass
+    except Exception:
+        pass
+    return out
 
 
 def extract_date_and_ts(fname, fpath=None):
@@ -163,6 +184,7 @@ def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
     pdfs      = [f for f in os.listdir(scan_folder) if f.lower().endswith('.pdf')]
     today_str = date.today().strftime("%Y-%m-%d")
     clsf      = load_classifications()
+    proc_dates = load_processed_dates()   # 실제 스캔(처리)된 시각
 
     docs = []
     for fname in pdfs:
@@ -171,7 +193,11 @@ def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
         company  = ov.get("company")  or detect_company(fname)
         category = ov.get("category") or detect_category(fname)
         doctype  = ov.get("doctype")  or detect_doctype(fname)
-        date_str, sort_ts = extract_date_and_ts(fname, fpath)
+        # 스캔일자 = 실제 스캔(처리)된 날짜 우선 → 방금 스캔한 파일이 항상 최상단
+        if fname in proc_dates:
+            date_str, sort_ts = proc_dates[fname]
+        else:
+            date_str, sort_ts = extract_date_and_ts(fname, fpath)
         if ov.get("date"):
             date_str = ov["date"]
             try: sort_ts = datetime.strptime(ov["date"], "%Y-%m-%d").timestamp()
@@ -185,7 +211,7 @@ def generate(scan_folder=SCAN_FOLDER, output_path=OUTPUT_HTML):
             "urgency": detect_urgency(fname), "link": link, "fid": fid,
         })
 
-    docs.sort(key=lambda d: (d["date"], d["sort_ts"]), reverse=True)
+    docs.sort(key=lambda d: d["sort_ts"], reverse=True)
 
     def esc(s):
         """HTML attribute 안전 이스케이프"""

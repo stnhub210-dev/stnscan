@@ -313,7 +313,14 @@ def git_push():
         if push.returncode == 0:
             log.info("GitHub 자동 업로드 완료 (scan.html 포함)")
         else:
-            log.warning(f"GitHub 업로드 오류: {push.stderr[:100]}")
+            # 푸시 실패(원격이 앞섬 등) → 원격과 자동 동기화 후 재시도
+            log.warning(f"GitHub 업로드 1차 실패, 동기화 후 재시도: {push.stderr[:80]}")
+            subprocess.run(["git","pull","--rebase","--autostash","origin","main"], cwd=folder, capture_output=True, text=True, encoding="utf-8", errors="ignore", env=env)
+            push2 = subprocess.run(["git","push"], cwd=folder, capture_output=True, text=True, encoding="utf-8", errors="ignore", env=env)
+            if push2.returncode == 0:
+                log.info("GitHub 자동 업로드 완료 (재시도 성공)")
+            else:
+                log.warning(f"GitHub 업로드 오류(재시도 실패): {push2.stderr[:100]}")
     except Exception as e:
         log.error(f"git push 오류: {e}")
 
