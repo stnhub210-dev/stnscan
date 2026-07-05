@@ -1175,3 +1175,2384 @@
  ! [rejected]        main -> main (fetch first)
 erro
 2026-06-05 07:57:36,428 [INFO] 폴더감시시작:C:\Users\User\Desktop\스캔
+2026-06-19 14:27:35,624 [INFO] 시스템 시작
+2026-06-19 14:27:36,383 [INFO] DriveID 372개
+2026-06-19 14:27:36,385 [INFO] 미처리파일 75개 처리
+2026-06-19 14:27:36,385 [INFO] ▶ 처리: (주)에스티엔 2026년 5월 관리인 월간보고서(간회합) (1).pdf
+2026-06-19 14:27:38,624 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:27:38,625 [INFO]   [업무] (주)에스티엔 2026년 5월 관리인 월간보고서(간회합) (1).pdf [일반]
+2026-06-19 14:27:39,128 [INFO] ▶ 처리: 2025간회합211_2026.02.26_회생계획안_채무자 대리인_김율.pdf
+2026-06-19 14:27:40,973 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:27:40,974 [INFO]   [업무] 2025간회합211_2026.02.26_회생계획안_채무자 대리인_김율.pdf [일반]
+2026-06-19 14:27:41,477 [INFO] ▶ 처리: 2025간회합211_2026.02.26_회생계획안_첨부_채무자 대리인_김율.pdf
+2026-06-19 14:27:43,257 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:27:43,257 [INFO]   [업무] 2025간회합211_2026.02.26_회생계획안_첨부_채무자 대리인_김율.pdf [일반]
+2026-06-19 14:27:43,760 [INFO] ▶ 처리: 2026.6.17 민사본안 - 서류제출 - 전자소송포털(2026 카정 10232).pdf
+2026-06-19 14:27:44,776 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,778 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,780 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,782 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,785 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,788 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,791 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,793 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,795 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,797 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,798 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,801 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,802 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,804 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,806 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,807 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,810 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,812 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,813 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,816 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,818 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,820 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,823 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,824 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,826 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,828 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,830 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,832 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,834 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,837 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,840 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,842 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,844 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,845 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,848 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,851 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,854 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,855 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,857 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,860 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,861 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,863 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,866 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,868 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,871 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:44,874 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:45,197 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:27:45,197 [INFO]   [업무] 2026.6.17 민사본안 - 서류제출 - 전자소송포털(2026 카정 10232).pdf [일반]
+2026-06-19 14:27:45,700 [INFO] ▶ 처리: 20260514_씨엘오미디어_서울회생법원_회생채권조사확정.pdf
+2026-06-19 14:27:47,209 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:27:47,210 [INFO]   [업무] 20260514_씨엘오미디어_서울회생법원_회생채권조사확정.pdf [일반]
+2026-06-19 14:27:47,713 [INFO] ▶ 처리: 20260514_에스티엔_회생채권조사확정.pdf
+2026-06-19 14:27:49,209 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:27:49,210 [INFO]   [업무] 20260514_에스티엔_회생채권조사확정.pdf [일반]
+2026-06-19 14:27:49,715 [INFO] ▶ 처리: 2026카정10232_2026.06.15_강제집행정지 신청서_신청인_관리인 이강영 주식회사 에스티엔 관리인 이강영 주식회사 에스티엔.pdf
+2026-06-19 14:27:50,744 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:50,747 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:50,751 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:50,753 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:50,755 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:50,758 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:50,759 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:50,761 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:50,763 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:51,572 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:27:51,573 [INFO]   [업무] 2026카정10232_2026.06.15_강제집행정지 신청서_신청인_관리인 이강영 주식회사 에스티엔 관리인 이강영 주식회사 에스티엔.pdf [일반]
+2026-06-19 14:27:51,574 [INFO] 파일명변경:2026카정10232_2026.06.15_강제집행정지 신청서_신청인_관리인 이강영 주식회사 에스티엔 관리인 이강영 주식회사 에스티엔.pdf→2026카정10232_2026.06.15_강제집행정지 신청서_신청인_관리인 이강영 주식회사 에스티엔 관리인 .pdf
+2026-06-19 14:27:52,077 [INFO] ▶ 처리: 2026카정10232_즉시항고장.pdf
+2026-06-19 14:27:53,094 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:53,096 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:53,099 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:53,100 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:53,103 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:53,106 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:53,107 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:53,110 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:53,112 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:53,114 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:53,163 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:53,166 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:53,168 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:53,170 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:27:53,566 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:27:53,567 [INFO]   [업무] 2026카정10232_즉시항고장.pdf [일반]
+2026-06-19 14:27:54,070 [INFO] ▶ 처리: 43구8244 모닝(자동차등록증).pdf
+2026-06-19 14:27:55,610 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:27:55,611 [INFO]   [업무] 43구8244 모닝(자동차등록증).pdf [일반]
+2026-06-19 14:27:56,115 [INFO] ▶ 처리: 70무7205(자동차등록증).pdf
+2026-06-19 14:27:57,642 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:27:57,642 [INFO]   [업무] 70무7205(자동차등록증).pdf [일반]
+2026-06-19 14:27:58,145 [INFO] ▶ 처리: 806호 개별 공시지가.pdf
+2026-06-19 14:27:59,630 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:27:59,630 [INFO]   [업무] 806호 개별 공시지가.pdf [일반]
+2026-06-19 14:28:00,133 [INFO] ▶ 처리: 806호 토지대장.pdf
+2026-06-19 14:28:04,163 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:04,163 [INFO]   [업무] 806호 토지대장.pdf [일반]
+2026-06-19 14:28:04,666 [INFO] ▶ 처리: SCAN_20260605_155425489_20260605_034529.pdf
+2026-06-19 14:28:06,246 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:06,246 [INFO]   [업무] SCAN_20260605_155425489_20260605_034529.pdf [일반]
+2026-06-19 14:28:06,750 [INFO] ▶ 처리: 강제집행정지 2026 가정 10232.pdf
+2026-06-19 14:28:07,765 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,767 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,775 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,778 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,782 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,784 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,788 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,791 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,794 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,796 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,799 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,802 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,803 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,807 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,809 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,810 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,814 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,816 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,817 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,820 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,823 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,825 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,827 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,829 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,831 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,833 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,836 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,838 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,841 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,845 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,848 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,851 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,853 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,855 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,858 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,862 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,864 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,866 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,869 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,870 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,873 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,876 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,879 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,882 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:07,886 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:08,209 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:08,209 [INFO]   [업무] 강제집행정지 2026 가정 10232.pdf [일반]
+2026-06-19 14:28:08,713 [INFO] ▶ 처리: 강제집행정지신청 가상계좌.pdf
+2026-06-19 14:28:09,728 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,729 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,731 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,733 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,734 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,736 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,738 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,740 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,743 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,746 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,748 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,750 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,752 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,753 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,756 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,759 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,760 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,761 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,763 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,765 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,767 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,770 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,772 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,774 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,777 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,779 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,781 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,782 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,785 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,786 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,788 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,789 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:09,792 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:10,121 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:10,122 [INFO]   [업무] 강제집행정지신청 가상계좌.pdf [일반]
+2026-06-19 14:28:10,625 [INFO] ▶ 처리: 국기태권도사원출자자명단.pdf
+2026-06-19 14:28:12,105 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:12,106 [INFO]   [업무] 국기태권도사원출자자명단.pdf [일반]
+2026-06-19 14:28:12,609 [INFO] ▶ 처리: 국세납세증명.pdf
+2026-06-19 14:28:14,115 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:14,116 [INFO]   [업무] 국세납세증명.pdf [일반]
+2026-06-19 14:28:14,619 [INFO] ▶ 처리: 금전소비대차.pdf
+2026-06-19 14:28:16,112 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:16,113 [INFO]   [업무] 금전소비대차.pdf [일반]
+2026-06-19 14:28:16,616 [INFO] ▶ 처리: 긴급처리요청서-에스티엔.pdf
+2026-06-19 14:28:18,076 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:18,076 [INFO]   [업무] 긴급처리요청서-에스티엔.pdf [일반]
+2026-06-19 14:28:18,579 [INFO] ▶ 처리: 미디어허브 등기부등본.pdf
+2026-06-19 14:28:20,061 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:20,062 [INFO]   [업무] 미디어허브 등기부등본.pdf [일반]
+2026-06-19 14:28:20,565 [INFO] ▶ 처리: 미디어허브 주주명부 (2).pdf
+2026-06-19 14:28:22,032 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:22,032 [INFO]   [업무] 미디어허브 주주명부 (2).pdf [일반]
+2026-06-19 14:28:22,535 [INFO] ▶ 처리: 미디어허브 주주명부.pdf
+2026-06-19 14:28:24,018 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:24,019 [INFO]   [업무] 미디어허브 주주명부.pdf [일반]
+2026-06-19 14:28:24,522 [INFO] ▶ 처리: 미디어허브(이재혁)법인인감.pdf
+2026-06-19 14:28:26,029 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:26,030 [INFO]   [업무] 미디어허브(이재혁)법인인감.pdf [일반]
+2026-06-19 14:28:26,533 [INFO] ▶ 처리: 미디어허브(이재혁)사업자등록증.pdf
+2026-06-19 14:28:27,999 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:27,999 [INFO]   [업무] 미디어허브(이재혁)사업자등록증.pdf [일반]
+2026-06-19 14:28:28,502 [INFO] ▶ 처리: 미이어허브(이재혁)사업자등록증.pdf
+2026-06-19 14:28:30,081 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:30,081 [INFO]   [업무] 미이어허브(이재혁)사업자등록증.pdf [일반]
+2026-06-19 14:28:30,584 [INFO] ▶ 처리: 민사본안 - 서류제출 - 전자소송포털(가상계좌).pdf
+2026-06-19 14:28:31,600 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,602 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,604 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,606 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,607 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,609 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,612 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,614 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,616 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,620 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,622 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,624 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,626 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,628 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,630 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,635 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,636 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,638 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,641 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,642 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,645 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,647 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,650 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,652 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,655 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,656 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,658 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,660 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,662 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,664 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,665 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,668 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:31,997 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:31,997 [INFO]   [업무] 민사본안 - 서류제출 - 전자소송포털(가상계좌).pdf [일반]
+2026-06-19 14:28:32,500 [INFO] ▶ 처리: 민사본안 - 서류제출 - 전자소송포털.pdf
+2026-06-19 14:28:33,516 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,518 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,521 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,524 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,526 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,528 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,530 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,532 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,534 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,536 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,537 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,540 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,542 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,543 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,545 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,547 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,550 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,552 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,554 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,557 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,560 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,561 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,564 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,566 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,568 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,571 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,573 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,575 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,578 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,580 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,582 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,585 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,586 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,589 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,590 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,591 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,593 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,595 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,597 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,598 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,601 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,604 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,607 [WARNING] Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+2026-06-19 14:28:33,910 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:33,911 [INFO]   [업무] 민사본안 - 서류제출 - 전자소송포털.pdf [일반]
+2026-06-19 14:28:34,414 [INFO] ▶ 처리: 부동산개발.pdf
+2026-06-19 14:28:35,962 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:35,963 [INFO]   [업무] 부동산개발.pdf [일반]
+2026-06-19 14:28:36,466 [INFO] ▶ 처리: 부동산임대차계약.pdf
+2026-06-19 14:28:37,922 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:37,922 [INFO]   [업무] 부동산임대차계약.pdf [일반]
+2026-06-19 14:28:38,425 [INFO] ▶ 처리: 부동산임대차계약루시드그룹.pdf
+2026-06-19 14:28:39,887 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:39,888 [INFO]   [업무] 부동산임대차계약루시드그룹.pdf [일반]
+2026-06-19 14:28:40,391 [INFO] ▶ 처리: 부평테크노타워 관리비 2026.6.pdf
+2026-06-19 14:28:41,909 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:41,910 [INFO]   [업무] 부평테크노타워 관리비 2026.6.pdf [일반]
+2026-06-19 14:28:42,413 [INFO] ▶ 처리: 분양계약서.pdf
+2026-06-19 14:28:43,967 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:43,968 [INFO]   [업무] 분양계약서.pdf [일반]
+2026-06-19 14:28:44,471 [INFO] ▶ 처리: 신용평가서26.6.30.pdf
+2026-06-19 14:28:46,156 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:46,157 [INFO]   [업무] 신용평가서26.6.30.pdf [일반]
+2026-06-19 14:28:46,660 [INFO] ▶ 처리: 에스티엔(이강영)법인인감.pdf
+2026-06-19 14:28:48,153 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:48,153 [INFO]   [업무] 에스티엔(이강영)법인인감.pdf [일반]
+2026-06-19 14:28:48,656 [INFO] ▶ 처리: 에스티엔게임즈 등기부등본.pdf
+2026-06-19 14:28:50,188 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:50,189 [INFO]   [업무] 에스티엔게임즈 등기부등본.pdf [일반]
+2026-06-19 14:28:50,692 [INFO] ▶ 처리: 에스티엔게임즈 주주명부.pdf
+2026-06-19 14:28:52,252 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:52,253 [INFO]   [업무] 에스티엔게임즈 주주명부.pdf [일반]
+2026-06-19 14:28:52,756 [INFO] ▶ 처리: 에스티엔게임즈(성학승)법인인감.pdf
+2026-06-19 14:28:54,234 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:54,234 [INFO]   [업무] 에스티엔게임즈(성학승)법인인감.pdf [일반]
+2026-06-19 14:28:54,738 [INFO] ▶ 처리: 에스티엔게임즈(이강영)법인인감.pdf
+2026-06-19 14:28:56,264 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:56,264 [INFO]   [업무] 에스티엔게임즈(이강영)법인인감.pdf [일반]
+2026-06-19 14:28:56,767 [INFO] ▶ 처리: 에스티엔게임즌(성학승,이강영)사업자등록증.pdf
+2026-06-19 14:28:58,242 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:28:58,242 [INFO]   [업무] 에스티엔게임즌(성학승,이강영)사업자등록증.pdf [일반]
+2026-06-19 14:28:58,745 [INFO] ▶ 처리: 에스티엔뉴스 사업자등록증.pdf
+2026-06-19 14:29:00,297 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:00,297 [INFO]   [업무] 에스티엔뉴스 사업자등록증.pdf [일반]
+2026-06-19 14:29:00,800 [INFO] ▶ 처리: 에스티엔뉴스 주주명부 (2).pdf
+2026-06-19 14:29:02,259 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:02,260 [INFO]   [업무] 에스티엔뉴스 주주명부 (2).pdf [일반]
+2026-06-19 14:29:02,763 [INFO] ▶ 처리: 에스티엔뉴스 주주명부.pdf
+2026-06-19 14:29:04,221 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:04,221 [INFO]   [업무] 에스티엔뉴스 주주명부.pdf [일반]
+2026-06-19 14:29:04,724 [INFO] ▶ 처리: 에스티엔뉴스법인인감.pdf
+2026-06-19 14:29:06,179 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:06,180 [INFO]   [업무] 에스티엔뉴스법인인감.pdf [일반]
+2026-06-19 14:29:06,684 [INFO] ▶ 처리: 에스티엔뉴스인터넷신문사등록증.pdf
+2026-06-19 14:29:08,129 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:08,129 [INFO]   [업무] 에스티엔뉴스인터넷신문사등록증.pdf [일반]
+2026-06-19 14:29:08,633 [INFO] ▶ 처리: 에스티엔메타미디어 법인인감.pdf
+2026-06-19 14:29:10,252 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:10,252 [INFO]   [업무] 에스티엔메타미디어 법인인감.pdf [일반]
+2026-06-19 14:29:10,756 [INFO] ▶ 처리: 에스티엔메타미디어(김경아)법인등기부등본.pdf
+2026-06-19 14:29:12,246 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:12,247 [INFO]   [업무] 에스티엔메타미디어(김경아)법인등기부등본.pdf [일반]
+2026-06-19 14:29:12,750 [INFO] ▶ 처리: 에스티엔메타미디어(김경아)사업자등록증.pdf
+2026-06-19 14:29:14,224 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:14,225 [INFO]   [업무] 에스티엔메타미디어(김경아)사업자등록증.pdf [일반]
+2026-06-19 14:29:14,728 [INFO] ▶ 처리: 에스티엔미디어 신용평가서26.6.30.pdf
+2026-06-19 14:29:16,423 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:16,424 [INFO]   [업무] 에스티엔미디어 신용평가서26.6.30.pdf [일반]
+2026-06-19 14:29:16,926 [INFO] ▶ 처리: 에스티엔미디어 주주명부.pdf
+2026-06-19 14:29:18,412 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:18,412 [INFO]   [업무] 에스티엔미디어 주주명부.pdf [일반]
+2026-06-19 14:29:18,915 [INFO] ▶ 처리: 에스티엔미디어(이원재)법인인감증명.pdf
+2026-06-19 14:29:20,436 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:20,436 [INFO]   [업무] 에스티엔미디어(이원재)법인인감증명.pdf [일반]
+2026-06-19 14:29:20,939 [INFO] ▶ 처리: 에스티엔미디어상표권.pdf
+2026-06-19 14:29:22,479 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:22,480 [INFO]   [업무] 에스티엔미디어상표권.pdf [일반]
+2026-06-19 14:29:22,983 [INFO] ▶ 처리: 에스티엔사회건강운동본부(이강영).pdf
+2026-06-19 14:29:24,586 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:24,587 [INFO]   [업무] 에스티엔사회건강운동본부(이강영).pdf [일반]
+2026-06-19 14:29:25,090 [INFO] ▶ 처리: 에스티엔이엔지(이재욱)법인인감.pdf
+2026-06-19 14:29:26,603 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:26,603 [INFO]   [업무] 에스티엔이엔지(이재욱)법인인감.pdf [일반]
+2026-06-19 14:29:27,107 [INFO] ▶ 처리: 에스티엔홀딩스 법인등기부등본.pdf
+2026-06-19 14:29:28,720 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:28,720 [INFO]   [업무] 에스티엔홀딩스 법인등기부등본.pdf [일반]
+2026-06-19 14:29:29,224 [INFO] ▶ 처리: 위임장 중소기업은행.pdf
+2026-06-19 14:29:30,827 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:30,828 [INFO]   [업무] 위임장 중소기업은행.pdf [일반]
+2026-06-19 14:29:31,331 [INFO] ▶ 처리: 위임장(김성우).pdf
+2026-06-19 14:29:32,830 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:32,830 [INFO]   [업무] 위임장(김성우).pdf [일반]
+2026-06-19 14:29:33,334 [INFO] ▶ 처리: 유치권존재확인 청구의 소.pdf
+2026-06-19 14:29:34,860 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:34,861 [INFO]   [업무] 유치권존재확인 청구의 소.pdf [일반]
+2026-06-19 14:29:35,364 [INFO] ▶ 처리: 이강영 통장사본.pdf
+2026-06-19 14:29:36,839 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:36,840 [INFO]   [업무] 이강영 통장사본.pdf [일반]
+2026-06-19 14:29:37,343 [INFO] ▶ 처리: 이재혁.pdf
+2026-06-19 14:29:38,925 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:38,925 [INFO]   [업무] 이재혁.pdf [일반]
+2026-06-19 14:29:39,428 [INFO] ▶ 처리: 임효림 퇴직금 확인서.pdf
+2026-06-19 14:29:40,899 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:40,900 [INFO]   [업무] 임효림 퇴직금 확인서.pdf [일반]
+2026-06-19 14:29:41,403 [INFO] ▶ 처리: 정관(STN사회건강운동본부).pdf
+2026-06-19 14:29:42,877 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:42,878 [INFO]   [업무] 정관(STN사회건강운동본부).pdf [일반]
+2026-06-19 14:29:43,381 [INFO] ▶ 처리: 정관(미디어허브).pdf
+2026-06-19 14:29:44,847 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:44,847 [INFO]   [업무] 정관(미디어허브).pdf [일반]
+2026-06-19 14:29:45,351 [INFO] ▶ 처리: 정관(에스티엔게임즈).pdf
+2026-06-19 14:29:46,915 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:46,915 [INFO]   [업무] 정관(에스티엔게임즈).pdf [일반]
+2026-06-19 14:29:47,419 [INFO] ▶ 처리: 정관(에스티엔뉴스).pdf
+2026-06-19 14:29:48,965 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:48,965 [INFO]   [업무] 정관(에스티엔뉴스).pdf [일반]
+2026-06-19 14:29:49,468 [INFO] ▶ 처리: 정관(에스티엔메타미디어).pdf
+2026-06-19 14:29:51,087 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:51,088 [INFO]   [업무] 정관(에스티엔메타미디어).pdf [일반]
+2026-06-19 14:29:51,592 [INFO] ▶ 처리: 정관(에스티엔이엔지).pdf
+2026-06-19 14:29:53,055 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:53,056 [INFO]   [업무] 정관(에스티엔이엔지).pdf [일반]
+2026-06-19 14:29:53,560 [INFO] ▶ 처리: 주식회사 명진기업.pdf
+2026-06-19 14:29:54,945 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:54,945 [INFO]   [업무] 주식회사 명진기업.pdf [일반]
+2026-06-19 14:29:55,448 [INFO] ▶ 처리: 주주명부(에스티엔메타미디어).pdf
+2026-06-19 14:29:56,935 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:56,936 [INFO]   [업무] 주주명부(에스티엔메타미디어).pdf [일반]
+2026-06-19 14:29:57,439 [INFO] ▶ 처리: 출연계약서(여수).pdf
+2026-06-19 14:29:58,949 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:29:58,950 [INFO]   [업무] 출연계약서(여수).pdf [일반]
+2026-06-19 14:29:59,454 [INFO] ▶ 처리: 출연계약서(플래닛_파파야).pdf
+2026-06-19 14:30:00,926 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:30:00,927 [INFO]   [업무] 출연계약서(플래닛_파파야).pdf [일반]
+2026-06-19 14:30:01,431 [INFO] ▶ 처리: 케이써클파트너스(김경아).pdf
+2026-06-19 14:30:02,918 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:30:02,919 [INFO]   [업무] 케이써클파트너스(김경아).pdf [일반]
+2026-06-19 14:30:03,422 [INFO] ▶ 처리: 케이써클파트너스투(김경아).pdf
+2026-06-19 14:30:04,895 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:30:04,896 [INFO]   [업무] 케이써클파트너스투(김경아).pdf [일반]
+2026-06-19 14:30:05,399 [INFO] ▶ 처리: 케이지비씨 등기부등본.pdf
+2026-06-19 14:30:06,811 [INFO] 시스템 시작
+2026-06-19 14:30:06,814 [INFO] 미처리파일 3개 처리
+2026-06-19 14:30:06,814 [INFO] ▶ 처리: 케이지비씨 등기부등본.pdf
+2026-06-19 14:30:07,022 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:30:07,023 [INFO]   [업무] 케이지비씨 등기부등본.pdf [일반]
+2026-06-19 14:30:07,527 [INFO] ▶ 처리: 특허증(에스티엔미디어).pdf
+2026-06-19 14:30:08,602 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:30:08,602 [INFO]   [업무] 케이지비씨 등기부등본.pdf [일반]
+2026-06-19 14:30:09,037 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:30:09,038 [INFO]   [업무] 특허증(에스티엔미디어).pdf [일반]
+2026-06-19 14:30:09,107 [INFO] ▶ 처리: 특허증(에스티엔미디어).pdf
+2026-06-19 14:30:09,542 [INFO] ▶ 처리: 페이시스 통합결제창 연동 가이드-V2.0 6 (1).pdf
+2026-06-19 14:30:10,973 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:30:10,974 [INFO]   [업무] 페이시스 통합결제창 연동 가이드-V2.0 6 (1).pdf [일반]
+2026-06-19 14:30:11,001 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:30:11,002 [INFO]   [업무] 특허증(에스티엔미디어).pdf [일반]
+2026-06-19 14:30:11,505 [INFO] ▶ 처리: 페이시스 통합결제창 연동 가이드-V2.0 6 (1).pdf
+2026-06-19 14:30:12,303 [INFO] DriveID 372개
+2026-06-19 14:30:12,675 [INFO] HTML갱신완료(372개,소송:111,드라이브:372)
+2026-06-19 14:30:12,943 [ERROR] AI분석오류:HTTP Error 401: Unauthorized
+2026-06-19 14:30:12,943 [INFO]   [업무] 페이시스 통합결제창 연동 가이드-V2.0 6 (1).pdf [일반]
+2026-06-19 14:30:14,174 [INFO] DriveID 372개
+2026-06-19 14:30:15,957 [INFO] HTML갱신완료(372개,소송:111,드라이브:372)
+2026-06-19 14:30:20,967 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-19 14:30:20,968 [INFO] 폴더감시시작:C:\Users\User\Desktop\스캔
+2026-06-20 18:00:24,501 [INFO] JPG→PDF 변환:1p → SCAN_20251217_204918246_20251217_084121.pdf
+2026-06-20 18:00:24,544 [INFO] JPG→PDF 변환:1p → SCAN_20260324_163716916_20260324_042912.pdf
+2026-06-20 18:00:24,686 [INFO] JPG→PDF 변환:3p → SCAN_20260521_154252371_20260521_033409.pdf
+2026-06-20 18:00:24,929 [INFO] JPG→PDF 변환:5p → SCAN_20260620_173049158_20260620_052149.pdf
+2026-06-20 18:00:37,038 [INFO] === 일괄처리 시작 ===
+2026-06-20 18:00:37,057 [INFO] 미처리 PDF 71개 처리
+2026-06-20 18:00:37,057 [INFO] [1/71]
+2026-06-20 18:00:37,057 [INFO] ▶ 처리: SCAN_20251217_204918246_20251217_084121.pdf
+2026-06-20 18:00:47,643 [INFO]   [업무] 전시장 임대차 계약서 [일반]
+2026-06-20 18:00:47,644 [INFO] 파일명변경:SCAN_20251217_204918246_20251217_084121.pdf→20251031_송도컨벤시아_전시장임대차계약서.pdf
+2026-06-20 18:00:47,948 [INFO] [2/71]
+2026-06-20 18:00:47,948 [INFO] ▶ 처리: SCAN_20260324_163716916_20260324_042912.pdf
+2026-06-20 18:00:53,338 [INFO]   [업무] 증명사진 [일반]
+2026-06-20 18:00:53,339 [INFO] 파일명변경:SCAN_20260324_163716916_20260324_042912.pdf→20260324_미상_증명사진.pdf
+2026-06-20 18:00:53,643 [INFO] [3/71]
+2026-06-20 18:00:53,643 [INFO] ▶ 처리: SCAN_20260521_154252371_20260521_033409.pdf
+2026-06-20 18:01:01,784 [INFO]   [업무] 법인등기사항전부증명서 [일반]
+2026-06-20 18:01:01,785 [INFO] 파일명변경:SCAN_20260521_154252371_20260521_033409.pdf→20260521_등기번호0060111_법인등기사항전부증명서.pdf
+2026-06-20 18:01:02,089 [INFO] [4/71]
+2026-06-20 18:01:02,089 [INFO] ▶ 처리: SCAN_20260619_153252994_20260619_032346.pdf
+2026-06-20 18:01:08,936 [INFO]   [업무] 2026년 스포츠산업 인턴십 지원사업 5월 출근 기록부 [일반]
+2026-06-20 18:01:08,937 [INFO] 파일명변경:SCAN_20260619_153252994_20260619_032346.pdf→2026_에스티앤스포츠_5월출근기록부.pdf
+2026-06-20 18:01:09,241 [INFO] [5/71]
+2026-06-20 18:01:09,241 [INFO] ▶ 처리: SCAN_20260620_080227030_20260620_075320.pdf
+2026-06-20 18:01:16,297 [INFO]   [업무] 라이브방송 제품 홍보 영상 콘텐츠 제작 결과보고 [일반]
+2026-06-20 18:01:16,298 [INFO] 파일명변경:SCAN_20260620_080227030_20260620_075320.pdf→20211200_호서대학교_라이브방송제품홍보영상콘텐츠제작결과보고.pdf
+2026-06-20 18:01:16,601 [INFO] [6/71]
+2026-06-20 18:01:16,601 [INFO] ▶ 처리: SCAN_20260620_082647335_20260620_081740.pdf
+2026-06-20 18:01:26,386 [INFO]   [업무] 2025 내서넘 컵 심업탁구 대회 용역계약 [일반]
+2026-06-20 18:01:26,387 [INFO] 파일명변경:SCAN_20260620_082647335_20260620_081740.pdf→20250829_에스티엔_용역표준계약서_한국실업탁구연맹.pdf
+2026-06-20 18:01:26,690 [INFO] [7/71]
+2026-06-20 18:01:26,690 [INFO] ▶ 처리: SCAN_20260620_082722635_20260620_081815.pdf
+2026-06-20 18:01:32,281 [INFO]   [업무] 중계방송 제작 계약서 [일반]
+2026-06-20 18:01:32,282 [INFO] 파일명변경:SCAN_20260620_082722635_20260620_081815.pdf→20240401_러너러너_STN_중계방송제작계약서.pdf
+2026-06-20 18:01:32,584 [INFO] [8/71]
+2026-06-20 18:01:32,585 [INFO] ▶ 처리: SCAN_20260620_082748873_20260620_081841.pdf
+2026-06-20 18:01:45,484 [INFO]   [업무] 2023아시아탁구선수권대회 중계방송권 판매 계약서 [일반]
+2026-06-20 18:01:45,485 [INFO] 파일명변경:SCAN_20260620_082748873_20260620_081841.pdf→20230903-10_STN에스티엔메타미디어_KTTA대한탁구협회_2023아시아탁구선수권대회_중계방송권판매계약.pdf
+2026-06-20 18:01:45,788 [INFO] [9/71]
+2026-06-20 18:01:45,788 [INFO] ▶ 처리: SCAN_20260620_082812107_20260620_081904.pdf
+2026-06-20 18:01:51,862 [INFO]   [업무] 방송송출대행 계약서 [일반]
+2026-06-20 18:01:51,863 [INFO] 파일명변경:SCAN_20260620_082812107_20260620_081904.pdf→20200301_STN SPORTS TV_방송송출대행 계약서.pdf
+2026-06-20 18:01:52,166 [INFO] [10/71]
+2026-06-20 18:01:52,166 [INFO] ▶ 처리: SCAN_20260620_082835359_20260620_081928.pdf
+2026-06-20 18:01:59,478 [INFO]   [업무] 콘텐츠 공급 계약서 [일반]
+2026-06-20 18:01:59,479 [INFO] 파일명변경:SCAN_20260620_082835359_20260620_081928.pdf→2026-06-20_명칭미확인_콘텐츠공급계약서.pdf
+2026-06-20 18:01:59,782 [INFO] [11/71]
+2026-06-20 18:01:59,782 [INFO] ▶ 처리: SCAN_20260620_082855565_20260620_081947.pdf
+2026-06-20 18:02:07,107 [INFO]   [업무] 콘텐츠 공급 계약서 [일반]
+2026-06-20 18:02:07,108 [INFO] 파일명변경:SCAN_20260620_082855565_20260620_081947.pdf→2026-06-20_달라이븐강남게이툴티브이_콘텐츠공급계약서.pdf
+2026-06-20 18:02:07,410 [INFO] [12/71]
+2026-06-20 18:02:07,411 [INFO] ▶ 처리: SCAN_20260620_082915772_20260620_082007.pdf
+2026-06-20 18:02:14,059 [INFO]   [업무] 교환광고 계약서 [일반]
+2026-06-20 18:02:14,060 [INFO] 파일명변경:SCAN_20260620_082915772_20260620_082007.pdf→20240101-1231_에스티엠-연합뉴스_교환광고계약서.pdf
+2026-06-20 18:02:14,363 [INFO] [13/71]
+2026-06-20 18:02:14,363 [INFO] ▶ 처리: SCAN_20260620_082936035_20260620_082028.pdf
+2026-06-20 18:02:21,053 [INFO]   [업무] 콘텐츠 공급 계약서 [일반]
+2026-06-20 18:02:21,054 [INFO] 파일명변경:SCAN_20260620_082936035_20260620_082028.pdf→2026-06-20_딜라이브-엑스티엔터테인먼트_콘텐츠공급계약서.pdf
+2026-06-20 18:02:21,357 [INFO] [14/71]
+2026-06-20 18:02:21,357 [INFO] ▶ 처리: SCAN_20260620_082953244_20260620_082045.pdf
+2026-06-20 18:02:27,733 [INFO]   [업무] 콘텐츠 공급 계약서 [일반]
+2026-06-20 18:02:27,734 [INFO] 파일명변경:SCAN_20260620_082953244_20260620_082045.pdf→2026-06-20_딜라이브컴퍼니플러터미_콘텐츠공급계약서.pdf
+2026-06-20 18:02:28,037 [INFO] [15/71]
+2026-06-20 18:02:28,038 [INFO] ▶ 처리: SCAN_20260620_083016569_20260620_082109.pdf
+2026-06-20 18:02:34,105 [INFO]   [업무] 콘텐츠 공급 계약서 [일반]
+2026-06-20 18:02:34,106 [INFO] 파일명변경:SCAN_20260620_083016569_20260620_082109.pdf→2026-06-20_콘텐츠_공급_계약서.pdf
+2026-06-20 18:02:34,409 [INFO] [16/71]
+2026-06-20 18:02:34,409 [INFO] ▶ 처리: SCAN_20260620_083036771_20260620_082128.pdf
+2026-06-20 18:02:40,884 [INFO]   [업무] 콘텐츠 공급 계약서 [일반]
+2026-06-20 18:02:40,885 [INFO] 파일명변경:SCAN_20260620_083036771_20260620_082128.pdf→2026-06-20_공급자_콘텐츠공급계약서.pdf
+2026-06-20 18:02:41,188 [INFO] [17/71]
+2026-06-20 18:02:41,188 [INFO] ▶ 처리: SCAN_20260620_083100026_20260620_082152.pdf
+2026-06-20 18:02:47,488 [INFO]   [업무] 콘텐츠 공급 계약서 [일반]
+2026-06-20 18:02:47,489 [INFO] 파일명변경:SCAN_20260620_083100026_20260620_082152.pdf→20260620_팀라이브-에스티엔테티디_콘텐츠공급계약서.pdf
+2026-06-20 18:02:47,793 [INFO] [18/71]
+2026-06-20 18:02:47,793 [INFO] ▶ 처리: SCAN_20260620_100151104_20260620_095243.pdf
+2026-06-20 18:02:56,055 [INFO]   [업무] 디스플레이광고 계약서 [일반]
+2026-06-20 18:02:56,056 [INFO] 파일명변경:SCAN_20260620_100151104_20260620_095243.pdf→20151201-20151227_스포츠토토_디스플레이광고계약서.pdf
+2026-06-20 18:02:56,359 [INFO] [19/71]
+2026-06-20 18:02:56,359 [INFO] ▶ 처리: SCAN_20260620_100253467_20260620_095345.pdf
+2026-06-20 18:03:03,698 [INFO]   [업무] 디스플레이광고 계약서 [일반]
+2026-06-20 18:03:03,699 [INFO] 파일명변경:SCAN_20260620_100253467_20260620_095345.pdf→20151201_스포츠토토_디스플레이광고 계약서.pdf
+2026-06-20 18:03:04,002 [INFO] [20/71]
+2026-06-20 18:03:04,002 [INFO] ▶ 처리: SCAN_20260620_100522180_20260620_095614.pdf
+2026-06-20 18:03:11,738 [INFO]   [업무] My K 프로그램 협찬 계약서 [일반]
+2026-06-20 18:03:11,739 [INFO] 파일명변경:SCAN_20260620_100522180_20260620_095614.pdf→20160902_한국방송공사_My K 프로그램 협찬 계약서.pdf
+2026-06-20 18:03:12,041 [INFO] [21/71]
+2026-06-20 18:03:12,042 [INFO] ▶ 처리: SCAN_20260620_100542403_20260620_095634.pdf
+2026-06-20 18:03:20,708 [INFO]   [업무] 2016 청주 세계무예마스터십 야외 LED홍보 스크린 공급 [일반]
+2026-06-20 18:03:20,709 [INFO] 파일명변경:SCAN_20260620_100542403_20260620_095634.pdf→20160729_에스티엔STN_물품공급계약서.pdf
+2026-06-20 18:03:21,012 [INFO] [22/71]
+2026-06-20 18:03:21,012 [INFO] ▶ 처리: SCAN_20260620_100617648_20260620_095709.pdf
+2026-06-20 18:03:29,495 [INFO]   [업무] 청주세계무예마스터십 대회 방송송출 약정서 [일반]
+2026-06-20 18:03:29,496 [INFO] 파일명변경:SCAN_20260620_100617648_20260620_095709.pdf→20160801-20160901_OBS경인TV-에스티엔_청주세계무예마스터십대회 방송송출 약정서.pdf
+2026-06-20 18:03:29,800 [INFO] [23/71]
+2026-06-20 18:03:29,801 [INFO] ▶ 처리: SCAN_20260620_100710985_20260620_095802.pdf
+2026-06-20 18:03:36,497 [INFO]   [소송] 청주세계무예마스터십대회 방송권 계약서 [일반]
+2026-06-20 18:03:36,499 [INFO] 파일명변경:SCAN_20260620_100710985_20260620_095802.pdf→2016-08_청주세계무예마스터십대회_방송권계약서.pdf
+2026-06-20 18:03:36,913 [INFO] 소송목록추가:2016-08_청주세계무예마스터십대회_방송권계약서.pdf[일반]
+2026-06-20 18:03:37,216 [INFO] [24/71]
+2026-06-20 18:03:37,217 [INFO] ▶ 처리: SCAN_20260620_100728216_20260620_095820.pdf
+2026-06-20 18:03:46,318 [INFO]   [업무] 주식회사 에스티앤 스포츠 중계권 계약서 [일반]
+2026-06-20 18:03:46,320 [INFO] 파일명변경:SCAN_20260620_100728216_20260620_095820.pdf→20161010_NAVER_주식회사에스티앤_스포츠중계권계약서.pdf
+2026-06-20 18:03:46,623 [INFO] [25/71]
+2026-06-20 18:03:46,623 [INFO] ▶ 처리: SCAN_20260620_102220965_20260620_101313.pdf
+2026-06-20 18:03:54,575 [INFO]   [소송 또는 업무] 프로그램 제작,송출 계약서 - 달려라 정준 [일반]
+2026-06-20 18:03:54,577 [INFO] 파일명변경:SCAN_20260620_102220965_20260620_101313.pdf→20220722_stn스포츠착한미디어_프로그램제작송출계약서달려라정준.pdf
+2026-06-20 18:03:54,881 [INFO] [26/71]
+2026-06-20 18:03:54,881 [INFO] ▶ 처리: SCAN_20260620_102241196_20260620_101334.pdf
+2026-06-20 18:04:03,079 [INFO]   [업무] FINE 클라우드 Enterprise 서비스 계약서 [일반]
+2026-06-20 18:04:03,081 [INFO] 파일명변경:SCAN_20260620_102241196_20260620_101334.pdf→2026-06-20_엔디소프트_FINE클라우드Enterprise계약서.pdf
+2026-06-20 18:04:03,384 [INFO] [27/71]
+2026-06-20 18:04:03,384 [INFO] ▶ 처리: SCAN_20260620_102510802_20260620_101604.pdf
+2026-06-20 18:04:10,069 [INFO]   [소송] 소득 및 재산명시신청사건 [일반]
+2026-06-20 18:04:10,070 [INFO] 파일명변경:SCAN_20260620_102510802_20260620_101604.pdf→20260620_국민건강보험공단_답변서_소득및재산명시신청사건.pdf
+2026-06-20 18:04:10,121 [INFO] 소송목록추가:20260620_국민건강보험공단_답변서_소득및재산명시신청사건.pdf[일반]
+2026-06-20 18:04:10,424 [INFO] [28/71]
+2026-06-20 18:04:10,424 [INFO] ▶ 처리: SCAN_20260620_102701303_20260620_101754.pdf
+2026-06-20 18:04:17,772 [INFO]   [업무] kakao콘텐츠제휴 계약서 [일반]
+2026-06-20 18:04:17,773 [INFO] 파일명변경:SCAN_20260620_102701303_20260620_101754.pdf→2026-03-01_카카오-에스디엔_kakao콘텐츠제휴계약서.pdf
+2026-06-20 18:04:18,077 [INFO] [29/71]
+2026-06-20 18:04:18,078 [INFO] ▶ 처리: SCAN_20260620_103154293_20260620_102249.pdf
+2026-06-20 18:04:25,782 [INFO]   [소송 또는 업무] 정보제공계약서 원계약 연장 합의서 [일반]
+2026-06-20 18:04:25,783 [INFO] 파일명변경:SCAN_20260620_103154293_20260620_102249.pdf→20071015_엔에이치엔주식회사_원계약연장합의서.pdf
+2026-06-20 18:04:26,087 [INFO] [30/71]
+2026-06-20 18:04:26,087 [INFO] ▶ 처리: SCAN_20260620_103524272_20260620_102617.pdf
+2026-06-20 18:04:32,767 [INFO]   [소송] 2012-2013 시즌 분데스리가 뉴스보도영상 제공계약서 [일반]
+2026-06-20 18:04:32,768 [INFO] 파일명변경:SCAN_20260620_103524272_20260620_102617.pdf→2013-01-28_에스티앤_제이디비씨_시즌분테스리가뉴스보도영상제공계약서.pdf
+2026-06-20 18:04:32,826 [INFO] 소송목록추가:2013-01-28_에스티앤_제이디비씨_시즌분테스리가뉴스보도영상제공계약서.pdf[일반]
+2026-06-20 18:04:33,130 [INFO] [31/71]
+2026-06-20 18:04:33,131 [INFO] ▶ 처리: SCAN_20260620_103556549_20260620_102649.pdf
+2026-06-20 18:04:39,266 [INFO]   [업무] 2012-2013 시즌 분데스리가 뉴스보도영상 제공계약서 [일반]
+2026-06-20 18:04:39,268 [INFO] 파일명변경:SCAN_20260620_103556549_20260620_102649.pdf→20130117_에스티엔YTN_2012-2013시즌분데스리가뉴스보도영상제공계약서.pdf
+2026-06-20 18:04:39,571 [INFO] [32/71]
+2026-06-20 18:04:39,571 [INFO] ▶ 처리: SCAN_20260620_103628805_20260620_102721.pdf
+2026-06-20 18:04:47,359 [INFO]   [업무] 2012-2013 시즌 분데스리가 뉴스보도영상 제공계약서 [일반]
+2026-06-20 18:04:47,360 [INFO] 파일명변경:SCAN_20260620_103628805_20260620_102721.pdf→20130128_에스티엔제이디비씨_분데스리가뉴스보도영상제공계약서.pdf
+2026-06-20 18:04:47,664 [INFO] [33/71]
+2026-06-20 18:04:47,664 [INFO] ▶ 처리: SCAN_20260620_103655022_20260620_102747.pdf
+2026-06-20 18:04:57,158 [INFO]   [업무] 2012-2013 시즌 분데스리가 뉴스보도영상 제공계약서 [일반]
+2026-06-20 18:04:57,159 [INFO] 파일명변경:SCAN_20260620_103655022_20260620_102747.pdf→2013-01-17_에스티엔_분데스리가뉴스보도영상제공계약서.pdf
+2026-06-20 18:04:57,463 [INFO] [34/71]
+2026-06-20 18:04:57,463 [INFO] ▶ 처리: SCAN_20260620_103727300_20260620_102823.pdf
+2026-06-20 18:05:04,420 [INFO]   [업무] 2012-2013 시즌 분데스리가 뉴스보도영상 제공계약서 [일반]
+2026-06-20 18:05:04,422 [INFO] 파일명변경:SCAN_20260620_103727300_20260620_102823.pdf→20130117_에스티엔연합뉴스TV_분데스리가뉴스보도영상제공계약서.pdf
+2026-06-20 18:05:04,725 [INFO] [35/71]
+2026-06-20 18:05:04,725 [INFO] ▶ 처리: SCAN_20260620_103753548_20260620_102845.pdf
+2026-06-20 18:05:11,982 [INFO]   [업무] 2012-2013 시즌 분테스리가 뉴스보도영상 제공계약서 [일반]
+2026-06-20 18:05:11,983 [INFO] 파일명변경:SCAN_20260620_103753548_20260620_102845.pdf→20121009_에스터엔_분테스리가뉴스보도영상제공계약서.pdf
+2026-06-20 18:05:12,288 [INFO] [36/71]
+2026-06-20 18:05:12,288 [INFO] ▶ 처리: SCAN_20260620_104153411_20260620_103245.pdf
+2026-06-20 18:05:21,383 [INFO]   [업무] 2022 베이징 패럴림픽 인터넷권 및 PV권 재판매 계약서 [일반]
+2026-06-20 18:05:21,384 [INFO] 파일명변경:SCAN_20260620_104153411_20260620_103245.pdf→20220304_한국방송공사KBS_베이징패럴림픽인터넷권및PV권재판매계약서.pdf
+2026-06-20 18:05:21,687 [INFO] [37/71]
+2026-06-20 18:05:21,687 [INFO] ▶ 처리: SCAN_20260620_104544313_20260620_103636.pdf
+2026-06-20 18:05:31,854 [INFO]   [업무] 프로그램 편성 계약서 (나는 홀덴스다터) [일반]
+2026-06-20 18:05:31,856 [INFO] 파일명변경:SCAN_20260620_104544313_20260620_103636.pdf→20260620_에스티엔스포츠KMGM_프로그램편성계약서.pdf
+2026-06-20 18:05:32,159 [INFO] [38/71]
+2026-06-20 18:05:32,159 [INFO] ▶ 처리: SCAN_20260620_104655688_20260620_103754.pdf
+2026-06-20 18:05:38,592 [INFO]   [업무] 계약인수 안내문 [일반]
+2026-06-20 18:05:38,593 [INFO] 파일명변경:SCAN_20260620_104655688_20260620_103754.pdf→2021-03_네이버_계약인수안내문.pdf
+2026-06-20 18:05:38,897 [INFO] [39/71]
+2026-06-20 18:05:38,897 [INFO] ▶ 처리: SCAN_20260620_104730963_20260620_103824.pdf
+2026-06-20 18:05:51,993 [INFO]   [업무] 인천유나이티드 FC 홍보기 생중계 제작 대행 용역 계약서 [일반]
+2026-06-20 18:05:51,995 [INFO] 파일명변경:SCAN_20260620_104730963_20260620_103824.pdf→20210410_엑지벨로비전_인천유나이티드FC홍보기생중계제작대행용역계약서.pdf
+2026-06-20 18:05:52,298 [INFO] [40/71]
+2026-06-20 18:05:52,298 [INFO] ▶ 처리: SCAN_20260620_104948453_20260620_104040.pdf
+2026-06-20 18:05:59,958 [INFO]   [업무] 프로그램 편성 계약서(흑담은 스포츠다) [일반]
+2026-06-20 18:05:59,959 [INFO] 파일명변경:SCAN_20260620_104948453_20260620_104040.pdf→20210730_에스티앤KMGM_프로그램편성계약서.pdf
+2026-06-20 18:06:00,263 [INFO] [41/71]
+2026-06-20 18:06:00,263 [INFO] ▶ 처리: SCAN_20260620_105928487_20260620_105020.pdf
+2026-06-20 18:06:07,577 [INFO]   [업무] 제1회 계양구청장배 전국 양궁대회 종계벌상 계약 [일반]
+2026-06-20 18:06:07,578 [INFO] 파일명변경:SCAN_20260620_105928487_20260620_105020.pdf→20190531_에스티엔_용역표준계약서.pdf
+2026-06-20 18:06:07,881 [INFO] [42/71]
+2026-06-20 18:06:07,881 [INFO] ▶ 처리: SCAN_20260620_110256541_20260620_105415.pdf
+2026-06-20 18:06:16,917 [INFO]   [업무] 제1회 계양구청장배 전국 양궁대회 종계방송 제작 용역표준계약서 [일반]
+2026-06-20 18:06:16,918 [INFO] 파일명변경:SCAN_20260620_110256541_20260620_105415.pdf→20190531_에스티엔_용역표준계약서_제1회계양구청장배전국양궁대회.pdf
+2026-06-20 18:06:17,223 [INFO] [43/71]
+2026-06-20 18:06:17,223 [INFO] ▶ 처리: SCAN_20260620_110544304_20260620_105637.pdf
+2026-06-20 18:06:26,218 [INFO]   [업무] 2018 인천공항 배드민턴 챔피언십 & 전국 동호인 대회 프로그램 편성 계약서 [일반]
+2026-06-20 18:06:26,219 [INFO] 파일명변경:SCAN_20260620_110544304_20260620_105637.pdf→20180000_MBC스포츠플러스_프로그램편성계약서_2018인천공항배드민턴챔피언십.pdf
+2026-06-20 18:06:26,522 [INFO] [44/71]
+2026-06-20 18:06:26,523 [INFO] ▶ 처리: SCAN_20260620_111156617_20260620_110250.pdf
+2026-06-20 18:06:35,530 [INFO]   [업무] 2018평창 동계패럴림픽 IPTV권 및 케이블권 재판매 계약서 [일반]
+2026-06-20 18:06:35,531 [INFO] 파일명변경:SCAN_20260620_111156617_20260620_110250.pdf→20180000_KBS-STN_2018평창동계패럴림픽IPTV권및케이블권재판매계약서.pdf
+2026-06-20 18:06:35,834 [INFO] [45/71]
+2026-06-20 18:06:35,835 [INFO] ▶ 처리: SCAN_20260620_111219853_20260620_110312.pdf
+2026-06-20 18:06:42,983 [INFO]   [업무] 2018 평창동계패럴림픽대회 인터넷 중계 및 콘텐츠 제작 용역표준계약서 [일반]
+2026-06-20 18:06:42,985 [INFO] 파일명변경:SCAN_20260620_111219853_20260620_110312.pdf→2018-03-02_에스티엔_용역표준계약서.pdf
+2026-06-20 18:06:43,288 [INFO] [46/71]
+2026-06-20 18:06:43,288 [INFO] ▶ 처리: SCAN_20260620_123010914_20260620_122104.pdf
+2026-06-20 18:06:51,150 [INFO]   [업무] 방송채널사용사업 등록 신청서 [일반]
+2026-06-20 18:06:51,152 [INFO] 파일명변경:SCAN_20260620_123010914_20260620_122104.pdf→20181219_엣지스타엔스포츠_방송채널사용사업등록신청서.pdf
+2026-06-20 18:06:51,455 [INFO] [47/71]
+2026-06-20 18:06:51,455 [INFO] ▶ 처리: SCAN_20260620_123124485_20260620_122216.pdf
+2026-06-20 18:06:58,838 [INFO]   [업무] 마케팅 대행 계약서 [일반]
+2026-06-20 18:06:58,840 [INFO] 파일명변경:SCAN_20260620_123124485_20260620_122216.pdf→20241030_러너소프트미디어허브_마케팅대행계약서.pdf
+2026-06-20 18:06:59,144 [INFO] [48/71]
+2026-06-20 18:06:59,144 [INFO] ▶ 처리: SCAN_20260620_123330044_20260620_122422.pdf
+2026-06-20 18:07:07,195 [INFO]   [업무] 2025 ITF인천 월드투어 대회 방송 제작 및 LED운영 용역 계약 [일반]
+2026-06-20 18:07:07,196 [INFO] 파일명변경:SCAN_20260620_123330044_20260620_122422.pdf→2025-09-30_(주)에스티엔_용역표준계약서_ITF인천월드투어대회방송제작.pdf
+2026-06-20 18:07:07,501 [INFO] [49/71]
+2026-06-20 18:07:07,502 [INFO] ▶ 처리: SCAN_20260620_123417391_20260620_122509.pdf
+2026-06-20 18:07:13,958 [INFO]   [업무] STN TV 프로그램 공급 계약서 [일반]
+2026-06-20 18:07:13,960 [INFO] 파일명변경:SCAN_20260620_123417391_20260620_122509.pdf→20260620_에스티엔_프로그램공급계약서.pdf
+2026-06-20 18:07:14,263 [INFO] [50/71]
+2026-06-20 18:07:14,263 [INFO] ▶ 처리: SCAN_20260620_123437606_20260620_122529.pdf
+2026-06-20 18:07:21,238 [INFO]   [업무] 스마트노인 콘텐츠 제작 및 운영 계약서 [일반]
+2026-06-20 18:07:21,240 [INFO] 파일명변경:SCAN_20260620_123437606_20260620_122529.pdf→20251001_에스티엔_스마트노인콘텐츠제작및운영계약서.pdf
+2026-06-20 18:07:21,543 [INFO] [51/71]
+2026-06-20 18:07:21,544 [INFO] ▶ 처리: SCAN_20260620_123506890_20260620_122601.pdf
+2026-06-20 18:07:30,165 [INFO]   [업무] 제2회 인천 고3 외펙(樂) 콘서트 행사(공연) 출연 계약서 [일반]
+2026-06-20 18:07:30,166 [INFO] 파일명변경:SCAN_20260620_123506890_20260620_122601.pdf→20251127_미디어허브_에스티엘_제2회인천고3외펙콘서트_행사공연출연계약서.pdf
+2026-06-20 18:07:30,470 [INFO] [52/71]
+2026-06-20 18:07:30,471 [INFO] ▶ 처리: SCAN_20260620_123530145_20260620_122623.pdf
+2026-06-20 18:07:37,364 [INFO]   [업무] 프로그램 공급 계약서 [일반]
+2026-06-20 18:07:37,365 [INFO] 파일명변경:SCAN_20260620_123530145_20260620_122623.pdf→20260620_에스티엔미디어_프로그램공급계약서.pdf
+2026-06-20 18:07:37,669 [INFO] [53/71]
+2026-06-20 18:07:37,669 [INFO] ▶ 처리: SCAN_20260620_123553387_20260620_122645.pdf
+2026-06-20 18:07:45,506 [INFO]   [업무] 스마트노인장 콘텐츠 제작 및 운영 계약서 [일반]
+2026-06-20 18:07:45,507 [INFO] 파일명변경:SCAN_20260620_123553387_20260620_122645.pdf→20251210-1231_스마트노인_콘텐츠제작및운영계약서.pdf
+2026-06-20 18:07:45,811 [INFO] [54/71]
+2026-06-20 18:07:45,812 [INFO] ▶ 처리: SCAN_20260620_123613602_20260620_122708.pdf
+2026-06-20 18:07:54,114 [INFO]   [업무] 제2회 인천고3외래콘서트 행사(공연) 출연 계약서 [주의]
+2026-06-20 18:07:54,116 [INFO] 파일명변경:SCAN_20260620_123613602_20260620_122708.pdf→20251127_미디어허브에스티엔_제2회인천고3외래콘서트행사공연출연계약서.pdf
+2026-06-20 18:07:54,421 [INFO] [55/71]
+2026-06-20 18:07:54,421 [INFO] ▶ 처리: SCAN_20260620_123651890_20260620_122744.pdf
+2026-06-20 18:08:02,213 [INFO]   [업무] 2025 ITF인천 월드투어 대회 방송 제작 및 LED운영 용역 표준계약서 [일반]
+2026-06-20 18:08:02,215 [INFO] 파일명변경:SCAN_20260620_123651890_20260620_122744.pdf→20250930_에스티엘_용역표준계약서_인천광역시테니스협회_ITF워킹데회방송.pdf
+2026-06-20 18:08:02,518 [INFO] [56/71]
+2026-06-20 18:08:02,518 [INFO] ▶ 처리: SCAN_20260620_123712125_20260620_122803.pdf
+2026-06-20 18:08:09,942 [INFO]   [업무] 제16회 INK콘서트 운영대행 운영본부 용역표준계약서 [일반]
+2026-06-20 18:08:09,943 [INFO] 파일명변경:SCAN_20260620_123712125_20260620_122803.pdf→20250929_에스티엔피티어_INK콘서트운영대행용역표준계약서.pdf
+2026-06-20 18:08:10,247 [INFO] [57/71]
+2026-06-20 18:08:10,247 [INFO] ▶ 처리: SCAN_20260620_125617836_20260620_124711.pdf
+2026-06-20 18:08:18,001 [INFO]   [업무] 주식회사 에스티엠미디어와 사단법인 통일로스포츠연맹 간 업무제휴 협약서 [일반]
+2026-06-20 18:08:18,002 [INFO] 파일명변경:SCAN_20260620_125617836_20260620_124711.pdf→2026-06-20_사단법인통일로스포츠연맹_업무제휴협약서.pdf
+2026-06-20 18:08:18,306 [INFO] [58/71]
+2026-06-20 18:08:18,306 [INFO] ▶ 처리: SCAN_20260620_125848561_20260620_125026.pdf
+2026-06-20 18:08:26,134 [INFO]   [업무] 업무 협약서 - 강인한 숏팅스타 방송 프로그램 공동 제작 [일반]
+2026-06-20 18:08:26,135 [INFO] 파일명변경:SCAN_20260620_125848561_20260620_125026.pdf→20260620_에스티엔방송_메이콘텐츠_업무협약서.pdf
+2026-06-20 18:08:26,439 [INFO] [59/71]
+2026-06-20 18:08:26,439 [INFO] ▶ 처리: SCAN_20260620_125951056_20260620_125043.pdf
+2026-06-20 18:08:36,870 [INFO]   [업무] 2026 글로벌 K-POP 뮤지션 프로젝트 공동 추진을 위한 양해각서 [일반]
+2026-06-20 18:08:36,871 [INFO] 파일명변경:SCAN_20260620_125951056_20260620_125043.pdf→20260620_한국SDG경영지포럼외3_2026글로벌K-POP뮤지션프로젝트공동추진양해각서.pdf
+2026-06-20 18:08:37,175 [INFO] [60/71]
+2026-06-20 18:08:37,175 [INFO] ▶ 처리: SCAN_20260620_130011280_20260620_125103.pdf
+2026-06-20 18:08:45,610 [INFO]   [업무] 가족기업 협약서(현장실습, 인턴십 및 취업보장) [일반]
+2026-06-20 18:08:45,611 [INFO] 파일명변경:SCAN_20260620_130011280_20260620_125103.pdf→20251202_경동대학교STN뉴스미디어_가족기업협약서.pdf
+2026-06-20 18:08:45,915 [INFO] [61/71]
+2026-06-20 18:08:45,915 [INFO] ▶ 처리: SCAN_20260620_130028505_20260620_125120.pdf
+2026-06-20 18:08:52,738 [INFO]   [업무] 상호 협력을 위한 업무 협약서 [일반]
+2026-06-20 18:08:52,739 [INFO] 파일명변경:SCAN_20260620_130028505_20260620_125120.pdf→20251124_에스티엔미디어_동원대학교_업무협약서.pdf
+2026-06-20 18:08:53,043 [INFO] [62/71]
+2026-06-20 18:08:53,043 [INFO] ▶ 처리: SCAN_20260620_130045754_20260620_125137.pdf
+2026-06-20 18:09:01,417 [INFO]   [업무] 업무 협약서 [일반]
+2026-06-20 18:09:01,419 [INFO] 파일명변경:SCAN_20260620_130045754_20260620_125137.pdf→2026-06-20_한국스네그골프협회외_업무협약서.pdf
+2026-06-20 18:09:01,722 [INFO] [63/71]
+2026-06-20 18:09:01,722 [INFO] ▶ 처리: SCAN_20260620_130102969_20260620_125154.pdf
+2026-06-20 18:09:08,912 [INFO]   [업무] 휴먼서비스 분야 상호협력 협약서 [일반]
+2026-06-20 18:09:08,913 [INFO] 파일명변경:SCAN_20260620_130102969_20260620_125154.pdf→2024-11-26_에스티엔미디어한신대학교_휴먼서비스분야상호협력협약서.pdf
+2026-06-20 18:09:09,217 [INFO] [64/71]
+2026-06-20 18:09:09,217 [INFO] ▶ 처리: SCAN_20260620_130123213_20260620_125214.pdf
+2026-06-20 18:09:17,534 [INFO]   [업무] STN과 BOLTON POKER 간 업무협약서 [일반]
+2026-06-20 18:09:17,536 [INFO] 파일명변경:SCAN_20260620_130123213_20260620_125214.pdf→20241001_STN-BOLTONPOKER_업무협약서.pdf
+2026-06-20 18:09:17,840 [INFO] [65/71]
+2026-06-20 18:09:17,840 [INFO] ▶ 처리: SCAN_20260620_130140512_20260620_125232.pdf
+2026-06-20 18:09:25,590 [INFO]   [업무] 전략적 업무 협약서 [일반]
+2026-06-20 18:09:25,592 [INFO] 파일명변경:SCAN_20260620_130140512_20260620_125232.pdf→20260620_대한직장인체육회_STN_전략적업무협약서.pdf
+2026-06-20 18:09:25,896 [INFO] [66/71]
+2026-06-20 18:09:25,896 [INFO] ▶ 처리: SCAN_20260620_130200752_20260620_125252.pdf
+2026-06-20 18:09:32,305 [INFO]   [업무] 업무 협약서 [일반]
+2026-06-20 18:09:32,306 [INFO] 파일명변경:SCAN_20260620_130200752_20260620_125252.pdf→2026-06-20_스포츠메카_에스티엔미디어_업무협약서.pdf
+2026-06-20 18:09:32,611 [INFO] [67/71]
+2026-06-20 18:09:32,611 [INFO] ▶ 처리: SCAN_20260620_130338251_20260620_125432.pdf
+2026-06-20 18:09:40,098 [INFO]   [소송] 2025 인천공항 챔피언십 동호인 배드민턴 대회 행사대행용역 제안서 [일반]
+2026-06-20 18:09:40,100 [INFO] 파일명변경:SCAN_20260620_130338251_20260620_125432.pdf→20250905_에스디엔미디어_인천공항챔피언십동호인배드민턴대회행사대행용역제안서.pdf
+2026-06-20 18:09:40,149 [INFO] 소송목록추가:20250905_에스디엔미디어_인천공항챔피언십동호인배드민턴대회행사대행용역제안서.pdf[일반]
+2026-06-20 18:09:40,454 [INFO] [68/71]
+2026-06-20 18:09:40,454 [INFO] ▶ 처리: SCAN_20260620_131342251_20260620_010435.pdf
+2026-06-20 18:09:48,783 [INFO]   [업무] 업무 협약서 - 플랫폼 운영 및 광고·콘텐츠 사업 협력 [일반]
+2026-06-20 18:09:48,785 [INFO] 파일명변경:SCAN_20260620_131342251_20260620_010435.pdf→20260601_매디팜포드에스티엘에스티엘미디어_업무협약서.pdf
+2026-06-20 18:09:49,088 [INFO] [69/71]
+2026-06-20 18:09:49,088 [INFO] ▶ 처리: SCAN_20260620_142614278_20260620_021705.pdf
+2026-06-20 18:09:55,529 [INFO]   [업무] 방송채널사용사업 등록증 [일반]
+2026-06-20 18:09:55,531 [INFO] 파일명변경:SCAN_20260620_142614278_20260620_021705.pdf→20190219_에스티엔스포츠_방송채널사용사업등록증.pdf
+2026-06-20 18:09:55,836 [INFO] [70/71]
+2026-06-20 18:09:55,836 [INFO] ▶ 처리: SCAN_20260620_154334921_20260620_033428.pdf
+2026-06-20 18:10:01,589 [INFO]   [업무] 외국환 영수증 [일반]
+2026-06-20 18:10:01,591 [INFO] 파일명변경:SCAN_20260620_154334921_20260620_033428.pdf→20220126_NH농협은행_외국환영수증.pdf
+2026-06-20 18:10:01,894 [INFO] [71/71]
+2026-06-20 18:10:01,894 [INFO] ▶ 처리: SCAN_20260620_173049158_20260620_052149.pdf
+2026-06-20 18:10:10,918 [INFO]   [업무] 통합인지놀이지도사 2급 자격증 [일반]
+2026-06-20 18:10:10,920 [INFO] 파일명변경:SCAN_20260620_173049158_20260620_052149.pdf→20221220_한국교육문화예술진흥원_통합인지놀이지도사2급자격증.pdf
+2026-06-20 18:10:12,054 [INFO] DriveID 443개
+2026-06-20 18:10:12,105 [INFO] HTML갱신완료(443개,소송:115,드라이브:442)
+2026-06-20 18:10:15,642 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-20 18:10:15,643 [INFO] === 일괄처리 완료 ===
+2026-06-20 18:23:59,337 [INFO] 시스템 시작
+2026-06-20 18:24:00,990 [INFO] HTML갱신완료(443개,소송:115,드라이브:442)
+2026-06-20 18:24:07,015 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-20 18:24:07,016 [INFO] 폴더감시시작:C:\Users\User\Desktop\스캔
+2026-06-20 18:33:24,097 [INFO] 시스템 시작
+2026-06-20 18:33:24,467 [INFO] HTML갱신완료(443개,소송:115,드라이브:442)
+2026-06-20 18:33:30,027 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-20 18:33:30,028 [INFO] 폴더감시시작:C:\Users\User\Desktop\스캔
+2026-06-20 18:38:04,613 [INFO] DriveID 443개
+2026-06-20 18:38:26,890 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-20 18:38:29,581 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-20 18:45:28,150 [INFO] 시스템 시작
+2026-06-20 18:45:28,505 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-20 18:45:34,071 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-20 18:45:34,071 [INFO] 폴더감시시작:C:\Users\User\Desktop\스캔
+2026-06-20 18:52:25,925 [INFO] 시스템 시작
+2026-06-20 18:52:26,276 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-20 18:52:31,834 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-20 18:52:31,835 [INFO] 폴더감시시작:C:\Users\User\Desktop\스캔
+2026-06-20 19:01:17,950 [INFO] 시스템 시작
+2026-06-20 19:01:18,324 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-20 19:01:23,803 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-20 19:01:23,804 [INFO] 폴더감시시작:C:\Users\User\Desktop\스캔
+2026-06-20 19:31:25,382 [INFO] DriveID 443개
+2026-06-20 19:31:25,420 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-20 19:31:30,843 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-20 20:01:32,309 [INFO] DriveID 443개
+2026-06-20 20:01:32,350 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-20 20:01:37,461 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-20 20:31:38,986 [INFO] DriveID 443개
+2026-06-20 20:31:39,032 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-20 20:31:44,408 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-20 21:01:45,915 [INFO] DriveID 443개
+2026-06-20 21:01:45,954 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-20 21:01:50,790 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-20 21:31:52,231 [INFO] DriveID 443개
+2026-06-20 21:31:52,275 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-20 21:31:57,181 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-20 22:01:58,688 [INFO] DriveID 443개
+2026-06-20 22:01:58,730 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-20 22:02:04,140 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-20 22:32:05,646 [INFO] DriveID 443개
+2026-06-20 22:32:05,684 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-20 22:32:10,946 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-20 23:02:12,501 [INFO] DriveID 443개
+2026-06-20 23:02:12,541 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-20 23:02:17,594 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-20 23:32:19,071 [INFO] DriveID 443개
+2026-06-20 23:32:19,112 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-20 23:32:24,137 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 00:02:25,654 [INFO] DriveID 443개
+2026-06-21 00:02:25,696 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-21 00:02:30,660 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 00:32:32,184 [INFO] DriveID 443개
+2026-06-21 00:32:32,228 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-21 00:32:37,605 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 01:02:39,134 [INFO] DriveID 443개
+2026-06-21 01:02:39,177 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-21 01:02:44,366 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 01:32:46,016 [INFO] DriveID 443개
+2026-06-21 01:32:46,056 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-21 01:32:51,218 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 02:02:52,753 [INFO] DriveID 443개
+2026-06-21 02:02:52,794 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-21 02:02:58,091 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 02:32:59,741 [INFO] DriveID 443개
+2026-06-21 02:32:59,782 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-21 02:33:04,922 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 03:03:06,383 [INFO] DriveID 443개
+2026-06-21 03:03:06,422 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-21 03:03:11,605 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 03:33:13,045 [INFO] DriveID 443개
+2026-06-21 03:33:13,086 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-21 03:33:17,861 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 04:03:19,351 [INFO] DriveID 443개
+2026-06-21 04:03:19,389 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-21 04:03:24,184 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 04:33:25,640 [INFO] DriveID 443개
+2026-06-21 04:33:25,678 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-21 04:33:30,622 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 05:03:32,122 [INFO] DriveID 443개
+2026-06-21 05:03:32,166 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-21 05:03:37,312 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 05:33:38,773 [INFO] DriveID 443개
+2026-06-21 05:33:38,814 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-21 05:33:43,683 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 06:03:45,229 [INFO] DriveID 443개
+2026-06-21 06:03:45,271 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-21 06:03:50,128 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 06:33:51,593 [INFO] DriveID 443개
+2026-06-21 06:33:51,638 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-21 06:33:56,497 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 07:03:58,046 [INFO] DriveID 443개
+2026-06-21 07:03:58,087 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-21 07:04:03,301 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 07:34:04,762 [INFO] DriveID 443개
+2026-06-21 07:34:04,808 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-21 07:34:09,756 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 08:04:11,210 [INFO] DriveID 443개
+2026-06-21 08:04:11,263 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-21 08:04:16,166 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 08:34:17,574 [INFO] DriveID 443개
+2026-06-21 08:34:17,619 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-21 08:34:23,180 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 09:04:24,718 [INFO] DriveID 443개
+2026-06-21 09:04:24,759 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-21 09:04:29,722 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 09:34:31,189 [INFO] DriveID 443개
+2026-06-21 09:34:31,237 [INFO] HTML갱신완료(443개,소송:115,드라이브:443)
+2026-06-21 09:34:36,277 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 09:37:47,350 [INFO] ▶ 처리: SCAN_20260621_093730820_20260621_092823.pdf
+2026-06-21 09:37:58,645 [INFO]   [업무] 등기사항전부증명서(말소사항 포함) [일반]
+2026-06-21 09:37:58,647 [INFO] 파일명변경:SCAN_20260621_093730820_20260621_092823.pdf→2026-06-21_에스티엔메타미디어_등기사항전부증명서_말소사항포함.pdf
+2026-06-21 09:37:59,369 [INFO] DriveID 444개
+2026-06-21 09:37:59,411 [INFO] HTML갱신완료(444개,소송:115,드라이브:443)
+2026-06-21 09:38:04,290 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 10:04:38,723 [INFO] DriveID 444개
+2026-06-21 10:04:38,764 [INFO] HTML갱신완료(444개,소송:115,드라이브:444)
+2026-06-21 10:04:43,610 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 10:12:27,788 [INFO] ▶ 처리: SCAN_20260621_100910841_20260621_100003.pdf
+2026-06-21 10:12:36,706 [INFO]   [업무] 사업자등록증(법인사업자) [일반]
+2026-06-21 10:12:36,709 [INFO] 파일명변경:SCAN_20260621_100910841_20260621_100003.pdf→20221228_에스티엠베타미디어_사업자등록증.pdf
+2026-06-21 10:12:37,531 [INFO] DriveID 445개
+2026-06-21 10:12:37,572 [INFO] HTML갱신완료(445개,소송:115,드라이브:444)
+2026-06-21 10:12:42,497 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 10:34:46,804 [INFO] DriveID 445개
+2026-06-21 10:34:46,842 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 10:34:51,697 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 11:04:53,298 [INFO] DriveID 445개
+2026-06-21 11:04:53,340 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 11:04:58,291 [WARNING] GitHub 업로드 오류: 
+2026-06-21 11:34:59,953 [INFO] DriveID 445개
+2026-06-21 11:34:59,997 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 11:35:05,171 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 12:05:06,803 [INFO] DriveID 445개
+2026-06-21 12:05:06,847 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 12:05:12,031 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 12:35:13,786 [INFO] DriveID 445개
+2026-06-21 12:35:13,828 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 12:35:19,240 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 13:05:20,875 [INFO] DriveID 445개
+2026-06-21 13:05:20,920 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 13:05:25,954 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 13:35:27,540 [INFO] DriveID 445개
+2026-06-21 13:35:27,584 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 13:35:32,729 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 14:05:34,326 [INFO] DriveID 445개
+2026-06-21 14:05:34,368 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 14:05:39,468 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 14:35:41,227 [INFO] DriveID 445개
+2026-06-21 14:35:41,272 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 14:35:46,346 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 15:05:47,968 [INFO] DriveID 445개
+2026-06-21 15:05:48,010 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 15:05:53,336 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 15:35:54,946 [INFO] DriveID 445개
+2026-06-21 15:35:54,990 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 15:36:00,069 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 16:06:01,657 [INFO] DriveID 445개
+2026-06-21 16:06:01,703 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 16:06:06,601 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 16:36:08,169 [INFO] DriveID 445개
+2026-06-21 16:36:08,211 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 16:36:13,161 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 17:06:14,695 [INFO] DriveID 445개
+2026-06-21 17:06:14,740 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 17:06:20,061 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 17:36:21,627 [INFO] DriveID 445개
+2026-06-21 17:36:21,678 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 17:36:26,472 [WARNING] GitHub 업로드 오류: error: failed to push some refs to 'https://github.com/stnhub210-dev/stnscan.git'
+
+2026-06-21 18:06:28,026 [INFO] DriveID 445개
+2026-06-21 18:06:28,082 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 18:06:32,852 [WARNING] GitHub 업로드 오류: 
+2026-06-21 18:36:34,455 [INFO] DriveID 445개
+2026-06-21 18:36:34,496 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 18:36:40,101 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 19:06:41,814 [INFO] DriveID 445개
+2026-06-21 19:06:41,856 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 19:06:47,106 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 19:36:48,666 [INFO] DriveID 445개
+2026-06-21 19:36:48,706 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 19:36:53,968 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 20:06:55,560 [INFO] DriveID 445개
+2026-06-21 20:06:55,604 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 20:07:00,821 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 20:37:02,570 [INFO] DriveID 445개
+2026-06-21 20:37:02,616 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 20:37:06,527 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 21:07:08,113 [INFO] DriveID 445개
+2026-06-21 21:07:08,152 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 21:07:13,212 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 21:37:14,849 [INFO] DriveID 445개
+2026-06-21 21:37:14,888 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 21:37:20,783 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 22:07:22,317 [INFO] DriveID 445개
+2026-06-21 22:07:22,358 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 22:07:27,451 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 22:37:28,921 [INFO] DriveID 445개
+2026-06-21 22:37:28,982 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 22:37:34,236 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 23:07:35,725 [INFO] DriveID 445개
+2026-06-21 23:07:35,765 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 23:07:40,924 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-21 23:37:42,391 [INFO] DriveID 445개
+2026-06-21 23:37:42,431 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-21 23:37:47,545 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 00:07:49,039 [INFO] DriveID 445개
+2026-06-22 00:07:49,081 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-22 00:07:54,412 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 00:37:55,788 [INFO] DriveID 445개
+2026-06-22 00:37:55,827 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-22 00:38:00,841 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 01:08:02,311 [INFO] DriveID 445개
+2026-06-22 01:08:02,351 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-22 01:08:07,816 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 01:38:09,348 [INFO] DriveID 445개
+2026-06-22 01:38:09,400 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-22 01:38:14,578 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 02:08:16,076 [INFO] DriveID 445개
+2026-06-22 02:08:16,118 [INFO] HTML갱신완료(445개,소송:115,드라이브:445)
+2026-06-22 02:08:21,495 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 11:52:00,213 [INFO] 시스템 시작
+2026-06-22 11:52:00,308 [INFO] 미처리파일 2개 처리
+2026-06-22 11:52:00,309 [INFO] ▶ 처리: 2026.6.22 송출대행료 청구의 소 봉투.pdf
+2026-06-22 11:52:09,402 [INFO]   [소송] 송출대행료 청구의 소 [일반]
+2026-06-22 11:52:09,403 [INFO] 파일명변경:2026.6.22 송출대행료 청구의 소 봉투.pdf→20260122_특별법무법인_송출대행료청구의소봉투.pdf
+2026-06-22 11:52:11,112 [INFO] 소송목록추가:20260122_특별법무법인_송출대행료청구의소봉투.pdf[일반]
+2026-06-22 11:52:11,616 [INFO] ▶ 처리: 2026.6.22 송출대행료 청구의 소.pdf
+2026-06-22 11:52:19,398 [INFO]   [소송] 송출대행료 등 청구의 소 [긴급]
+2026-06-22 11:52:19,399 [INFO] 파일명변경:2026.6.22 송출대행료 청구의 소.pdf→20260721_에스티엠미디어_송출대행료등청구의소_소장.pdf
+2026-06-22 11:52:19,448 [INFO] 소송목록추가:20260721_에스티엠미디어_송출대행료등청구의소_소장.pdf[긴급]
+2026-06-22 11:52:20,836 [INFO] DriveID 447개
+2026-06-22 11:52:20,901 [INFO] HTML갱신완료(447개,소송:117,드라이브:446)
+2026-06-22 11:52:24,920 [WARNING] GitHub 업로드 오류: fatal: the remote end hung up unexpectedly
+
+2026-06-22 11:52:24,921 [INFO] 폴더감시시작:C:\Users\User\Desktop\스캔
+2026-06-22 12:22:26,462 [INFO] DriveID 447개
+2026-06-22 12:22:26,511 [INFO] HTML갱신완료(447개,소송:117,드라이브:447)
+2026-06-22 12:22:30,349 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 12:52:31,821 [INFO] DriveID 447개
+2026-06-22 12:52:31,859 [INFO] HTML갱신완료(447개,소송:117,드라이브:447)
+2026-06-22 12:52:35,081 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 13:22:36,652 [INFO] DriveID 447개
+2026-06-22 13:22:36,692 [INFO] HTML갱신완료(447개,소송:117,드라이브:447)
+2026-06-22 13:22:39,343 [WARNING] GitHub 업로드 오류: error: failed to push some refs to 'https://github.com/stnhub210-dev/stnscan.git'
+
+2026-06-22 13:52:40,912 [INFO] DriveID 447개
+2026-06-22 13:52:40,960 [INFO] HTML갱신완료(447개,소송:117,드라이브:447)
+2026-06-22 13:52:44,303 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 14:22:45,863 [INFO] DriveID 447개
+2026-06-22 14:22:45,902 [INFO] HTML갱신완료(447개,소송:117,드라이브:447)
+2026-06-22 14:22:49,562 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 14:52:50,992 [INFO] DriveID 447개
+2026-06-22 14:52:51,029 [INFO] HTML갱신완료(447개,소송:117,드라이브:447)
+2026-06-22 14:52:54,652 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 15:22:56,405 [INFO] DriveID 447개
+2026-06-22 15:22:56,447 [INFO] HTML갱신완료(447개,소송:117,드라이브:447)
+2026-06-22 15:22:59,670 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 15:53:01,140 [INFO] DriveID 447개
+2026-06-22 15:53:01,182 [INFO] HTML갱신완료(447개,소송:117,드라이브:447)
+2026-06-22 15:53:03,766 [WARNING] GitHub 업로드 오류: error: failed to push some refs to 'https://github.com/stnhub210-dev/stnscan.git'
+
+2026-06-22 16:23:05,241 [INFO] DriveID 447개
+2026-06-22 16:23:05,282 [INFO] HTML갱신완료(447개,소송:117,드라이브:447)
+2026-06-22 16:23:08,667 [WARNING] GitHub 업로드 오류: 
+2026-06-22 16:43:52,342 [INFO] ▶ 처리: (고용노동부)미수금납부기한 신청서.pdf
+2026-06-22 16:44:00,966 [INFO]   [업무] 미수금 납부기한 [연기·분할] 신청서 [긴급]
+2026-06-22 16:44:00,968 [INFO] 파일명변경:(고용노동부)미수금납부기한 신청서.pdf→2023-09-05_에스티에메티디아이_미수금납부기한연기분할신청서.pdf
+2026-06-22 16:44:01,860 [INFO] DriveID 448개
+2026-06-22 16:44:01,911 [INFO] HTML갱신완료(448개,소송:117,드라이브:447)
+2026-06-22 16:44:05,706 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 16:48:36,376 [INFO] 시스템 시작
+2026-06-22 16:48:37,773 [INFO] HTML갱신완료(448개,소송:117,드라이브:447)
+2026-06-22 16:48:41,342 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 16:48:41,343 [INFO] 폴더감시시작:C:\Users\User\Desktop\스캔
+2026-06-22 17:18:43,011 [INFO] DriveID 448개
+2026-06-22 17:18:43,054 [INFO] HTML갱신완료(448개,소송:117,드라이브:448)
+2026-06-22 17:18:46,861 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 17:48:48,454 [INFO] DriveID 448개
+2026-06-22 17:48:48,506 [INFO] HTML갱신완료(448개,소송:117,드라이브:448)
+2026-06-22 17:48:51,510 [WARNING] GitHub 업로드 1차 실패, 동기화 후 재시도: 
+2026-06-22 17:48:53,832 [WARNING] GitHub 업로드 오류(재시도 실패): 
+2026-06-22 18:18:55,657 [INFO] DriveID 448개
+2026-06-22 18:18:55,696 [INFO] HTML갱신완료(448개,소송:117,드라이브:448)
+2026-06-22 18:18:59,601 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 18:47:17,235 [INFO] ▶ 처리: SCAN_20260622_184703015_20260622_063756.pdf
+2026-06-22 18:47:26,910 [INFO]   [소송] 인감증명서 [일반]
+2026-06-22 18:47:26,912 [INFO] 파일명변경:SCAN_20260622_184703015_20260622_063756.pdf→20260622_에스티엔미디어_인감증명서.pdf
+2026-06-22 18:47:26,972 [INFO] 소송목록추가:20260622_에스티엔미디어_인감증명서.pdf[일반]
+2026-06-22 18:47:27,946 [INFO] DriveID 449개
+2026-06-22 18:47:27,993 [INFO] HTML갱신완료(449개,소송:118,드라이브:448)
+2026-06-22 18:47:30,816 [WARNING] GitHub 업로드 1차 실패, 동기화 후 재시도: 
+2026-06-22 18:47:33,950 [INFO] GitHub 자동 업로드 완료 (재시도 성공)
+2026-06-22 18:49:02,239 [INFO] DriveID 449개
+2026-06-22 18:49:02,280 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-22 18:49:05,396 [WARNING] GitHub 업로드 1차 실패, 동기화 후 재시도: 
+2026-06-22 18:49:08,166 [INFO] GitHub 자동 업로드 완료 (재시도 성공)
+2026-06-22 18:53:34,266 [INFO] ▶ 처리: SCAN_20260622_185321403_20260622_064413.pdf
+2026-06-22 18:53:43,411 [INFO]   [업무] 인감증명서 [일반]
+2026-06-22 18:53:43,411 [ERROR] 오류:[WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260622_185321403_20260622_064413.pdf' -> 'C:\\Users\\User\\Desktop\\스캔\\20260622_STN MEDIA Co Ltd_인감증명서.pdf'
+2026-06-22 18:53:50,413 [INFO] ▶ 처리: SCAN_20260622_185321403_20260622_064413.pdf
+2026-06-22 18:53:57,704 [INFO]   [업무] 인감증명서 [일반]
+2026-06-22 18:53:57,705 [ERROR] 오류:[WinError 2] 지정된 파일을 찾을 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260622_185321403_20260622_064413.pdf' -> 'C:\\Users\\User\\Desktop\\스캔\\20260622_STN MEDIA Co Ltd_인감증명서.pdf'
+2026-06-22 19:19:10,160 [INFO] DriveID 449개
+2026-06-22 19:19:10,198 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-22 19:19:14,609 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 19:49:16,257 [INFO] DriveID 449개
+2026-06-22 19:49:16,294 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-22 19:49:20,272 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 20:19:21,805 [INFO] DriveID 449개
+2026-06-22 20:19:21,845 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-22 20:19:25,623 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 20:49:27,325 [INFO] DriveID 449개
+2026-06-22 20:49:27,365 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-22 20:49:31,235 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 21:19:32,782 [INFO] DriveID 449개
+2026-06-22 21:19:32,820 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-22 21:19:36,546 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 21:49:38,053 [INFO] DriveID 449개
+2026-06-22 21:49:38,093 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-22 21:49:42,066 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 22:19:43,595 [INFO] DriveID 449개
+2026-06-22 22:19:43,637 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-22 22:19:47,482 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 22:49:49,032 [INFO] DriveID 449개
+2026-06-22 22:49:49,073 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-22 22:49:52,910 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 23:19:54,421 [INFO] DriveID 449개
+2026-06-22 23:19:54,461 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-22 23:19:58,128 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-22 23:49:59,710 [INFO] DriveID 449개
+2026-06-22 23:49:59,751 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-22 23:50:03,609 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 00:20:05,146 [INFO] DriveID 449개
+2026-06-23 00:20:05,184 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-23 00:20:09,147 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 00:50:11,014 [INFO] DriveID 449개
+2026-06-23 00:50:11,054 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-23 00:50:15,023 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 01:20:16,597 [INFO] DriveID 449개
+2026-06-23 01:20:16,634 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-23 01:20:20,663 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 01:50:22,279 [INFO] DriveID 449개
+2026-06-23 01:50:22,320 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-23 01:50:26,058 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 02:20:27,591 [INFO] DriveID 449개
+2026-06-23 02:20:27,632 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-23 02:20:31,594 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 02:50:33,251 [INFO] DriveID 449개
+2026-06-23 02:50:33,292 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-23 02:50:36,958 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 03:20:38,498 [INFO] DriveID 449개
+2026-06-23 03:20:38,555 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-23 03:20:42,291 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 03:50:43,771 [INFO] DriveID 449개
+2026-06-23 03:50:43,830 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-23 03:50:47,689 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 04:20:49,310 [INFO] DriveID 449개
+2026-06-23 04:20:49,348 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-23 04:20:53,150 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 04:50:54,721 [INFO] DriveID 449개
+2026-06-23 04:50:54,760 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-23 04:50:58,408 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 05:20:59,967 [INFO] DriveID 449개
+2026-06-23 05:21:00,009 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-23 05:21:03,720 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 05:51:05,245 [INFO] DriveID 449개
+2026-06-23 05:51:05,283 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-23 05:51:09,061 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 06:21:10,649 [INFO] DriveID 449개
+2026-06-23 06:21:10,686 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-23 06:21:14,260 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 06:51:15,717 [INFO] DriveID 449개
+2026-06-23 06:51:15,759 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-23 06:51:19,360 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 07:21:20,872 [INFO] DriveID 449개
+2026-06-23 07:21:20,910 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-23 07:21:24,610 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 07:51:26,106 [INFO] DriveID 449개
+2026-06-23 07:51:26,155 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-23 07:51:30,016 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 08:21:31,506 [INFO] DriveID 449개
+2026-06-23 08:21:31,547 [INFO] HTML갱신완료(449개,소송:118,드라이브:449)
+2026-06-23 08:21:35,598 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 08:45:44,533 [INFO] 시스템 시작
+2026-06-23 08:45:44,742 [WARNING] 원본이동실패 SCAN_20251217_204918246_20251217_084121_001.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20251217_204918246_20251217_084121_001.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20251217_204918246_20251217_084121_001.jpg'
+2026-06-23 08:45:44,742 [INFO] JPG→PDF 변환:1p → SCAN_20251217_204918246_20251217_084121.pdf
+2026-06-23 08:45:44,786 [WARNING] 원본이동실패 SCAN_20260324_163716916_20260324_042912.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260324_163716916_20260324_042912.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260324_163716916_20260324_042912.jpg'
+2026-06-23 08:45:44,786 [INFO] JPG→PDF 변환:1p → SCAN_20260324_163716916_20260324_042912.pdf
+2026-06-23 08:45:44,942 [WARNING] 원본이동실패 SCAN_20260521_154252371_20260521_033409_002.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260521_154252371_20260521_033409_002.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260521_154252371_20260521_033409_002.jpg'
+2026-06-23 08:45:44,943 [WARNING] 원본이동실패 SCAN_20260521_154252371_20260521_033409_003.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260521_154252371_20260521_033409_003.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260521_154252371_20260521_033409_003.jpg'
+2026-06-23 08:45:44,943 [WARNING] 원본이동실패 SCAN_20260521_154252371_20260521_033409_004.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260521_154252371_20260521_033409_004.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260521_154252371_20260521_033409_004.jpg'
+2026-06-23 08:45:44,944 [INFO] JPG→PDF 변환:3p → SCAN_20260521_154252371_20260521_033409.pdf
+2026-06-23 08:45:44,950 [INFO] 미처리파일 3개 처리
+2026-06-23 08:45:44,950 [INFO] ▶ 처리: SCAN_20251217_204918246_20251217_084121.pdf
+2026-06-23 08:45:56,328 [INFO]   [업무] 전시장 임대차 계약서 [일반]
+2026-06-23 08:45:56,329 [INFO] 파일명변경:SCAN_20251217_204918246_20251217_084121.pdf→20251031_송도컨벤시아_전시장임대차계약서_1.pdf
+2026-06-23 08:45:56,832 [INFO] ▶ 처리: SCAN_20260324_163716916_20260324_042912.pdf
+2026-06-23 08:46:03,338 [INFO]   [업무] 신분증명용 사진 [일반]
+2026-06-23 08:46:03,339 [INFO] 파일명변경:SCAN_20260324_163716916_20260324_042912.pdf→20260324_미상_신분증명사진.pdf
+2026-06-23 08:46:03,842 [INFO] ▶ 처리: SCAN_20260521_154252371_20260521_033409.pdf
+2026-06-23 08:46:12,345 [INFO]   [업무] 법인등기사항전부증명서 [일반]
+2026-06-23 08:46:12,346 [INFO] 파일명변경:SCAN_20260521_154252371_20260521_033409.pdf→2026-05-21_등기번호0060111_법인등기사항전부증명서.pdf
+2026-06-23 08:46:13,838 [INFO] DriveID 452개
+2026-06-23 08:46:15,064 [INFO] HTML갱신완료(452개,소송:118,드라이브:451)
+2026-06-23 08:46:18,708 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 08:46:18,708 [INFO] 폴더감시시작:C:\Users\User\Desktop\스캔
+2026-06-23 08:46:56,723 [INFO] ▶ 처리: 에스티엔미디어(제일은행표지).pdf
+2026-06-23 08:47:01,561 [INFO]   [업무] 다모아비즈통장 통장표제부 [일반]
+2026-06-23 08:47:01,562 [INFO] 파일명변경:에스티엔미디어(제일은행표지).pdf→20230523_에스티엔미디어_제일은행통장표지.pdf
+2026-06-23 08:47:02,379 [INFO] DriveID 453개
+2026-06-23 08:47:02,419 [INFO] HTML갱신완료(453개,소송:118,드라이브:452)
+2026-06-23 08:47:05,581 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 08:47:34,593 [INFO] ▶ 처리: 에스티엔미디어(제일은행표지).pdf
+2026-06-23 08:47:39,245 [INFO]   [업무] 다모아비즈통장 통장표제부 [일반]
+2026-06-23 08:47:39,246 [INFO] 파일명변경:에스티엔미디어(제일은행표지).pdf→2023-05-23_에스티엔미디어_제일은행통장표지.pdf
+2026-06-23 08:47:40,007 [INFO] DriveID 454개
+2026-06-23 08:47:40,046 [INFO] HTML갱신완료(454개,소송:118,드라이브:453)
+2026-06-23 08:48:11,223 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 08:48:52,239 [INFO] ▶ 처리: 2023-06_23_에스티엔미디어_제일은행통장표지.pdf
+2026-06-23 08:48:57,150 [INFO]   [업무] 제일은행 다모아비즈통장 표지 [일반]
+2026-06-23 08:48:57,151 [INFO] 파일명변경:2023-06_23_에스티엔미디어_제일은행통장표지.pdf→20230523_에스티엔미디어_제일은행다모아비즈통장표지.pdf
+2026-06-23 08:48:57,983 [INFO] DriveID 454개
+2026-06-23 08:48:58,025 [INFO] HTML갱신완료(454개,소송:118,드라이브:453)
+2026-06-23 08:49:00,892 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 08:50:02,915 [INFO] ▶ 처리: 20260324_김준영_증명사진.pdf
+2026-06-23 08:50:08,123 [INFO]   [업무] 증명사진 [일반]
+2026-06-23 08:50:08,963 [INFO] DriveID 454개
+2026-06-23 08:50:09,000 [INFO] HTML갱신완료(454개,소송:118,드라이브:454)
+2026-06-23 08:50:11,923 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 08:51:40,955 [INFO] ▶ 처리: 20260721_에스티엔미디어_송출대행료등청구의소_소장.pdf
+2026-06-23 08:51:47,629 [INFO]   [소송] 송출대행료 등 청구의 소 [긴급]
+2026-06-23 08:51:47,682 [INFO] 소송목록추가:20260721_에스티엔미디어_송출대행료등청구의소_소장.pdf[긴급]
+2026-06-23 08:51:48,455 [INFO] DriveID 454개
+2026-06-23 08:51:48,495 [INFO] HTML갱신완료(454개,소송:118,드라이브:454)
+2026-06-23 08:51:51,378 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 09:16:20,432 [INFO] DriveID 454개
+2026-06-23 09:16:20,476 [INFO] HTML갱신완료(454개,소송:118,드라이브:454)
+2026-06-23 09:16:24,197 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 09:31:03,874 [INFO] 시스템 시작
+2026-06-23 09:31:04,108 [WARNING] 원본이동실패 SCAN_20251217_204918246_20251217_084121_001.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20251217_204918246_20251217_084121_001.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20251217_204918246_20251217_084121_001.jpg'
+2026-06-23 09:31:04,108 [INFO] JPG→PDF 변환:1p → SCAN_20251217_204918246_20251217_084121.pdf
+2026-06-23 09:31:04,155 [WARNING] 원본이동실패 SCAN_20260324_163716916_20260324_042912.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260324_163716916_20260324_042912.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260324_163716916_20260324_042912.jpg'
+2026-06-23 09:31:04,155 [INFO] JPG→PDF 변환:1p → SCAN_20260324_163716916_20260324_042912.pdf
+2026-06-23 09:31:04,316 [WARNING] 원본이동실패 SCAN_20260521_154252371_20260521_033409_002.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260521_154252371_20260521_033409_002.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260521_154252371_20260521_033409_002.jpg'
+2026-06-23 09:31:04,316 [WARNING] 원본이동실패 SCAN_20260521_154252371_20260521_033409_003.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260521_154252371_20260521_033409_003.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260521_154252371_20260521_033409_003.jpg'
+2026-06-23 09:31:04,316 [WARNING] 원본이동실패 SCAN_20260521_154252371_20260521_033409_004.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260521_154252371_20260521_033409_004.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260521_154252371_20260521_033409_004.jpg'
+2026-06-23 09:31:04,316 [INFO] JPG→PDF 변환:3p → SCAN_20260521_154252371_20260521_033409.pdf
+2026-06-23 09:31:04,324 [INFO] 미처리파일 3개 처리
+2026-06-23 09:31:04,324 [INFO] ▶ 처리: SCAN_20251217_204918246_20251217_084121.pdf
+2026-06-23 09:31:15,246 [INFO]   [업무] 전시장 임대차 계약서 [일반]
+2026-06-23 09:31:15,248 [INFO] 파일명변경:SCAN_20251217_204918246_20251217_084121.pdf→20251031_송도컨벤시아_전시장임대차계약서_2.pdf
+2026-06-23 09:31:15,751 [INFO] ▶ 처리: SCAN_20260324_163716916_20260324_042912.pdf
+2026-06-23 09:31:21,725 [INFO]   [업무] 여권용 신분증명 사진 [일반]
+2026-06-23 09:31:21,727 [INFO] 파일명변경:SCAN_20260324_163716916_20260324_042912.pdf→2026-03-24_신분증명_여권사진.pdf
+2026-06-23 09:31:22,231 [INFO] ▶ 처리: SCAN_20260521_154252371_20260521_033409.pdf
+2026-06-23 09:31:31,571 [INFO]   [업무] 법인등기사항전부증명서 [일반]
+2026-06-23 09:31:31,572 [INFO] 파일명변경:SCAN_20260521_154252371_20260521_033409.pdf→20260521_등기번호0060111_법인등기사항전부증명서_1.pdf
+2026-06-23 09:31:33,701 [INFO] DriveID 457개
+2026-06-23 09:31:35,076 [INFO] HTML갱신완료(457개,소송:118,드라이브:456)
+2026-06-23 09:31:39,019 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 09:31:39,020 [INFO] 폴더감시시작:C:\Users\User\Desktop\스캔
+2026-06-23 10:01:40,606 [INFO] DriveID 457개
+2026-06-23 10:01:40,647 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 10:01:44,316 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 10:31:45,967 [INFO] DriveID 457개
+2026-06-23 10:31:46,012 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 10:31:49,351 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 11:01:50,988 [INFO] DriveID 457개
+2026-06-23 11:01:51,029 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 11:01:54,140 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 11:31:55,878 [INFO] DriveID 457개
+2026-06-23 11:31:55,918 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 11:32:01,118 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 12:02:02,701 [INFO] DriveID 457개
+2026-06-23 12:02:02,740 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 12:02:06,093 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 12:32:07,627 [INFO] DriveID 457개
+2026-06-23 12:32:07,665 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 12:32:11,231 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 13:02:12,797 [INFO] DriveID 457개
+2026-06-23 13:02:12,839 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 13:02:16,269 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 13:32:17,907 [INFO] DriveID 457개
+2026-06-23 13:32:17,952 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 13:32:21,394 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 14:02:24,342 [INFO] DriveID 457개
+2026-06-23 14:02:24,380 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 14:02:28,031 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 14:32:29,679 [INFO] DriveID 457개
+2026-06-23 14:32:29,718 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 14:32:33,067 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 15:02:34,609 [INFO] DriveID 457개
+2026-06-23 15:02:34,648 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 15:02:38,066 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 15:32:39,646 [INFO] DriveID 457개
+2026-06-23 15:32:39,685 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 15:32:42,673 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 16:02:44,631 [INFO] DriveID 457개
+2026-06-23 16:02:44,670 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 16:02:47,942 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 16:32:49,471 [INFO] DriveID 457개
+2026-06-23 16:32:49,509 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 16:32:52,913 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 17:02:54,538 [INFO] DriveID 457개
+2026-06-23 17:02:54,576 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 17:02:58,036 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 17:32:59,663 [INFO] DriveID 457개
+2026-06-23 17:32:59,701 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 17:33:03,010 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 18:03:04,655 [INFO] DriveID 457개
+2026-06-23 18:03:04,697 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 18:03:08,431 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 18:33:10,226 [INFO] DriveID 457개
+2026-06-23 18:33:10,266 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 18:33:13,659 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 19:03:15,206 [INFO] DriveID 457개
+2026-06-23 19:03:15,252 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 19:03:18,891 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 19:33:20,535 [INFO] DriveID 457개
+2026-06-23 19:33:20,575 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 19:33:24,026 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 20:03:25,567 [INFO] DriveID 457개
+2026-06-23 20:03:25,605 [INFO] HTML갱신완료(457개,소송:118,드라이브:457)
+2026-06-23 20:03:29,153 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 20:08:52,262 [INFO] ▶ 처리: SCAN_20260623_200835335_20260623_075926.pdf
+2026-06-23 20:08:59,747 [INFO]   [업무] 통장 계좌 등록 증명서 [일반]
+2026-06-23 20:08:59,748 [INFO] 파일명변경:SCAN_20260623_200835335_20260623_075926.pdf→20260507_우리은행_통장계좌등록증명서_이광호.pdf
+2026-06-23 20:09:00,598 [INFO] DriveID 458개
+2026-06-23 20:09:00,638 [INFO] HTML갱신완료(458개,소송:118,드라이브:457)
+2026-06-23 20:09:03,599 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 20:10:26,628 [INFO] ▶ 처리: SCAN_20260623_201013860_20260623_080105.pdf
+2026-06-23 20:10:33,911 [INFO]   [업무] 통장개설증명서 [일반]
+2026-06-23 20:10:33,913 [INFO] 파일명변경:SCAN_20260623_201013860_20260623_080105.pdf→20260507_우리은행_통장개설증명서.pdf
+2026-06-23 20:10:34,748 [INFO] DriveID 459개
+2026-06-23 20:10:34,789 [INFO] HTML갱신완료(459개,소송:118,드라이브:458)
+2026-06-23 20:10:37,834 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 20:33:30,161 [INFO] DriveID 459개
+2026-06-23 20:33:30,202 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-23 20:33:33,634 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 21:03:35,095 [INFO] DriveID 459개
+2026-06-23 21:03:35,135 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-23 21:03:38,619 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 21:11:07,779 [INFO] ▶ 처리: 20260507_우리은행_통장계좌등록증명서_이광호(샹그릴라).pdf
+2026-06-23 21:11:15,690 [INFO]   [업무] 통장계좌등록증명서_이광호 [일반]
+2026-06-23 21:11:15,692 [INFO] 파일명변경:20260507_우리은행_통장계좌등록증명서_이광호(샹그릴라).pdf→20260507_우리은행_통장계좌등록증명서_이광호.pdf
+2026-06-23 21:11:16,542 [INFO] DriveID 459개
+2026-06-23 21:11:16,587 [INFO] HTML갱신완료(459개,소송:118,드라이브:458)
+2026-06-23 21:11:19,730 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 21:33:42,147 [INFO] DriveID 459개
+2026-06-23 21:33:42,187 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-23 21:33:45,735 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 22:03:47,396 [INFO] DriveID 459개
+2026-06-23 22:03:47,435 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-23 22:03:51,003 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 22:33:52,636 [INFO] DriveID 459개
+2026-06-23 22:33:52,677 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-23 22:33:56,357 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 23:03:57,893 [INFO] DriveID 459개
+2026-06-23 23:03:57,932 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-23 23:04:01,676 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-23 23:34:03,057 [INFO] DriveID 459개
+2026-06-23 23:34:03,095 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-23 23:34:06,577 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 00:04:08,235 [INFO] DriveID 459개
+2026-06-24 00:04:08,274 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 00:04:11,773 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 00:34:13,284 [INFO] DriveID 459개
+2026-06-24 00:34:13,322 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 00:34:16,818 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 01:04:18,268 [INFO] DriveID 459개
+2026-06-24 01:04:18,306 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 01:04:22,145 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 01:34:23,624 [INFO] DriveID 459개
+2026-06-24 01:34:23,662 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 01:34:27,259 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 02:04:28,984 [INFO] DriveID 459개
+2026-06-24 02:04:29,021 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 02:04:32,620 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 02:34:34,114 [INFO] DriveID 459개
+2026-06-24 02:34:34,153 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 02:34:37,591 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 03:04:39,141 [INFO] DriveID 459개
+2026-06-24 03:04:39,179 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 03:04:42,780 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 03:34:44,273 [INFO] DriveID 459개
+2026-06-24 03:34:44,314 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 03:34:47,885 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 04:04:49,429 [INFO] DriveID 459개
+2026-06-24 04:04:49,467 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 04:04:52,961 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 04:34:54,468 [INFO] DriveID 459개
+2026-06-24 04:34:54,507 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 04:34:58,068 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 05:04:59,556 [INFO] DriveID 459개
+2026-06-24 05:04:59,598 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 05:05:03,082 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 05:35:04,565 [INFO] DriveID 459개
+2026-06-24 05:35:04,603 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 05:35:08,293 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 06:05:09,856 [INFO] DriveID 459개
+2026-06-24 06:05:09,894 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 06:05:13,514 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 06:35:15,090 [INFO] DriveID 459개
+2026-06-24 06:35:15,129 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 06:35:18,579 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 07:05:20,102 [INFO] DriveID 459개
+2026-06-24 07:05:20,140 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 07:05:23,546 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 07:35:25,063 [INFO] DriveID 459개
+2026-06-24 07:35:25,102 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 07:35:28,403 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 08:05:29,992 [INFO] DriveID 459개
+2026-06-24 08:05:30,037 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 08:05:33,273 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 08:35:35,231 [INFO] DriveID 459개
+2026-06-24 08:35:35,272 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 08:35:38,831 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 09:05:40,507 [INFO] DriveID 459개
+2026-06-24 09:05:40,545 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 09:05:43,932 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 09:35:45,481 [INFO] DriveID 459개
+2026-06-24 09:35:45,525 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 09:35:49,222 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 10:05:50,834 [INFO] DriveID 459개
+2026-06-24 10:05:50,882 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 10:05:54,469 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 10:35:56,120 [INFO] DriveID 459개
+2026-06-24 10:35:56,159 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 10:35:59,569 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 11:06:01,136 [INFO] DriveID 459개
+2026-06-24 11:06:01,175 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 11:06:04,642 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 11:36:06,164 [INFO] DriveID 459개
+2026-06-24 11:36:06,203 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 11:36:09,555 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 12:06:11,028 [INFO] DriveID 459개
+2026-06-24 12:06:11,067 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 12:06:14,636 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 12:36:16,591 [INFO] DriveID 459개
+2026-06-24 12:36:16,651 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 12:36:20,128 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 13:06:21,719 [INFO] DriveID 459개
+2026-06-24 13:06:21,757 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 13:06:25,203 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 13:36:26,830 [INFO] DriveID 459개
+2026-06-24 13:36:26,867 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 13:36:30,359 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 14:06:31,882 [INFO] DriveID 459개
+2026-06-24 14:06:31,923 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 14:06:35,580 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 14:36:37,217 [INFO] DriveID 459개
+2026-06-24 14:36:37,256 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 14:36:40,807 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 15:06:42,292 [INFO] DriveID 459개
+2026-06-24 15:06:42,331 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 15:06:46,436 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 15:36:47,814 [INFO] DriveID 459개
+2026-06-24 15:36:47,855 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 15:36:51,479 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 16:06:53,035 [INFO] DriveID 459개
+2026-06-24 16:06:53,076 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 16:06:57,131 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 16:36:58,513 [INFO] DriveID 459개
+2026-06-24 16:36:58,559 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 16:37:02,387 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 17:07:03,931 [INFO] DriveID 459개
+2026-06-24 17:07:03,977 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 17:07:07,961 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 17:37:11,442 [INFO] DriveID 459개
+2026-06-24 17:37:11,481 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 17:37:16,304 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 18:07:18,240 [INFO] DriveID 459개
+2026-06-24 18:07:18,280 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 18:07:22,155 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 18:37:23,741 [INFO] DriveID 459개
+2026-06-24 18:37:23,785 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 18:37:27,769 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 19:07:29,351 [INFO] DriveID 459개
+2026-06-24 19:07:29,391 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 19:07:33,155 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 19:37:34,734 [INFO] DriveID 459개
+2026-06-24 19:37:34,773 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 19:37:38,616 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 20:07:40,114 [INFO] DriveID 459개
+2026-06-24 20:07:40,156 [INFO] HTML갱신완료(459개,소송:118,드라이브:459)
+2026-06-24 20:07:42,938 [WARNING] GitHub 업로드 1차 실패, 동기화 후 재시도: error: failed to push some refs to 'https://github.com/stnhub210-dev/stnscan.git
+2026-06-24 20:07:45,418 [INFO] GitHub 자동 업로드 완료 (재시도 성공)
+2026-06-24 20:28:38,858 [INFO] ▶ 처리: SCAN_20260624_202823384_20260624_081914.pdf
+2026-06-24 20:28:45,098 [INFO]   [업무] 급여 대장 2026년 5월 [일반]
+2026-06-24 20:28:45,098 [ERROR] 오류:[WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260624_202823384_20260624_081914.pdf' -> 'C:\\Users\\User\\Desktop\\스캔\\20260624_회사명불명_급여대장_2026년5월.pdf'
+2026-06-24 20:28:52,100 [INFO] ▶ 처리: SCAN_20260624_202823384_20260624_081914.pdf
+2026-06-24 20:28:53,374 [WARNING] 추출실패:SCAN_20260624_202823384_20260624_081914.pdf
+2026-06-24 20:29:10,382 [INFO] ▶ 처리: 2026.6.24 에스티엔급여신청.pdf
+2026-06-24 20:29:16,197 [INFO]   [업무] 급여 대장 [일반]
+2026-06-24 20:29:16,197 [ERROR] 오류:[WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\2026.6.24 에스티엔급여신청.pdf' -> 'C:\\Users\\User\\Desktop\\스캔\\20260624_에스티엔_급여대장.pdf'
+2026-06-24 20:29:23,199 [INFO] ▶ 처리: 2026.6.24 에스티엔급여신청.pdf
+2026-06-24 20:29:29,339 [INFO]   [업무] 급여명세서 [일반]
+2026-06-24 20:29:29,340 [ERROR] 오류:[WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\2026.6.24 에스티엔급여신청.pdf' -> 'C:\\Users\\User\\Desktop\\스캔\\20260624_에스티엔_급여명세서.pdf'
+2026-06-24 20:29:36,341 [INFO] ▶ 처리: 2026.6.24 에스티엔급여신청.pdf
+2026-06-24 20:29:42,497 [INFO]   [업무] 2026년 5월분 급여명세서 [일반]
+2026-06-24 20:29:42,497 [ERROR] 오류:[WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\2026.6.24 에스티엔급여신청.pdf' -> 'C:\\Users\\User\\Desktop\\스캔\\20260624_에스티엔_급여명세서.pdf'
+2026-06-24 20:29:49,499 [INFO] ▶ 처리: 2026.6.24 에스티엔급여신청.pdf
+2026-06-24 20:29:55,783 [INFO]   [업무] 급여명세서 [일반]
+2026-06-24 20:29:55,783 [ERROR] 오류:[WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\2026.6.24 에스티엔급여신청.pdf' -> 'C:\\Users\\User\\Desktop\\스캔\\20260624_에스티엔_급여명세서.pdf'
+2026-06-24 20:30:02,785 [INFO] ▶ 처리: 2026.6.24 에스티엔급여신청.pdf
+2026-06-24 20:30:08,454 [INFO]   [업무] 급여명세서 [일반]
+2026-06-24 20:30:08,454 [ERROR] 오류:[WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\2026.6.24 에스티엔급여신청.pdf' -> 'C:\\Users\\User\\Desktop\\스캔\\20260624_에스티엔_급여명세서.pdf'
+2026-06-24 20:30:15,455 [INFO] ▶ 처리: 2026.6.24 에스티엔급여신청.pdf
+2026-06-24 20:30:21,366 [INFO]   [업무] 급여명세서 [일반]
+2026-06-24 20:30:21,367 [ERROR] 오류:[WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\2026.6.24 에스티엔급여신청.pdf' -> 'C:\\Users\\User\\Desktop\\스캔\\20260624_에스티엔_급여명세서.pdf'
+2026-06-24 20:30:28,368 [INFO] ▶ 처리: 2026.6.24 에스티엔급여신청.pdf
+2026-06-24 20:30:34,382 [INFO]   [업무] 급여명세서 [일반]
+2026-06-24 20:30:34,382 [ERROR] 오류:[WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\2026.6.24 에스티엔급여신청.pdf' -> 'C:\\Users\\User\\Desktop\\스캔\\20260624_에스티엔_급여명세서.pdf'
+2026-06-24 20:30:41,383 [INFO] ▶ 처리: 2026.6.24 에스티엔급여신청.pdf
+2026-06-24 20:30:47,513 [INFO]   [업무] 급여대장 [일반]
+2026-06-24 20:30:47,513 [ERROR] 오류:[WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\2026.6.24 에스티엔급여신청.pdf' -> 'C:\\Users\\User\\Desktop\\스캔\\20260624_에스티엔_급여대장.pdf'
+2026-06-24 20:30:54,515 [INFO] ▶ 처리: 2026.6.24 에스티엔급여신청.pdf
+2026-06-24 20:31:00,792 [INFO]   [업무] 급여명세서 [일반]
+2026-06-24 20:31:00,792 [ERROR] 오류:[WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\2026.6.24 에스티엔급여신청.pdf' -> 'C:\\Users\\User\\Desktop\\스캔\\20260624_에스티엔_급여명세서.pdf'
+2026-06-24 20:31:07,793 [INFO] ▶ 처리: 2026.6.24 에스티엔급여신청.pdf
+2026-06-24 20:31:13,966 [INFO]   [업무] 급여명세서 [일반]
+2026-06-24 20:31:13,966 [ERROR] 오류:[WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\2026.6.24 에스티엔급여신청.pdf' -> 'C:\\Users\\User\\Desktop\\스캔\\20260624_에스티엔_급여명세서.pdf'
+2026-06-24 20:31:20,967 [INFO] ▶ 처리: 2026.6.24 에스티엔급여신청.pdf
+2026-06-24 20:31:27,166 [INFO]   [업무] 급여명세서 [일반]
+2026-06-24 20:31:27,166 [ERROR] 오류:[WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\2026.6.24 에스티엔급여신청.pdf' -> 'C:\\Users\\User\\Desktop\\스캔\\20260624_에스티엔_급여명세서.pdf'
+2026-06-24 20:31:34,168 [INFO] ▶ 처리: 2026.6.24 에스티엔급여신청.pdf
+2026-06-24 20:31:40,875 [INFO]   [업무] 급여명세서 [일반]
+2026-06-24 20:31:40,875 [ERROR] 오류:[WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\2026.6.24 에스티엔급여신청.pdf' -> 'C:\\Users\\User\\Desktop\\스캔\\20260624_에스티엔_급여명세서.pdf'
+2026-06-24 20:31:47,877 [INFO] ▶ 처리: 2026.6.24 에스티엔급여신청.pdf
+2026-06-24 20:31:53,740 [INFO]   [업무] 급여명세서 [일반]
+2026-06-24 20:31:53,740 [ERROR] 오류:[WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\2026.6.24 에스티엔급여신청.pdf' -> 'C:\\Users\\User\\Desktop\\스캔\\20260624_에스티엔_급여명세서.pdf'
+2026-06-24 20:32:00,742 [INFO] ▶ 처리: 2026.6.24 에스티엔급여신청.pdf
+2026-06-24 20:32:06,435 [INFO]   [업무] 급여명세서 [일반]
+2026-06-24 20:32:06,437 [INFO] 파일명변경:2026.6.24 에스티엔급여신청.pdf→20260624_에스티엔_급여명세서.pdf
+2026-06-24 20:32:07,377 [INFO] DriveID 460개
+2026-06-24 20:32:07,425 [INFO] HTML갱신완료(460개,소송:118,드라이브:459)
+2026-06-24 20:32:11,526 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 20:37:48,724 [INFO] DriveID 460개
+2026-06-24 20:37:48,765 [INFO] HTML갱신완료(460개,소송:118,드라이브:460)
+2026-06-24 20:37:51,950 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 21:07:53,581 [INFO] DriveID 460개
+2026-06-24 21:07:53,623 [INFO] HTML갱신완료(460개,소송:118,드라이브:460)
+2026-06-24 21:07:57,600 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 21:37:59,369 [INFO] DriveID 460개
+2026-06-24 21:37:59,411 [INFO] HTML갱신완료(460개,소송:118,드라이브:460)
+2026-06-24 21:38:03,239 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 22:08:05,000 [INFO] DriveID 460개
+2026-06-24 22:08:05,042 [INFO] HTML갱신완료(460개,소송:118,드라이브:460)
+2026-06-24 22:08:09,117 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 22:38:10,693 [INFO] DriveID 460개
+2026-06-24 22:38:10,734 [INFO] HTML갱신완료(460개,소송:118,드라이브:460)
+2026-06-24 22:38:15,191 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 22:47:56,390 [INFO] ▶ 처리: (영어)2026STN미디어(뉴스포함) 회사 소개서(2026.6)3.pdf
+2026-06-24 22:48:02,546 [INFO]   [업무] Broadcasting Company Profile 2026 [일반]
+2026-06-24 22:48:02,547 [INFO] 파일명변경:(영어)2026STN미디어(뉴스포함) 회사 소개서(2026.6)3.pdf→20260624_STN Media_회사소개서.pdf
+2026-06-24 22:48:03,541 [INFO] DriveID 461개
+2026-06-24 22:48:03,584 [INFO] HTML갱신완료(461개,소송:118,드라이브:460)
+2026-06-24 22:48:07,759 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 22:54:42,909 [INFO] ▶ 처리: (영어)2026STN미디어(뉴스포함) 회사 소개서(2026.6)3.pdf
+2026-06-24 22:54:49,601 [INFO]   [업무] STN Media 회사 소개서 [일반]
+2026-06-24 22:54:49,602 [INFO] 파일명변경:(영어)2026STN미디어(뉴스포함) 회사 소개서(2026.6)3.pdf→20260624_STN미디어_회사소개서.pdf
+2026-06-24 22:54:50,546 [INFO] DriveID 462개
+2026-06-24 22:54:50,588 [INFO] HTML갱신완료(462개,소송:118,드라이브:461)
+2026-06-24 22:54:54,194 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 23:08:16,863 [INFO] DriveID 462개
+2026-06-24 23:08:16,930 [INFO] HTML갱신완료(462개,소송:118,드라이브:462)
+2026-06-24 23:08:21,107 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-24 23:38:22,729 [INFO] DriveID 462개
+2026-06-24 23:38:22,768 [INFO] HTML갱신완료(462개,소송:118,드라이브:462)
+2026-06-24 23:38:27,049 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 00:08:28,790 [INFO] DriveID 462개
+2026-06-25 00:08:28,831 [INFO] HTML갱신완료(462개,소송:118,드라이브:462)
+2026-06-25 00:08:33,466 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 00:38:35,107 [INFO] DriveID 462개
+2026-06-25 00:38:35,148 [INFO] HTML갱신완료(462개,소송:118,드라이브:462)
+2026-06-25 00:38:39,219 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 01:08:41,550 [INFO] DriveID 462개
+2026-06-25 01:08:41,588 [INFO] HTML갱신완료(462개,소송:118,드라이브:462)
+2026-06-25 01:08:45,726 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 01:38:47,448 [INFO] DriveID 462개
+2026-06-25 01:38:47,490 [INFO] HTML갱신완료(462개,소송:118,드라이브:462)
+2026-06-25 01:38:51,537 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 02:08:53,108 [INFO] DriveID 462개
+2026-06-25 02:08:53,149 [INFO] HTML갱신완료(462개,소송:118,드라이브:462)
+2026-06-25 02:08:57,085 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 02:38:58,703 [INFO] DriveID 462개
+2026-06-25 02:38:58,744 [INFO] HTML갱신완료(462개,소송:118,드라이브:462)
+2026-06-25 02:39:03,383 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 03:09:04,945 [INFO] DriveID 462개
+2026-06-25 03:09:04,985 [INFO] HTML갱신완료(462개,소송:118,드라이브:462)
+2026-06-25 03:09:36,896 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 03:39:38,434 [INFO] DriveID 462개
+2026-06-25 03:39:38,475 [INFO] HTML갱신완료(462개,소송:118,드라이브:462)
+2026-06-25 03:40:17,061 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 04:10:18,620 [INFO] DriveID 462개
+2026-06-25 04:10:18,659 [INFO] HTML갱신완료(462개,소송:118,드라이브:462)
+2026-06-25 04:10:22,614 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 04:40:24,187 [INFO] DriveID 462개
+2026-06-25 04:40:24,228 [INFO] HTML갱신완료(462개,소송:118,드라이브:462)
+2026-06-25 04:40:28,255 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 05:10:29,776 [INFO] DriveID 462개
+2026-06-25 05:10:29,818 [INFO] HTML갱신완료(462개,소송:118,드라이브:462)
+2026-06-25 05:10:33,816 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 05:40:35,463 [INFO] DriveID 462개
+2026-06-25 05:40:35,505 [INFO] HTML갱신완료(462개,소송:118,드라이브:462)
+2026-06-25 05:40:40,118 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 06:10:41,633 [INFO] DriveID 462개
+2026-06-25 06:10:41,672 [INFO] HTML갱신완료(462개,소송:118,드라이브:462)
+2026-06-25 06:10:46,104 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 06:40:47,564 [INFO] DriveID 462개
+2026-06-25 06:40:47,607 [INFO] HTML갱신완료(462개,소송:118,드라이브:462)
+2026-06-25 06:40:51,737 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 07:10:53,258 [INFO] DriveID 462개
+2026-06-25 07:10:53,299 [INFO] HTML갱신완료(462개,소송:118,드라이브:462)
+2026-06-25 07:10:57,288 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 07:40:58,896 [INFO] DriveID 462개
+2026-06-25 07:40:58,935 [INFO] HTML갱신완료(462개,소송:118,드라이브:462)
+2026-06-25 07:41:02,712 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 07:54:31,270 [INFO] 시스템 시작
+2026-06-25 07:54:31,461 [WARNING] 원본이동실패 SCAN_20251217_204918246_20251217_084121_001.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20251217_204918246_20251217_084121_001.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20251217_204918246_20251217_084121_001.jpg'
+2026-06-25 07:54:31,461 [INFO] JPG→PDF 변환:1p → SCAN_20251217_204918246_20251217_084121.pdf
+2026-06-25 07:54:31,501 [WARNING] 원본이동실패 SCAN_20260324_163716916_20260324_042912.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260324_163716916_20260324_042912.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260324_163716916_20260324_042912.jpg'
+2026-06-25 07:54:31,501 [INFO] JPG→PDF 변환:1p → SCAN_20260324_163716916_20260324_042912.pdf
+2026-06-25 07:54:31,642 [WARNING] 원본이동실패 SCAN_20260521_154252371_20260521_033409_002.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260521_154252371_20260521_033409_002.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260521_154252371_20260521_033409_002.jpg'
+2026-06-25 07:54:31,642 [WARNING] 원본이동실패 SCAN_20260521_154252371_20260521_033409_003.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260521_154252371_20260521_033409_003.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260521_154252371_20260521_033409_003.jpg'
+2026-06-25 07:54:31,644 [WARNING] 원본이동실패 SCAN_20260521_154252371_20260521_033409_004.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260521_154252371_20260521_033409_004.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260521_154252371_20260521_033409_004.jpg'
+2026-06-25 07:54:31,644 [INFO] JPG→PDF 변환:3p → SCAN_20260521_154252371_20260521_033409.pdf
+2026-06-25 07:54:31,645 [INFO] 미처리파일 3개 처리
+2026-06-25 07:54:31,645 [INFO] ▶ 처리: SCAN_20251217_204918246_20251217_084121.pdf
+2026-06-25 07:54:43,548 [INFO]   [업무] 전시장 임대차 계약서 [일반]
+2026-06-25 07:54:43,550 [INFO] 파일명변경:SCAN_20251217_204918246_20251217_084121.pdf→20251031_송도컨벤시아_전시장임대차계약서_3.pdf
+2026-06-25 07:54:44,054 [INFO] ▶ 처리: SCAN_20260324_163716916_20260324_042912.pdf
+2026-06-25 07:54:51,573 [INFO]   [업무] 신분증명용 증명사진 [일반]
+2026-06-25 07:54:51,575 [INFO] 파일명변경:SCAN_20260324_163716916_20260324_042912.pdf→2026-03-24_미상_신분증명사진.pdf
+2026-06-25 07:54:52,078 [INFO] ▶ 처리: SCAN_20260521_154252371_20260521_033409.pdf
+2026-06-25 07:55:02,355 [INFO]   [업무] 법인 등기부등본 - 발행주식의 총수와 그 종류 및 각각의 수 [일반]
+2026-06-25 07:55:02,356 [INFO] 파일명변경:SCAN_20260521_154252371_20260521_033409.pdf→20260521_회사명불명_법인등기부등본_발행주식총수및종류.pdf
+2026-06-25 07:55:03,758 [INFO] DriveID 465개
+2026-06-25 07:55:05,061 [INFO] HTML갱신완료(465개,소송:118,드라이브:464)
+2026-06-25 07:55:08,127 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 07:55:08,128 [INFO] 폴더감시시작:C:\Users\User\Desktop\스캔
+2026-06-25 07:55:17,279 [INFO] 시스템 시작
+2026-06-25 07:55:17,353 [WARNING] 원본이동실패 SCAN_20251217_204918246_20251217_084121_001.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20251217_204918246_20251217_084121_001.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20251217_204918246_20251217_084121_001.jpg'
+2026-06-25 07:55:17,353 [INFO] JPG→PDF 변환:1p → SCAN_20251217_204918246_20251217_084121.pdf
+2026-06-25 07:55:17,395 [WARNING] 원본이동실패 SCAN_20260324_163716916_20260324_042912.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260324_163716916_20260324_042912.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260324_163716916_20260324_042912.jpg'
+2026-06-25 07:55:17,395 [INFO] JPG→PDF 변환:1p → SCAN_20260324_163716916_20260324_042912.pdf
+2026-06-25 07:55:17,543 [WARNING] 원본이동실패 SCAN_20260521_154252371_20260521_033409_002.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260521_154252371_20260521_033409_002.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260521_154252371_20260521_033409_002.jpg'
+2026-06-25 07:55:17,543 [WARNING] 원본이동실패 SCAN_20260521_154252371_20260521_033409_003.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260521_154252371_20260521_033409_003.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260521_154252371_20260521_033409_003.jpg'
+2026-06-25 07:55:17,544 [WARNING] 원본이동실패 SCAN_20260521_154252371_20260521_033409_004.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260521_154252371_20260521_033409_004.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260521_154252371_20260521_033409_004.jpg'
+2026-06-25 07:55:17,544 [INFO] JPG→PDF 변환:3p → SCAN_20260521_154252371_20260521_033409.pdf
+2026-06-25 07:55:17,546 [INFO] 미처리파일 3개 처리
+2026-06-25 07:55:17,546 [INFO] ▶ 처리: SCAN_20251217_204918246_20251217_084121.pdf
+2026-06-25 07:55:22,135 [INFO] ▶ 처리: SCAN_20260521_154252371_20260521_033409.pdf
+2026-06-25 07:55:26,448 [INFO]   [업무] 전시장 임대차 계약서 [일반]
+2026-06-25 07:55:31,405 [INFO]   [업무] 법인등기사항전부증명서 [일반]
+2026-06-25 07:55:31,406 [INFO] 파일명변경:SCAN_20260521_154252371_20260521_033409.pdf→20260521_등기번호0060111_법인등기사항전부증명서_2.pdf
+2026-06-25 07:55:32,167 [INFO] DriveID 468개
+2026-06-25 07:55:32,211 [INFO] HTML갱신완료(468개,소송:118,드라이브:467)
+2026-06-25 07:55:35,151 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 07:55:37,152 [INFO] ▶ 처리: SCAN_20260324_163716916_20260324_042912.pdf
+2026-06-25 07:55:43,909 [INFO]   [업무] 신분증명용 사진 [일반]
+2026-06-25 07:55:43,910 [INFO] 파일명변경:SCAN_20260324_163716916_20260324_042912.pdf→2026-03-24_미상_신분증명사진_1.pdf
+2026-06-25 07:55:44,728 [INFO] DriveID 468개
+2026-06-25 07:55:44,771 [INFO] HTML갱신완료(468개,소송:118,드라이브:467)
+2026-06-25 07:55:47,731 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 07:55:49,733 [INFO] ▶ 처리: SCAN_20251217_204918246_20251217_084121.pdf
+2026-06-25 07:55:58,661 [INFO]   [업무] 전시장 임대차 계약서 [일반]
+2026-06-25 07:55:58,662 [INFO] 파일명변경:SCAN_20251217_204918246_20251217_084121.pdf→20251031_송도컨벤시아_전시장임대차계약서_4.pdf
+2026-06-25 07:55:59,388 [INFO] DriveID 468개
+2026-06-25 07:55:59,429 [INFO] HTML갱신완료(468개,소송:118,드라이브:467)
+2026-06-25 07:56:03,576 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 08:25:11,030 [INFO] DriveID 468개
+2026-06-25 08:25:11,076 [INFO] HTML갱신완료(468개,소송:118,드라이브:468)
+2026-06-25 08:25:15,513 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 08:55:17,021 [INFO] DriveID 468개
+2026-06-25 08:55:17,060 [INFO] HTML갱신완료(468개,소송:118,드라이브:468)
+2026-06-25 08:55:21,392 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 09:25:23,105 [INFO] DriveID 468개
+2026-06-25 09:25:23,146 [INFO] HTML갱신완료(468개,소송:118,드라이브:468)
+2026-06-25 09:25:27,945 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 09:42:51,319 [INFO] ▶ 처리: (영어)2026STN미디어(뉴스포함) 회사 소개서(2026.6).pdf
+2026-06-25 09:42:57,536 [INFO]   [업무] 2026 STN미디어 회사 소개서 [일반]
+2026-06-25 09:42:57,537 [INFO] 파일명변경:(영어)2026STN미디어(뉴스포함) 회사 소개서(2026.6).pdf→20260625_STN Media_회사소개서.pdf
+2026-06-25 09:42:58,550 [INFO] DriveID 468개
+2026-06-25 09:42:58,616 [INFO] HTML갱신완료(469개,소송:118,드라이브:468)
+2026-06-25 09:43:03,641 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 09:55:32,128 [INFO] DriveID 469개
+2026-06-25 09:55:32,175 [INFO] HTML갱신완료(469개,소송:118,드라이브:469)
+2026-06-25 09:55:36,804 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 10:28:47,784 [ERROR] Drive오류:<urlopen error [Errno 11001] getaddrinfo failed>
+2026-06-25 10:28:47,878 [INFO] HTML갱신완료(469개,소송:118,드라이브:0)
+2026-06-25 10:28:54,113 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 10:59:12,849 [ERROR] Drive오류:<urlopen error _ssl.c:1063: The handshake operation timed out>
+2026-06-25 10:59:12,888 [INFO] HTML갱신완료(469개,소송:118,드라이브:0)
+2026-06-25 10:59:22,851 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 13:01:12,916 [ERROR] Drive오류:<urlopen error [Errno 11001] getaddrinfo failed>
+2026-06-25 13:01:12,972 [INFO] HTML갱신완료(469개,소송:118,드라이브:0)
+2026-06-25 13:01:19,318 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 13:31:20,913 [INFO] DriveID 469개
+2026-06-25 13:31:20,952 [INFO] HTML갱신완료(469개,소송:118,드라이브:469)
+2026-06-25 13:31:25,999 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 14:01:27,605 [INFO] DriveID 469개
+2026-06-25 14:01:27,646 [INFO] HTML갱신완료(469개,소송:118,드라이브:469)
+2026-06-25 14:01:32,458 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 14:31:34,011 [INFO] DriveID 469개
+2026-06-25 14:31:34,052 [INFO] HTML갱신완료(469개,소송:118,드라이브:469)
+2026-06-25 14:31:38,741 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 15:01:40,269 [INFO] DriveID 469개
+2026-06-25 15:01:40,308 [INFO] HTML갱신완료(469개,소송:118,드라이브:469)
+2026-06-25 15:01:44,826 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 15:11:23,048 [INFO] ▶ 처리: SCAN_20260625_151110099_20260625_030201.pdf
+2026-06-25 15:11:32,955 [INFO]   [업무] 사업자등록증(일반과세자) [일반]
+2026-06-25 15:11:32,955 [ERROR] 오류:[WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260625_151110099_20260625_030201.pdf' -> 'C:\\Users\\User\\Desktop\\스캔\\20240117_용산세무서장_사업자등록증_일반과세자_이광호.pdf'
+2026-06-25 15:11:39,957 [INFO] ▶ 처리: SCAN_20260625_151110099_20260625_030201.pdf
+2026-06-25 15:11:41,524 [WARNING] 추출실패:SCAN_20260625_151110099_20260625_030201.pdf
+2026-06-25 15:12:04,534 [INFO] ▶ 처리: 사업자등록증 (샹그릴라).pdf
+2026-06-25 15:12:13,188 [INFO]   [업무] 사업자등록증 (일반과세자) [일반]
+2026-06-25 15:12:13,190 [INFO] 파일명변경:사업자등록증 (샹그릴라).pdf→20240117_샹그릴라이앤티_사업자등록증.pdf
+2026-06-25 15:12:14,137 [INFO] DriveID 470개
+2026-06-25 15:12:14,177 [INFO] HTML갱신완료(470개,소송:118,드라이브:469)
+2026-06-25 15:12:18,298 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 15:31:46,667 [INFO] DriveID 470개
+2026-06-25 15:31:46,707 [INFO] HTML갱신완료(470개,소송:118,드라이브:470)
+2026-06-25 15:31:51,255 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 15:34:59,323 [INFO] ▶ 처리: SCAN_20260625_153431360_20260625_032528.pdf
+2026-06-25 15:35:10,303 [INFO]   [업무] WHO'S BAD The Ultimate Michael Jackson Experience Live in Korea 공연계약서 [주의]
+2026-06-25 15:35:10,305 [INFO] 파일명변경:SCAN_20260625_153431360_20260625_032528.pdf→20260924-1005_STN_MEDIA_Co_Ltd_공연계약서_Michael_공연.pdf
+2026-06-25 15:35:11,274 [INFO] DriveID 470개
+2026-06-25 15:35:11,322 [INFO] HTML갱신완료(471개,소송:118,드라이브:470)
+2026-06-25 15:35:16,001 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 16:01:53,684 [INFO] DriveID 471개
+2026-06-25 16:01:53,726 [INFO] HTML갱신완료(471개,소송:118,드라이브:471)
+2026-06-25 16:01:58,424 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 16:03:03,451 [INFO] ▶ 처리: SCAN_20260625_160252084_20260625_035342.pdf
+2026-06-25 16:03:12,067 [INFO]   [업무] 주권미발행확인서 [일반]
+2026-06-25 16:03:12,070 [INFO] 파일명변경:SCAN_20260625_160252084_20260625_035342.pdf→20260625_주식회사에스더엔_주권미발행확인서.pdf
+2026-06-25 16:03:12,792 [INFO] DriveID 471개
+2026-06-25 16:03:12,834 [INFO] HTML갱신완료(472개,소송:118,드라이브:471)
+2026-06-25 16:03:17,198 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 16:04:49,237 [INFO] ▶ 처리: SCAN_20260625_160436545_20260625_035527.pdf
+2026-06-25 16:05:01,274 [INFO]   [업무] 주주명부 [일반]
+2026-06-25 16:05:01,276 [INFO] 파일명변경:SCAN_20260625_160436545_20260625_035527.pdf→20260625_주식회사에스티엘_주주명부.pdf
+2026-06-25 16:05:02,105 [INFO] DriveID 473개
+2026-06-25 16:05:02,173 [INFO] HTML갱신완료(473개,소송:118,드라이브:472)
+2026-06-25 16:05:06,704 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 16:06:20,736 [INFO] ▶ 처리: 공연계약서_Michael_공연(마킹).pdf
+2026-06-25 16:06:31,170 [INFO]   [업무] WHO'S BAD: The Ultimate Michael Jackson Experience Live in Korea 공연계약서 [주의]
+2026-06-25 16:06:31,171 [INFO] 파일명변경:공연계약서_Michael_공연(마킹).pdf→20260924_STN MEDIA_Michael 공연계약서.pdf
+2026-06-25 16:06:31,969 [INFO] DriveID 474개
+2026-06-25 16:06:32,012 [INFO] HTML갱신완료(474개,소송:118,드라이브:473)
+2026-06-25 16:06:36,594 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 16:32:02,196 [INFO] DriveID 474개
+2026-06-25 16:32:02,239 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-25 16:32:06,803 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 17:02:08,477 [INFO] DriveID 474개
+2026-06-25 17:02:08,517 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-25 17:02:13,517 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 17:32:15,510 [INFO] DriveID 474개
+2026-06-25 17:32:15,548 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-25 17:32:20,264 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 18:02:22,070 [INFO] DriveID 474개
+2026-06-25 18:02:22,115 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-25 18:02:26,937 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 18:32:28,435 [INFO] DriveID 474개
+2026-06-25 18:32:28,473 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-25 18:32:33,259 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 19:02:36,777 [INFO] DriveID 474개
+2026-06-25 19:02:36,816 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-25 19:02:41,703 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 19:32:43,388 [INFO] DriveID 474개
+2026-06-25 19:32:43,428 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-25 19:32:48,443 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 20:02:50,015 [INFO] DriveID 474개
+2026-06-25 20:02:50,055 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-25 20:02:54,887 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 20:32:56,486 [INFO] DriveID 474개
+2026-06-25 20:32:56,525 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-25 20:33:01,239 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 21:03:02,782 [INFO] DriveID 474개
+2026-06-25 21:03:02,823 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-25 21:03:07,813 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 21:33:09,558 [INFO] DriveID 474개
+2026-06-25 21:33:09,597 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-25 21:33:14,651 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 22:03:16,395 [INFO] DriveID 474개
+2026-06-25 22:03:16,434 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-25 22:03:21,470 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 22:33:23,038 [INFO] DriveID 474개
+2026-06-25 22:33:23,077 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-25 22:33:28,139 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 23:03:29,989 [INFO] DriveID 474개
+2026-06-25 23:03:30,027 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-25 23:03:35,075 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-25 23:33:36,703 [INFO] DriveID 474개
+2026-06-25 23:33:36,746 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-25 23:33:41,290 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 00:03:42,975 [INFO] DriveID 474개
+2026-06-26 00:03:43,014 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-26 00:03:48,080 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 00:33:49,646 [INFO] DriveID 474개
+2026-06-26 00:33:49,684 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-26 00:33:54,678 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 01:03:56,278 [INFO] DriveID 474개
+2026-06-26 01:03:56,317 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-26 01:04:01,019 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 01:34:02,610 [INFO] DriveID 474개
+2026-06-26 01:34:02,649 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-26 01:34:07,430 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 02:04:09,069 [INFO] DriveID 474개
+2026-06-26 02:04:09,109 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-26 02:04:14,155 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 02:34:15,759 [INFO] DriveID 474개
+2026-06-26 02:34:15,804 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-26 02:34:20,777 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 03:04:22,381 [INFO] DriveID 474개
+2026-06-26 03:04:22,420 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-26 03:04:27,024 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 03:34:28,668 [INFO] DriveID 474개
+2026-06-26 03:34:28,707 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-26 03:34:33,272 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 04:04:34,849 [INFO] DriveID 474개
+2026-06-26 04:04:34,888 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-26 04:04:39,607 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 04:34:41,139 [INFO] DriveID 474개
+2026-06-26 04:34:41,178 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-26 04:34:45,693 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 05:04:47,369 [INFO] DriveID 474개
+2026-06-26 05:04:47,411 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-26 05:04:51,959 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 05:34:53,550 [INFO] DriveID 474개
+2026-06-26 05:34:53,588 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-26 05:34:57,984 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 06:04:59,598 [INFO] DriveID 474개
+2026-06-26 06:04:59,638 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-26 06:05:04,327 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 06:35:05,868 [INFO] DriveID 474개
+2026-06-26 06:35:05,926 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-26 06:35:10,518 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 07:05:12,103 [INFO] DriveID 474개
+2026-06-26 07:05:12,142 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-26 07:05:16,922 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 07:35:18,628 [INFO] DriveID 474개
+2026-06-26 07:35:18,667 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-26 07:35:23,228 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 08:05:25,133 [INFO] DriveID 474개
+2026-06-26 08:05:25,189 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-26 08:05:29,714 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 08:35:31,446 [INFO] DriveID 474개
+2026-06-26 08:35:31,485 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-26 08:35:35,755 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 09:05:37,469 [INFO] DriveID 474개
+2026-06-26 09:05:37,509 [INFO] HTML갱신완료(474개,소송:118,드라이브:474)
+2026-06-26 09:05:42,112 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 09:30:17,733 [INFO] ▶ 처리: 2025간회합211_2026.06.25_허가서 주주총회 개최 및 임원 선임 허가 신청(2026-30호)_참여_김규섭.pdf
+2026-06-26 09:30:24,735 [INFO]   [소송] 주주총회 개최 및 임원 선임 허가 신청 [주의]
+2026-06-26 09:30:24,736 [INFO] 파일명변경:2025간회합211_2026.06.25_허가서 주주총회 개최 및 임원 선임 허가 신청(2026-30호)_참여_김규섭.pdf→2026-06-24_주식회사에스티엔_주주총회개최및임원선임허가결정문.pdf
+2026-06-26 09:30:24,800 [INFO] 소송목록추가:2026-06-24_주식회사에스티엔_주주총회개최및임원선임허가결정문.pdf[주의]
+2026-06-26 09:30:25,726 [INFO] DriveID 475개
+2026-06-26 09:30:25,773 [INFO] HTML갱신완료(475개,소송:119,드라이브:474)
+2026-06-26 09:30:30,553 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 09:35:43,695 [INFO] DriveID 475개
+2026-06-26 09:35:43,743 [INFO] HTML갱신완료(475개,소송:119,드라이브:475)
+2026-06-26 09:35:48,098 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 10:05:49,885 [INFO] DriveID 475개
+2026-06-26 10:05:49,940 [INFO] HTML갱신완료(475개,소송:119,드라이브:475)
+2026-06-26 10:05:54,982 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 10:35:56,856 [INFO] DriveID 475개
+2026-06-26 10:35:56,901 [INFO] HTML갱신완료(475개,소송:119,드라이브:475)
+2026-06-26 10:36:01,415 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 11:01:16,019 [INFO] ▶ 처리: (요약본)2026 YEOSU with MyK FESTA 제안서.pdf
+2026-06-26 11:01:26,647 [INFO]   [업무] 2026 여수세계섬박람회 D-50 붐업 YEOSU with MyK FESTA [일반]
+2026-06-26 11:01:26,648 [INFO] 파일명변경:(요약본)2026 YEOSU with MyK FESTA 제안서.pdf→20260427_콜럼버스파파야_2026여수세계섬박람회D-50붐업YEOSU with MyK FESTA 제안서.pdf
+2026-06-26 11:01:27,644 [INFO] DriveID 475개
+2026-06-26 11:01:27,691 [INFO] HTML갱신완료(477개,소송:119,드라이브:475)
+2026-06-26 11:01:32,079 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 11:01:34,080 [INFO] ▶ 처리: 2026 YEOSU with MyK FESTA 제안서.pdf
+2026-06-26 11:01:43,616 [INFO]   [업무] 2026 여수세계섬박람회 D-50 붐업 YEOSU with MyK FESTA [일반]
+2026-06-26 11:01:43,617 [INFO] 파일명변경:2026 YEOSU with MyK FESTA 제안서.pdf→20260427_콜럼버스파파야_2026여수세계섬박람회D-50붐업YEOSUwithMyKFESTA제안서.pdf
+2026-06-26 11:01:44,505 [INFO] DriveID 477개
+2026-06-26 11:01:44,592 [INFO] HTML갱신완료(477개,소송:119,드라이브:476)
+2026-06-26 11:01:48,476 [WARNING] GitHub 업로드 1차 실패, 동기화 후 재시도: error: failed to push some refs to 'https://github.com/stnhub210-dev/stnscan.git
+2026-06-26 11:01:51,735 [INFO] GitHub 자동 업로드 완료 (재시도 성공)
+2026-06-26 11:06:04,739 [INFO] DriveID 477개
+2026-06-26 11:06:04,779 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 11:06:08,866 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 11:36:10,625 [INFO] DriveID 477개
+2026-06-26 11:36:10,673 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 11:36:13,792 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 12:06:15,398 [INFO] DriveID 477개
+2026-06-26 12:06:15,447 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 12:06:18,789 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 12:36:20,467 [INFO] DriveID 477개
+2026-06-26 12:36:20,513 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 12:36:23,971 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 13:06:25,662 [INFO] DriveID 477개
+2026-06-26 13:06:25,702 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 13:06:29,041 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 13:36:30,855 [INFO] DriveID 477개
+2026-06-26 13:36:30,898 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 13:36:34,270 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 14:06:35,849 [INFO] DriveID 477개
+2026-06-26 14:06:35,890 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 14:06:39,066 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 14:36:40,770 [INFO] DriveID 477개
+2026-06-26 14:36:40,810 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 14:36:44,245 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 15:06:46,007 [INFO] DriveID 477개
+2026-06-26 15:06:46,051 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 15:06:49,713 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 15:36:51,524 [INFO] DriveID 477개
+2026-06-26 15:36:51,565 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 15:36:55,160 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 16:06:56,796 [INFO] DriveID 477개
+2026-06-26 16:06:56,841 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 16:07:00,219 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 16:37:02,280 [INFO] DriveID 477개
+2026-06-26 16:37:02,326 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 16:37:05,728 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 17:07:07,380 [INFO] DriveID 477개
+2026-06-26 17:07:07,424 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 17:07:10,865 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 17:37:12,840 [INFO] DriveID 477개
+2026-06-26 17:37:12,880 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 17:37:17,985 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 18:07:19,787 [INFO] DriveID 477개
+2026-06-26 18:07:19,842 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 18:07:24,753 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 18:37:26,614 [INFO] DriveID 477개
+2026-06-26 18:37:26,665 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 18:37:31,621 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 19:07:33,365 [INFO] DriveID 477개
+2026-06-26 19:07:33,415 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 19:07:38,258 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 19:37:39,942 [INFO] DriveID 477개
+2026-06-26 19:37:39,985 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 19:37:45,013 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 20:07:46,753 [INFO] DriveID 477개
+2026-06-26 20:07:46,802 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 20:07:52,112 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 20:37:53,740 [INFO] DriveID 477개
+2026-06-26 20:37:53,785 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 20:37:58,855 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 21:08:00,572 [INFO] DriveID 477개
+2026-06-26 21:08:00,617 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 21:08:05,558 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 21:38:07,161 [INFO] DriveID 477개
+2026-06-26 21:38:07,207 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 21:38:12,313 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 22:08:14,029 [INFO] DriveID 477개
+2026-06-26 22:08:14,069 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 22:08:18,866 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 22:38:20,474 [INFO] DriveID 477개
+2026-06-26 22:38:20,517 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 22:38:25,446 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 23:08:27,134 [INFO] DriveID 477개
+2026-06-26 23:08:27,176 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 23:08:31,983 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-26 23:38:33,760 [INFO] DriveID 477개
+2026-06-26 23:38:33,808 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-26 23:38:38,742 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 00:08:40,388 [INFO] DriveID 477개
+2026-06-27 00:08:40,431 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 00:08:45,568 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 00:38:47,227 [INFO] DriveID 477개
+2026-06-27 00:38:47,267 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 00:38:52,151 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 01:08:54,000 [INFO] DriveID 477개
+2026-06-27 01:08:54,039 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 01:08:58,946 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 01:39:00,542 [INFO] DriveID 477개
+2026-06-27 01:39:00,584 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 01:39:05,516 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 02:09:07,204 [INFO] DriveID 477개
+2026-06-27 02:09:07,245 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 02:09:12,046 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 02:39:13,788 [INFO] DriveID 477개
+2026-06-27 02:39:13,832 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 02:39:18,846 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 03:09:20,575 [INFO] DriveID 477개
+2026-06-27 03:09:20,640 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 03:09:25,377 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 03:39:27,015 [INFO] DriveID 477개
+2026-06-27 03:39:27,054 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 03:39:31,932 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 04:09:33,796 [INFO] DriveID 477개
+2026-06-27 04:09:33,836 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 04:09:39,054 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 04:39:40,725 [INFO] DriveID 477개
+2026-06-27 04:39:40,767 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 04:39:45,716 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 05:09:47,371 [INFO] DriveID 477개
+2026-06-27 05:09:47,411 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 05:09:52,558 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 05:39:54,196 [INFO] DriveID 477개
+2026-06-27 05:39:54,242 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 05:39:59,689 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 06:10:01,219 [INFO] DriveID 477개
+2026-06-27 06:10:01,262 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 06:10:06,300 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 06:40:07,821 [INFO] DriveID 477개
+2026-06-27 06:40:07,861 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 06:40:12,583 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 07:10:14,236 [INFO] DriveID 477개
+2026-06-27 07:10:14,279 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 07:10:19,053 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 07:40:20,704 [INFO] DriveID 477개
+2026-06-27 07:40:20,746 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 07:40:25,840 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 08:10:27,493 [INFO] DriveID 477개
+2026-06-27 08:10:27,532 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 08:10:32,369 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 08:40:34,062 [INFO] DriveID 477개
+2026-06-27 08:40:34,102 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 08:40:39,070 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 09:10:40,730 [INFO] DriveID 477개
+2026-06-27 09:10:40,777 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 09:10:45,641 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 09:40:47,265 [INFO] DriveID 477개
+2026-06-27 09:40:47,308 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 09:40:52,232 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 10:10:53,774 [INFO] DriveID 477개
+2026-06-27 10:10:53,829 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 10:10:58,998 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 10:41:00,570 [INFO] DriveID 477개
+2026-06-27 10:41:00,613 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 10:41:05,429 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 11:11:07,192 [INFO] DriveID 477개
+2026-06-27 11:11:07,231 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 11:11:12,009 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 11:41:17,256 [INFO] DriveID 477개
+2026-06-27 11:41:17,305 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 11:41:21,683 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 12:11:23,283 [INFO] DriveID 477개
+2026-06-27 12:11:23,331 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 12:11:28,095 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 12:41:29,708 [INFO] DriveID 477개
+2026-06-27 12:41:29,750 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 12:41:34,846 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 13:11:36,701 [INFO] DriveID 477개
+2026-06-27 13:11:36,744 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 13:11:41,721 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 13:41:43,361 [INFO] DriveID 477개
+2026-06-27 13:41:43,405 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 13:41:48,788 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 14:11:50,514 [INFO] DriveID 477개
+2026-06-27 14:11:50,564 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 14:11:55,807 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 14:41:57,466 [INFO] DriveID 477개
+2026-06-27 14:41:57,514 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 14:42:02,223 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 15:12:03,972 [INFO] DriveID 477개
+2026-06-27 15:12:04,028 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 15:12:07,929 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 15:42:09,591 [INFO] DriveID 477개
+2026-06-27 15:42:09,632 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 15:42:13,633 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 16:12:15,368 [INFO] DriveID 477개
+2026-06-27 16:12:15,416 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 16:12:19,411 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 16:42:21,179 [INFO] DriveID 477개
+2026-06-27 16:42:21,225 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 16:42:24,494 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 17:12:26,250 [INFO] DriveID 477개
+2026-06-27 17:12:26,298 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 17:12:29,673 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 17:42:31,344 [INFO] DriveID 477개
+2026-06-27 17:42:31,385 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 17:42:34,540 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 18:12:36,106 [INFO] DriveID 477개
+2026-06-27 18:12:36,156 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 18:12:39,516 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 18:42:41,119 [INFO] DriveID 477개
+2026-06-27 18:42:41,161 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 18:42:45,096 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 19:12:48,606 [INFO] DriveID 477개
+2026-06-27 19:12:48,647 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 19:12:51,843 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 19:42:53,534 [INFO] DriveID 477개
+2026-06-27 19:42:53,579 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 19:42:56,740 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 20:12:58,376 [INFO] DriveID 477개
+2026-06-27 20:12:58,416 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 20:13:01,607 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 20:43:03,351 [INFO] DriveID 477개
+2026-06-27 20:43:03,397 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 20:43:06,824 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 21:13:08,676 [INFO] DriveID 477개
+2026-06-27 21:13:08,718 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 21:13:12,091 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 21:43:13,770 [INFO] DriveID 477개
+2026-06-27 21:43:13,815 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 21:43:17,228 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 22:13:19,137 [INFO] DriveID 477개
+2026-06-27 22:13:19,179 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 22:13:22,424 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 22:43:24,395 [INFO] DriveID 477개
+2026-06-27 22:43:24,445 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 22:43:28,078 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 23:13:30,245 [INFO] DriveID 477개
+2026-06-27 23:13:30,291 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 23:13:33,910 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-27 23:43:35,500 [INFO] DriveID 477개
+2026-06-27 23:43:35,541 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-27 23:43:39,012 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 00:13:40,685 [INFO] DriveID 477개
+2026-06-28 00:13:40,726 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 00:13:44,189 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 00:43:45,823 [INFO] DriveID 477개
+2026-06-28 00:43:45,862 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 00:43:49,359 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 01:13:50,949 [INFO] DriveID 477개
+2026-06-28 01:13:50,989 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 01:13:54,709 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 01:43:56,323 [INFO] DriveID 477개
+2026-06-28 01:43:56,366 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 01:43:59,944 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 02:14:01,523 [INFO] DriveID 477개
+2026-06-28 02:14:01,563 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 02:14:05,029 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 02:44:06,670 [INFO] DriveID 477개
+2026-06-28 02:44:06,711 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 02:44:10,256 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 03:14:11,920 [INFO] DriveID 477개
+2026-06-28 03:14:11,960 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 03:14:15,506 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 03:44:17,110 [INFO] DriveID 477개
+2026-06-28 03:44:17,149 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 03:44:20,693 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 04:14:22,241 [INFO] DriveID 477개
+2026-06-28 04:14:22,280 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 04:14:25,429 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 04:44:27,098 [INFO] DriveID 477개
+2026-06-28 04:44:27,137 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 04:44:30,209 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 05:14:31,790 [INFO] DriveID 477개
+2026-06-28 05:14:31,830 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 05:14:35,268 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 05:44:36,901 [INFO] DriveID 477개
+2026-06-28 05:44:36,941 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 05:44:40,538 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 06:14:42,095 [INFO] DriveID 477개
+2026-06-28 06:14:42,147 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 06:14:45,817 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 06:44:47,431 [INFO] DriveID 477개
+2026-06-28 06:44:47,482 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 06:44:50,680 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 07:14:52,299 [INFO] DriveID 477개
+2026-06-28 07:14:52,349 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 07:14:55,737 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 07:44:57,301 [INFO] DriveID 477개
+2026-06-28 07:44:57,357 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 07:45:00,521 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 08:15:02,237 [INFO] DriveID 477개
+2026-06-28 08:15:02,285 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 08:15:06,392 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 08:45:08,094 [INFO] DriveID 477개
+2026-06-28 08:45:08,142 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 08:45:11,763 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 09:15:13,479 [INFO] DriveID 477개
+2026-06-28 09:15:13,524 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 09:15:17,089 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 09:45:18,816 [INFO] DriveID 477개
+2026-06-28 09:45:18,863 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 09:45:22,571 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 10:15:24,215 [INFO] DriveID 477개
+2026-06-28 10:15:24,264 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 10:15:27,764 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 10:45:29,501 [INFO] DriveID 477개
+2026-06-28 10:45:29,547 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 10:45:32,822 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 11:15:34,487 [INFO] DriveID 477개
+2026-06-28 11:15:34,527 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 11:15:38,162 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-06-28 11:45:39,876 [INFO] DriveID 477개
+2026-06-28 11:45:39,918 [INFO] HTML갱신완료(477개,소송:119,드라이브:477)
+2026-06-28 11:45:43,501 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 08:47:43,242 [INFO] 시스템 시작
+2026-07-01 08:47:43,433 [WARNING] 원본이동실패 SCAN_20251217_204918246_20251217_084121_001.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20251217_204918246_20251217_084121_001.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20251217_204918246_20251217_084121_001.jpg'
+2026-07-01 08:47:43,433 [INFO] JPG→PDF 변환:1p → SCAN_20251217_204918246_20251217_084121.pdf
+2026-07-01 08:47:43,472 [WARNING] 원본이동실패 SCAN_20260324_163716916_20260324_042912.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260324_163716916_20260324_042912.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260324_163716916_20260324_042912.jpg'
+2026-07-01 08:47:43,472 [INFO] JPG→PDF 변환:1p → SCAN_20260324_163716916_20260324_042912.pdf
+2026-07-01 08:47:43,608 [WARNING] 원본이동실패 SCAN_20260521_154252371_20260521_033409_002.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260521_154252371_20260521_033409_002.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260521_154252371_20260521_033409_002.jpg'
+2026-07-01 08:47:43,609 [WARNING] 원본이동실패 SCAN_20260521_154252371_20260521_033409_003.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260521_154252371_20260521_033409_003.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260521_154252371_20260521_033409_003.jpg'
+2026-07-01 08:47:43,609 [WARNING] 원본이동실패 SCAN_20260521_154252371_20260521_033409_004.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260521_154252371_20260521_033409_004.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260521_154252371_20260521_033409_004.jpg'
+2026-07-01 08:47:43,609 [INFO] JPG→PDF 변환:3p → SCAN_20260521_154252371_20260521_033409.pdf
+2026-07-01 08:47:44,794 [INFO] DriveID 481개
+2026-07-01 08:47:44,795 [INFO] 미처리파일 7개 처리
+2026-07-01 08:47:44,795 [INFO] ▶ 처리: 0522 용마별빛포차_제안발표자료 (2).pdf
+2026-07-01 08:47:52,900 [INFO]   [업무] 2026 지역상권육성(유망골목상권) 사업 - 용마별빛포차 [일반]
+2026-07-01 08:47:52,902 [INFO] 파일명변경:0522 용마별빛포차_제안발표자료 (2).pdf→20260528_용마거리골목형상점가상인회_2026지역상권육성사업제안서.pdf
+2026-07-01 08:47:53,407 [INFO] ▶ 처리: SCAN_20251217_204918246_20251217_084121.pdf
+2026-07-01 08:47:54,570 [WARNING] 추출실패:SCAN_20251217_204918246_20251217_084121.pdf
+2026-07-01 08:47:55,071 [INFO] ▶ 처리: SCAN_20260324_163716916_20260324_042912.pdf
+2026-07-01 08:47:56,074 [WARNING] 추출실패:SCAN_20260324_163716916_20260324_042912.pdf
+2026-07-01 08:47:56,575 [INFO] ▶ 처리: SCAN_20260521_154252371_20260521_033409.pdf
+2026-07-01 08:47:57,581 [WARNING] 추출실패:SCAN_20260521_154252371_20260521_033409.pdf
+2026-07-01 08:47:58,082 [INFO] ▶ 처리: 마이클잭슨 6월(인천)1.pdf
+2026-07-01 08:48:03,896 [INFO]   [업무] 마이클잭슨 내한 30주년 기념 공연 제안서 [일반]
+2026-07-01 08:48:03,898 [INFO] 파일명변경:마이클잭슨 6월(인천)1.pdf→20260701_STN MEDIA_마이클잭슨내한30주년기념공연제안서.pdf
+2026-07-01 08:48:04,404 [INFO] ▶ 처리: 외국인근로자 브로셔.pdf
+2026-07-01 08:48:05,423 [WARNING] 추출실패:외국인근로자 브로셔.pdf
+2026-07-01 08:48:05,923 [INFO] ▶ 처리: 지구촌 신청서.pdf
+2026-07-01 08:48:06,936 [WARNING] 추출실패:지구촌 신청서.pdf
+2026-07-01 08:48:08,560 [INFO] DriveID 484개
+2026-07-01 08:48:09,963 [INFO] HTML갱신완료(484개,소송:119,드라이브:483)
+2026-07-01 08:48:14,102 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 08:48:14,103 [INFO] 폴더감시시작:C:\Users\User\Desktop\스캔
+2026-07-01 09:18:15,917 [INFO] DriveID 484개
+2026-07-01 09:18:15,967 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 09:18:19,687 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 09:48:21,648 [INFO] DriveID 484개
+2026-07-01 09:48:21,688 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 09:48:24,956 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 10:18:26,564 [INFO] DriveID 484개
+2026-07-01 10:18:26,612 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 10:18:30,474 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 10:48:32,119 [INFO] DriveID 484개
+2026-07-01 10:48:32,158 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 10:48:35,469 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 11:18:37,221 [INFO] DriveID 484개
+2026-07-01 11:18:37,264 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 11:18:40,583 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 11:48:42,303 [INFO] DriveID 484개
+2026-07-01 11:48:42,345 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 11:48:45,419 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 12:18:46,998 [INFO] DriveID 484개
+2026-07-01 12:18:47,038 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 12:18:50,542 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 12:48:52,010 [INFO] DriveID 484개
+2026-07-01 12:48:52,052 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 12:48:55,569 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 13:18:57,271 [INFO] DriveID 484개
+2026-07-01 13:18:57,319 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 13:19:02,048 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 13:49:03,579 [INFO] DriveID 484개
+2026-07-01 13:49:03,618 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 13:49:07,098 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 14:19:08,825 [INFO] DriveID 484개
+2026-07-01 14:19:08,865 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 14:19:12,271 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 14:49:13,999 [INFO] DriveID 484개
+2026-07-01 14:49:14,044 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 14:49:17,407 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 15:19:19,090 [INFO] DriveID 484개
+2026-07-01 15:19:19,130 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 15:19:22,672 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 15:49:24,405 [INFO] DriveID 484개
+2026-07-01 15:49:24,445 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 15:49:27,782 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 16:19:29,501 [INFO] DriveID 484개
+2026-07-01 16:19:29,542 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 16:19:32,873 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 16:49:34,350 [INFO] DriveID 484개
+2026-07-01 16:49:34,389 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 16:49:37,766 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 17:19:40,737 [INFO] DriveID 484개
+2026-07-01 17:19:40,776 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 17:19:44,378 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 17:49:45,968 [INFO] DriveID 484개
+2026-07-01 17:49:46,011 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 17:49:49,522 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 18:19:51,096 [INFO] DriveID 484개
+2026-07-01 18:19:51,135 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 18:19:54,758 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 18:49:56,312 [INFO] DriveID 484개
+2026-07-01 18:49:56,351 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 18:49:59,879 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 19:20:01,619 [INFO] DriveID 484개
+2026-07-01 19:20:01,665 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 19:20:05,174 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 19:50:06,620 [INFO] DriveID 484개
+2026-07-01 19:50:06,658 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 19:50:10,054 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 20:20:11,688 [INFO] DriveID 484개
+2026-07-01 20:20:11,727 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 20:20:15,203 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 20:50:16,708 [INFO] DriveID 484개
+2026-07-01 20:50:16,749 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 20:50:20,162 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 21:20:21,802 [INFO] DriveID 484개
+2026-07-01 21:20:21,846 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 21:20:25,284 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 21:50:26,857 [INFO] DriveID 484개
+2026-07-01 21:50:26,896 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 21:50:30,334 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 22:20:31,948 [INFO] DriveID 484개
+2026-07-01 22:20:31,987 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 22:20:35,478 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 22:50:37,189 [INFO] DriveID 484개
+2026-07-01 22:50:37,231 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 22:50:40,968 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 23:20:42,487 [INFO] DriveID 484개
+2026-07-01 23:20:42,526 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 23:20:46,309 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-01 23:50:47,764 [INFO] DriveID 484개
+2026-07-01 23:50:47,803 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-01 23:50:51,438 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 00:20:53,154 [INFO] DriveID 484개
+2026-07-02 00:20:53,194 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-02 00:20:57,255 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 00:50:58,823 [INFO] DriveID 484개
+2026-07-02 00:50:58,863 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-02 00:51:02,241 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 01:21:03,875 [INFO] DriveID 484개
+2026-07-02 01:21:03,914 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-02 01:21:07,421 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 01:51:08,968 [INFO] DriveID 484개
+2026-07-02 01:51:09,007 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-02 01:51:12,629 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 02:21:14,164 [INFO] DriveID 484개
+2026-07-02 02:21:14,205 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-02 02:21:17,919 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 02:51:19,579 [INFO] DriveID 484개
+2026-07-02 02:51:19,619 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-02 02:51:51,574 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 03:21:53,242 [INFO] DriveID 484개
+2026-07-02 03:21:53,281 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-02 03:21:56,762 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 03:51:58,384 [INFO] DriveID 484개
+2026-07-02 03:51:58,426 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-02 03:52:01,966 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 04:22:03,711 [INFO] DriveID 484개
+2026-07-02 04:22:03,751 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-02 04:22:07,169 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 04:52:08,659 [INFO] DriveID 484개
+2026-07-02 04:52:08,699 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-02 04:52:12,154 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 05:22:13,801 [INFO] DriveID 484개
+2026-07-02 05:22:13,840 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-02 05:22:17,395 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 05:52:18,918 [INFO] DriveID 484개
+2026-07-02 05:52:18,957 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-02 05:52:22,493 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 06:22:24,003 [INFO] DriveID 484개
+2026-07-02 06:22:24,042 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-02 06:22:27,687 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 06:52:29,239 [INFO] DriveID 484개
+2026-07-02 06:52:29,278 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-02 06:52:32,618 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 07:22:34,269 [INFO] DriveID 484개
+2026-07-02 07:22:34,309 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-02 07:22:37,715 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 07:52:39,396 [INFO] DriveID 484개
+2026-07-02 07:52:39,435 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-02 07:52:42,947 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 08:22:44,592 [INFO] DriveID 484개
+2026-07-02 08:22:44,631 [INFO] HTML갱신완료(484개,소송:119,드라이브:484)
+2026-07-02 08:22:48,020 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 08:55:58,314 [INFO] 시스템 시작
+2026-07-02 08:55:58,536 [WARNING] 원본이동실패 SCAN_20251217_204918246_20251217_084121_001.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20251217_204918246_20251217_084121_001.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20251217_204918246_20251217_084121_001.jpg'
+2026-07-02 08:55:58,536 [INFO] JPG→PDF 변환:1p → SCAN_20251217_204918246_20251217_084121_1.pdf
+2026-07-02 08:55:58,579 [WARNING] 원본이동실패 SCAN_20260324_163716916_20260324_042912.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260324_163716916_20260324_042912.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260324_163716916_20260324_042912.jpg'
+2026-07-02 08:55:58,579 [INFO] JPG→PDF 변환:1p → SCAN_20260324_163716916_20260324_042912_1.pdf
+2026-07-02 08:55:58,723 [WARNING] 원본이동실패 SCAN_20260521_154252371_20260521_033409_002.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260521_154252371_20260521_033409_002.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260521_154252371_20260521_033409_002.jpg'
+2026-07-02 08:55:58,724 [WARNING] 원본이동실패 SCAN_20260521_154252371_20260521_033409_003.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260521_154252371_20260521_033409_003.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260521_154252371_20260521_033409_003.jpg'
+2026-07-02 08:55:58,725 [WARNING] 원본이동실패 SCAN_20260521_154252371_20260521_033409_004.jpg:[WinError 183] 파일이 이미 있으므로 만들 수 없습니다: 'C:\\Users\\User\\Desktop\\스캔\\SCAN_20260521_154252371_20260521_033409_004.jpg' -> 'C:\\Users\\User\\Desktop\\스캔\\스캔원본_JPG\\SCAN_20260521_154252371_20260521_033409_004.jpg'
+2026-07-02 08:55:58,725 [INFO] JPG→PDF 변환:3p → SCAN_20260521_154252371_20260521_033409_1.pdf
+2026-07-02 08:55:58,732 [INFO] 미처리파일 8개 처리
+2026-07-02 08:55:58,732 [INFO] ▶ 처리: SCAN_20251217_204918246_20251217_084121.pdf
+2026-07-02 08:56:00,954 [WARNING] 추출실패:SCAN_20251217_204918246_20251217_084121.pdf
+2026-07-02 08:56:01,454 [INFO] ▶ 처리: SCAN_20251217_204918246_20251217_084121_1.pdf
+2026-07-02 08:56:02,459 [WARNING] 추출실패:SCAN_20251217_204918246_20251217_084121_1.pdf
+2026-07-02 08:56:02,960 [INFO] ▶ 처리: SCAN_20260324_163716916_20260324_042912.pdf
+2026-07-02 08:56:03,972 [WARNING] 추출실패:SCAN_20260324_163716916_20260324_042912.pdf
+2026-07-02 08:56:04,472 [INFO] ▶ 처리: SCAN_20260324_163716916_20260324_042912_1.pdf
+2026-07-02 08:56:05,476 [WARNING] 추출실패:SCAN_20260324_163716916_20260324_042912_1.pdf
+2026-07-02 08:56:05,977 [INFO] ▶ 처리: SCAN_20260521_154252371_20260521_033409.pdf
+2026-07-02 08:56:06,995 [WARNING] 추출실패:SCAN_20260521_154252371_20260521_033409.pdf
+2026-07-02 08:56:07,496 [INFO] ▶ 처리: SCAN_20260521_154252371_20260521_033409_1.pdf
+2026-07-02 08:56:08,503 [WARNING] 추출실패:SCAN_20260521_154252371_20260521_033409_1.pdf
+2026-07-02 08:56:09,003 [INFO] ▶ 처리: 외국인근로자 브로셔.pdf
+2026-07-02 08:56:10,016 [WARNING] 추출실패:외국인근로자 브로셔.pdf
+2026-07-02 08:56:10,517 [INFO] ▶ 처리: 지구촌 신청서.pdf
+2026-07-02 08:56:11,531 [WARNING] 추출실패:지구촌 신청서.pdf
+2026-07-02 08:56:13,056 [INFO] DriveID 487개
+2026-07-02 08:56:14,530 [INFO] HTML갱신완료(487개,소송:119,드라이브:487)
+2026-07-02 08:56:18,247 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 08:56:18,248 [INFO] 폴더감시시작:C:\Users\User\Desktop\스캔
+2026-07-02 08:57:05,269 [INFO] ▶ 처리: SCAN_20260702_085636685_20260702_084737.pdf
+2026-07-02 08:57:06,274 [WARNING] 추출실패:SCAN_20260702_085636685_20260702_084737.pdf
+2026-07-02 08:57:29,285 [INFO] ▶ 처리: SCAN_20260702_085718049_20260702_084805.pdf
+2026-07-02 08:57:30,289 [WARNING] 추출실패:SCAN_20260702_085718049_20260702_084805.pdf
+2026-07-02 08:58:02,303 [INFO] ▶ 처리: SCAN_20260702_085750281_20260702_084837.pdf
+2026-07-02 08:58:03,307 [WARNING] 추출실패:SCAN_20260702_085750281_20260702_084837.pdf
+2026-07-02 08:59:23,339 [INFO] ▶ 처리: SCAN_20260702_085831302_20260702_084958.pdf
+2026-07-02 08:59:24,343 [WARNING] 추출실패:SCAN_20260702_085831302_20260702_084958.pdf
+2026-07-02 09:01:41,399 [INFO] ▶ 처리: 에스티엔 기부금 영수증.pdf
+2026-07-02 09:01:42,407 [WARNING] 추출실패:에스티엔 기부금 영수증.pdf
+2026-07-02 09:01:56,413 [INFO] ▶ 처리: 에스티엔 기부금 영수증(1500).pdf
+2026-07-02 09:01:57,421 [WARNING] 추출실패:에스티엔 기부금 영수증(1500).pdf
+2026-07-02 09:02:14,427 [INFO] ▶ 처리: 에스티엔 기부금 영수증(9000).pdf
+2026-07-02 09:02:15,435 [WARNING] 추출실패:에스티엔 기부금 영수증(9000).pdf
+2026-07-02 09:02:29,442 [INFO] ▶ 처리: 고상영 신분증, 통장.pdf
+2026-07-02 09:02:30,448 [WARNING] 추출실패:고상영 신분증, 통장.pdf
+2026-07-02 09:02:44,453 [INFO] ▶ 처리: 근로계약서(곽수지).pdf
+2026-07-02 09:02:45,458 [WARNING] 추출실패:근로계약서(곽수지).pdf
+2026-07-02 09:03:26,474 [INFO] ▶ 처리: 계약서-송도컨벤시아 와락콘서트.pdf
+2026-07-02 09:03:27,480 [WARNING] 추출실패:계약서-송도컨벤시아 와락콘서트.pdf
+2026-07-02 09:03:38,484 [INFO] ▶ 처리: 김준영 반명함 사진.pdf
+2026-07-02 09:03:39,498 [WARNING] 추출실패:김준영 반명함 사진.pdf
+2026-07-02 09:22:14,953 [INFO] ▶ 처리: SCAN_20260702_092125141_20260702_091211.pdf
+2026-07-02 09:22:15,958 [WARNING] 추출실패:SCAN_20260702_092125141_20260702_091211.pdf
+2026-07-02 09:26:20,142 [INFO] DriveID 491개
+2026-07-02 09:26:20,188 [INFO] HTML갱신완료(491개,소송:119,드라이브:491)
+2026-07-02 09:26:23,797 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 09:56:25,456 [INFO] DriveID 491개
+2026-07-02 09:56:25,499 [INFO] HTML갱신완료(491개,소송:119,드라이브:491)
+2026-07-02 09:56:28,925 [INFO] GitHub 자동 업로드 완료 (scan.html 포함)
+2026-07-02 10:01:07,049 [INFO] ▶ 처리: SCAN_20260702_100049472_20260702_095136_001.pdf
+2026-07-02 10:03:24,106 [INFO] ▶ 처리: 자동차보험(메리츠)2544.pdf
+2026-07-02 10:03:25,112 [WARNING] 추출실패:자동차보험(메리츠)2544.pdf
+2026-07-02 10:06:12,182 [INFO] ▶ 처리: AI소울 유튜브 쇼핑몰 계약서.pdf
+2026-07-02 10:06:13,192 [WARNING] 추출실패:AI소울 유튜브 쇼핑몰 계약서.pdf
