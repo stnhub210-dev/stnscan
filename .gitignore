@@ -23,3 +23,8 @@ _web_dash_tmp.html
 !icon-192.png
 !icon-512.png
 !icon-512-maskable.png
+
+# --- 대용량 문서 파일 (GitHub 100MB 제한 초과 방지) ---
+*.pptx
+*.docx
+.claude/
