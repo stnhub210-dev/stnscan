@@ -14,6 +14,7 @@ jobs:
           mkdir -p _site
           cp index.html _site/ 2>/dev/null || true
           cp scan.html _site/ 2>/dev/null || true
+          cp version.json _site/ 2>/dev/null || true
           cp CNAME _site/ 2>/dev/null || true
           cp .nojekyll _site/ 2>/dev/null || true
           cp manifest.json _site/ 2>/dev/null || true
